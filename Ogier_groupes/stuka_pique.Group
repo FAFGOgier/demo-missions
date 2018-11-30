@@ -1,0 +1,364 @@
+Group
+{
+  Name = "Stuka pique";
+  Index = 75;
+  Desc = "";
+  Plane
+  {
+    Name = "Stuka leader";
+    Index = 76;
+    LinkTrId = 77;
+    XPos = 46220.209;
+    YPos = 2500.000;
+    ZPos = 25663.152;
+    XOri = 0.61;
+    YOri = 31.75;
+    ZOri = 11.16;
+    Script = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
+    Model = "graphics\planes\ju87d3\ju87d3.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 3;
+    WMMask = 11;
+    AiRTBDecision = 1;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 77;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 46220.209;
+    YPos = 2500.200;
+    ZPos = 25663.152;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 76;
+    OnEvents
+    {
+      OnEvent
+      {
+        Type = 9;
+        TarId = 103;
+      }
+    }
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 79;
+    Name = "WP LAND";
+    Desc = "";
+    Targets = [80];
+    Objects = [77];
+    XPos = 23745.160;
+    YPos = 800.000;
+    ZPos = 14899.222;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 50;
+    Speed = 300;
+    Priority = 1;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 81;
+    Name = "IN";
+    Desc = "";
+    Targets = [82,83];
+    Objects = [];
+    XPos = 47017.923;
+    YPos = 82.605;
+    ZPos = 24590.652;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 82;
+    Name = "set wp";
+    Desc = "";
+    Targets = [85];
+    Objects = [];
+    XPos = 46807.854;
+    YPos = 82.505;
+    ZPos = 24600.984;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 83;
+    Name = "form";
+    Desc = "";
+    Targets = [87];
+    Objects = [];
+    XPos = 46615.003;
+    YPos = 82.680;
+    ZPos = 24604.427;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 3;
+    Random = 100;
+  }
+  
+
+  MCU_CMD_Formation
+  {
+    Index = 87;
+    Name = "form V";
+    Desc = "";
+    Targets = [];
+    Objects = [77];
+    XPos = 46501.067;
+    YPos = 80.496;
+    ZPos = 24944.913;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  FormationType = 1;
+  FormationDensity = 1;
+  }
+  
+
+  MCU_CMD_Land
+  {
+    Index = 80;
+    Name = "command Land";
+    Desc = "";
+    Targets = [];
+    Objects = [77];
+    XPos = 22323.369;
+    YPos = 118.420;
+    ZPos = 13881.090;
+    XOri = 0.00;
+    YOri = 217.06;
+    ZOri = 0.00;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 85;
+    Name = "WP1";
+    Desc = "";
+    Targets = [91];
+    Objects = [77];
+    XPos = 44399.644;
+    YPos = 2500.000;
+    ZPos = 28467.213;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 50;
+    Speed = 200;
+    Priority = 1;
+  }
+  
+
+  MCU_CMD_AttackArea
+  {
+    Index = 91;
+    Name = "command AttackArea";
+    Desc = "";
+    Targets = [];
+    Objects = [77];
+    XPos = 39321.414;
+    YPos = 2500.000;
+    ZPos = 33597.901;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    AttackGround = 0;
+    AttackAir = 0;
+    AttackGTargets = 1;
+    AttackArea = 1500;
+    Time = 600;
+    Priority = 1;
+  }
+  
+
+  Plane
+  {
+    Name = "Stuka";
+    Index = 95;
+    LinkTrId = 96;
+    XPos = 46174.823;
+    YPos = 2500.000;
+    ZPos = 25545.055;
+    XOri = 0.61;
+    YOri = 31.75;
+    ZOri = 11.16;
+    Script = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
+    Model = "graphics\planes\ju87d3\ju87d3.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 1;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 3;
+    WMMask = 11;
+    AiRTBDecision = 1;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 96;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [77];
+    Objects = [];
+    XPos = 46174.823;
+    YPos = 2500.200;
+    ZPos = 25545.055;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 95;
+  }
+  
+
+  Plane
+  {
+    Name = "Stuka";
+    Index = 98;
+    LinkTrId = 99;
+    XPos = 46118.234;
+    YPos = 2500.000;
+    ZPos = 25593.080;
+    XOri = 0.61;
+    YOri = 31.75;
+    ZOri = 11.16;
+    Script = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
+    Model = "graphics\planes\ju87d3\ju87d3.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 2;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 3;
+    WMMask = 11;
+    AiRTBDecision = 1;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 99;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [77];
+    Objects = [];
+    XPos = 46118.234;
+    YPos = 2500.200;
+    ZPos = 25593.080;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 98;
+  }
+  
+
+  MCU_TR_MissionBegin
+  {
+    Index = 101;
+    Name = "BEGIN";
+    Desc = "";
+    Targets = [81];
+    Objects = [];
+    XPos = 47220.872;
+    YPos = 36.474;
+    ZPos = 24584.447;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 103;
+    Name = "Bingo Bomb";
+    Desc = "";
+    Targets = [79];
+    Objects = [];
+    XPos = 45383.821;
+    YPos = 60.632;
+    ZPos = 25708.937;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0;
+    Random = 100;
+  }
+  
+
+}
+

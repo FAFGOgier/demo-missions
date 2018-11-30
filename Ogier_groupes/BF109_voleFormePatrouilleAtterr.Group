@@ -1,0 +1,421 @@
+Group
+{
+  Name = "BF109_voleFormePatrouilleAtterr";
+  Index = 99;
+  Desc = "patrouille";
+  Plane
+  {
+    Name = "Chasse lead";
+    Index = 100;
+    LinkTrId = 101;
+    XPos = 25183.965;
+    YPos = 5000.000;
+    ZPos = 11010.239;
+    XOri = 0.00;
+    YOri = 55.51;
+    ZOri = 14.30;
+    Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+    Model = "graphics\planes\bf109e7\bf109e7.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 1;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 101;
+    Name = "Chasse entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 25183.965;
+    YPos = 5000.200;
+    ZPos = 11010.239;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 100;
+  }
+  
+
+  MCU_TR_MissionBegin
+  {
+    Index = 103;
+    Name = "BEGIN";
+    Desc = "";
+    Targets = [104];
+    Objects = [];
+    XPos = 27654.433;
+    YPos = 76.032;
+    ZPos = 10314.961;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 104;
+    Name = "IN";
+    Desc = "";
+    Targets = [106,107];
+    Objects = [];
+    XPos = 25542.549;
+    YPos = 73.976;
+    ZPos = 10270.964;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 106;
+    Name = "WP 1";
+    Desc = "priority low: agressif en route";
+    Targets = [126,129];
+    Objects = [101];
+    XPos = 24114.914;
+    YPos = 5000.000;
+    ZPos = 14229.314;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 0;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 113;
+    Name = "WP Land";
+    Desc = "";
+    Targets = [115];
+    Objects = [101];
+    XPos = 20184.907;
+    YPos = 500.000;
+    ZPos = 18792.316;
+    XOri = 0.00;
+    YOri = 358.78;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 200;
+    Priority = 1;
+  }
+  
+
+  MCU_CMD_Land
+  {
+    Index = 115;
+    Name = "command Land";
+    Desc = "";
+    Targets = [];
+    Objects = [101];
+    XPos = 18954.799;
+    YPos = 149.887;
+    ZPos = 20745.400;
+    XOri = 0.00;
+    YOri = 133.64;
+    ZOri = 0.00;
+    Priority = 1;
+  }
+  
+
+  Plane
+  {
+    Name = "Chasse";
+    Index = 117;
+    LinkTrId = 118;
+    XPos = 25185.386;
+    YPos = 5000.000;
+    ZPos = 10973.984;
+    XOri = 0.00;
+    YOri = 55.51;
+    ZOri = 14.30;
+    Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+    Model = "graphics\planes\bf109e7\bf109e7.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 1;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 1;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 118;
+    Name = "Chasse entity";
+    Desc = "";
+    Targets = [101];
+    Objects = [];
+    XPos = 25185.386;
+    YPos = 5000.200;
+    ZPos = 10973.984;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 117;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 107;
+    Name = "1s";
+    Desc = "";
+    Targets = [121];
+    Objects = [];
+    XPos = 25206.930;
+    YPos = 108.584;
+    ZPos = 10279.040;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  MCU_CMD_Formation
+  {
+    Index = 121;
+    Name = "Formation";
+    Desc = "";
+    Targets = [];
+    Objects = [101];
+    XPos = 25206.930;
+    YPos = 108.584;
+    ZPos = 10617.437;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  FormationType = 1;
+  FormationDensity = 1;
+  }
+  
+
+  Plane
+  {
+    Name = "Chasse";
+    Index = 123;
+    LinkTrId = 124;
+    XPos = 25162.602;
+    YPos = 5000.000;
+    ZPos = 11008.619;
+    XOri = 0.00;
+    YOri = 55.51;
+    ZOri = 14.30;
+    Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+    Model = "graphics\planes\bf109e7\bf109e7.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 2;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 1;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 124;
+    Name = "Chasse entity";
+    Desc = "";
+    Targets = [101];
+    Objects = [];
+    XPos = 25162.602;
+    YPos = 5000.200;
+    ZPos = 11008.619;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 123;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 126;
+    Name = "WP 2 Patrouille";
+    Desc = "";
+    Targets = [127];
+    Objects = [101];
+    XPos = 24884.482;
+    YPos = 5000.000;
+    ZPos = 15204.221;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 0;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 127;
+    Name = "WP 3 Patrouille";
+    Desc = "";
+    Targets = [128];
+    Objects = [101];
+    XPos = 23598.815;
+    YPos = 5000.000;
+    ZPos = 18878.595;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 0;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 128;
+    Name = "WP 4 Patrouille";
+    Desc = "";
+    Targets = [106];
+    Objects = [101];
+    XPos = 23132.462;
+    YPos = 5000.000;
+    ZPos = 15480.855;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 0;
+  }
+  
+
+  MCU_Counter
+  {
+    Index = 129;
+    Name = "Compte tour";
+    Desc = "Arrete la patrouille apres N to";
+    Targets = [130,131];
+    Objects = [];
+    XPos = 23736.189;
+    YPos = 43.799;
+    ZPos = 14243.394;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Counter = 2;
+    Dropcount = 0;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 130;
+    Name = "2s";
+    Desc = "attends un peu pour desactiver ";
+    Targets = [113];
+    Objects = [];
+    XPos = 23251.729;
+    YPos = 43.144;
+    ZPos = 14363.361;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 131;
+    Name = "Translator Subtitle";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 23281.522;
+    YPos = 40.137;
+    ZPos = 13441.182;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 30;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 2;
+      RColor = 255;
+      GColor = 255;
+      BColor = 255;
+      LCText = 3;
+    }
+    
+    Coalitions = [0, 1, 2];
+  }
+  
+
+}
+

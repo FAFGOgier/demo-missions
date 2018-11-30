@@ -1,0 +1,382 @@
+Group
+{
+  Name = "Stuka strafe 1";
+  Index = 131;
+  Desc = "";
+  Plane
+  {
+    Name = "Stuka leader";
+    Index = 132;
+    LinkTrId = 133;
+    XPos = 41174.935;
+    YPos = 2500.000;
+    ZPos = 21562.887;
+    XOri = 0.61;
+    YOri = 115.77;
+    ZOri = 11.16;
+    Script = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
+    Model = "graphics\planes\ju87d3\ju87d3.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 3;
+    CoopStart = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 10;
+    WMMask = 100001;
+    AiRTBDecision = 1;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 133;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 41174.935;
+    YPos = 2500.200;
+    ZPos = 21562.887;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 132;
+    OnEvents
+    {
+      OnEvent
+      {
+        Type = 8;
+        TarId = 158;
+      }
+    }
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 135;
+    Name = "WP LAND";
+    Desc = "";
+    Targets = [136];
+    Objects = [133];
+    XPos = 16621.182;
+    YPos = 800.000;
+    ZPos = 17289.879;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 50;
+    Speed = 300;
+    Priority = 1;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 137;
+    Name = "IN";
+    Desc = "";
+    Targets = [138,139];
+    Objects = [];
+    XPos = 42149.210;
+    YPos = 82.605;
+    ZPos = 21563.147;
+    XOri = 0.00;
+    YOri = 3.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 138;
+    Name = "2s";
+    Desc = "";
+    Targets = [141];
+    Objects = [];
+    XPos = 41717.990;
+    YPos = 82.505;
+    ZPos = 21572.894;
+    XOri = 0.00;
+    YOri = 3.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 139;
+    Name = "3s";
+    Desc = "";
+    Targets = [143];
+    Objects = [];
+    XPos = 41939.792;
+    YPos = 82.680;
+    ZPos = 21566.804;
+    XOri = 0.00;
+    YOri = 3.00;
+    ZOri = 0.00;
+    Time = 3;
+    Random = 100;
+  }
+  
+
+  MCU_CMD_Formation
+  {
+    Index = 143;
+    Name = "form V";
+    Desc = "";
+    Targets = [];
+    Objects = [133];
+    XPos = 41521.424;
+    YPos = 80.496;
+    ZPos = 21570.764;
+    XOri = 0.00;
+    YOri = 3.00;
+    ZOri = 0.00;
+  FormationType = 1;
+  FormationDensity = 1;
+  }
+  
+
+  MCU_CMD_Land
+  {
+    Index = 136;
+    Name = "command Land";
+    Desc = "";
+    Targets = [];
+    Objects = [133];
+    XPos = 14341.517;
+    YPos = 118.420;
+    ZPos = 15820.234;
+    XOri = 0.00;
+    YOri = 217.06;
+    ZOri = 0.00;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 141;
+    Name = "WP1";
+    Desc = "";
+    Targets = [147,148];
+    Objects = [133];
+    XPos = 38970.904;
+    YPos = 1000.000;
+    ZPos = 25466.583;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 50;
+    Speed = 250;
+    Priority = 1;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 148;
+    Name = "10mn";
+    Desc = "";
+    Targets = [135];
+    Objects = [];
+    XPos = 37705.684;
+    YPos = 138.946;
+    ZPos = 31130.227;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 603;
+    Random = 100;
+  }
+  
+
+  MCU_CMD_AttackArea
+  {
+    Index = 147;
+    Name = "command AttackArea";
+    Desc = "";
+    Targets = [];
+    Objects = [133];
+    XPos = 38556.189;
+    YPos = 500.000;
+    ZPos = 34052.840;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    AttackGround = 0;
+    AttackAir = 0;
+    AttackGTargets = 1;
+    AttackArea = 1500;
+    Time = 600;
+    Priority = 1;
+  }
+  
+
+  Plane
+  {
+    Name = "Stuka";
+    Index = 151;
+    LinkTrId = 152;
+    XPos = 41201.130;
+    YPos = 1500.000;
+    ZPos = 21526.695;
+    XOri = 0.61;
+    YOri = 115.77;
+    ZOri = 11.16;
+    Script = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
+    Model = "graphics\planes\ju87d3\ju87d3.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 3;
+    CoopStart = 0;
+    NumberInFormation = 2;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 10;
+    WMMask = 100001;
+    AiRTBDecision = 1;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 152;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [133];
+    Objects = [];
+    XPos = 41201.130;
+    YPos = 1500.200;
+    ZPos = 21526.695;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 151;
+  }
+  
+
+  Plane
+  {
+    Name = "Stuka";
+    Index = 154;
+    LinkTrId = 155;
+    XPos = 41171.096;
+    YPos = 1500.000;
+    ZPos = 21517.515;
+    XOri = 0.61;
+    YOri = 115.77;
+    ZOri = 11.16;
+    Script = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
+    Model = "graphics\planes\ju87d3\ju87d3.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 3;
+    CoopStart = 0;
+    NumberInFormation = 1;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 10;
+    WMMask = 100001;
+    AiRTBDecision = 1;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 155;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [133];
+    Objects = [];
+    XPos = 41171.096;
+    YPos = 1500.200;
+    ZPos = 21517.515;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 154;
+  }
+  
+
+  MCU_TR_MissionBegin
+  {
+    Index = 157;
+    Name = "BEGIN";
+    Desc = "";
+    Targets = [137];
+    Objects = [];
+    XPos = 42454.080;
+    YPos = 37.828;
+    ZPos = 21561.684;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 158;
+    Name = "Bingo Gun";
+    Desc = "";
+    Targets = [135];
+    Objects = [];
+    XPos = 42001.240;
+    YPos = 39.831;
+    ZPos = 22266.747;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 30;
+    Random = 100;
+  }
+  
+
+}
+

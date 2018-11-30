@@ -1,0 +1,381 @@
+# Mission File Version = 1.0;
+
+Options
+{
+  LCName = 0;
+  LCDesc = 1;
+  LCAuthor = 2;
+  PlayerConfig = "LuaScripts\WorldObjects\Planes\mig3s24.txt";
+  Time = 12:30:0;
+  Date = 25.8.1942;
+  HMap = "graphics\LANDSCAPE_summer\height.hini";
+  Textures = "graphics\LANDSCAPE_summer\textures.tini";
+  Forests = "graphics\LANDSCAPE_summer\trees\woods.wds";
+  Layers = "";
+  GuiMap = "lapino-summer";
+  SeasonPrefix = "su";
+  MissionType = 0;
+  AqmId = 0;
+  CloudLevel = 500;
+  CloudHeight = 200;
+  PrecLevel = 0;
+  PrecType = 0;
+  CloudConfig = "summer\00_clear_00\sky.ini";
+  SeaState = 0;
+  Turbulence = 0;
+  TempPressLevel = 0;
+  Temperature = 25;
+  Pressure = 760;
+  WindLayers
+  {
+    0 :     0 :     0;
+    500 :     0 :     0;
+    1000 :     0 :     0;
+    2000 :     0 :     0;
+    5000 :     0 :     0;
+  }
+  Countries
+  {
+    0 : 0;
+    101 : 1;
+    201 : 2;
+  }
+}
+
+Plane
+{
+  Name = "joueur";
+  Index = 2;
+  LinkTrId = 3;
+  XPos = 38460.854;
+  YPos = 3000.000;
+  ZPos = 34388.802;
+  XOri = 1.28;
+  YOri = 250.18;
+  ZOri = 17.26;
+  Script = "LuaScripts\WorldObjects\Planes\mig3s24.txt";
+  Model = "graphics\planes\mig3s24\mig3s24.mgm";
+  Country = 101;
+  Desc = "";
+  Skin = "";
+  AILevel = 0;
+  CoopStart = 0;
+  NumberInFormation = 0;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  StartInAir = 0;
+  Callsign = 0;
+  Callnum = 0;
+  Time = 60;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  PayloadId = 0;
+  WMMask = 1;
+  AiRTBDecision = 0;
+  DeleteAfterDeath = 1;
+  Spotter = -1;
+  Fuel = 1;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 3;
+  Name = "Plane entity";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 38460.854;
+  YPos = 3000.200;
+  ZPos = 34388.802;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 2;
+}
+
+
+
+Plane
+{
+  Name = "chasse leader";
+  Index = 5;
+  LinkTrId = 6;
+  XPos = 29037.811;
+  YPos = 108.584;
+  ZPos = 20062.794;
+  XOri = 0.00;
+  YOri = 71.95;
+  ZOri = 0.00;
+  Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
+  Model = "graphics\planes\bf109f4\bf109f4.mgm";
+  Country = 201;
+  Desc = "";
+  Skin = "";
+  AILevel = 2;
+  CoopStart = 0;
+  NumberInFormation = 0;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  StartInAir = 1;
+  Callsign = 0;
+  Callnum = 0;
+  Time = 60;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  PayloadId = 0;
+  WMMask = 1;
+  AiRTBDecision = 0;
+  DeleteAfterDeath = 1;
+  Spotter = -1;
+  Fuel = 1;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 6;
+  Name = "chasse entity";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 29037.811;
+  YPos = 108.784;
+  ZPos = 20062.794;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 5;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 6;
+      TarId = 8;
+    }
+  }
+}
+
+
+
+MCU_TR_MissionBegin
+{
+  Index = 9;
+  Name = "Translator Mission Begin DEBUT";
+  Desc = "Permet de lancer les op*rations";
+  Targets = [10];
+  Objects = [];
+  XPos = 29483.552;
+  YPos = 108.584;
+  ZPos = 19832.549;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+}
+
+
+
+MCU_CMD_TakeOff
+{
+  Index = 11;
+  Name = "command Take off";
+  Desc = "";
+  Targets = [];
+  Objects = [6];
+  XPos = 29071.505;
+  YPos = 108.584;
+  ZPos = 20148.856;
+  XOri = 0.00;
+  YOri = 239.11;
+  ZOri = 0.00;
+  NoTaxiTakeoff = 0;
+}
+
+
+
+MCU_Timer
+{
+  Index = 10;
+  Name = "Trigger Timer 2s";
+  Desc = "On attend un peu avant de lance";
+  Targets = [11];
+  Objects = [];
+  XPos = 29325.977;
+  YPos = 108.584;
+  ZPos = 19830.933;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 2;
+  Random = 100;
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 8;
+  Name = "WP 1";
+  Desc = "Pour activer ce Waypoint, on at";
+  Targets = [14];
+  Objects = [6];
+  XPos = 30412.070;
+  YPos = 500.000;
+  ZPos = 23529.005;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Area = 20;
+  Speed = 300;
+  Priority = 1;
+}
+
+
+
+MCU_TR_CameraOperator
+{
+  Index = 15;
+  Name = "Translator Camera";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 28908.546;
+  YPos = 108.584;
+  ZPos = 19675.381;
+  XOri = 0.00;
+  YOri = 69.68;
+  ZOri = 0.00;
+  Enabled = 1;
+  Speed = 0;
+  FOV = 90;
+  FirstId = -1;
+  SecondId = -1;
+  LockView = 0;
+  CameraType = 0;
+  Config = "";
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 14;
+  Name = "WP 2";
+  Desc = "Second WP. Obtenu tr*s simpleme";
+  Targets = [17];
+  Objects = [6];
+  XPos = 27805.719;
+  YPos = 1000.000;
+  ZPos = 27003.804;
+  XOri = 0.00;
+  YOri = 143.67;
+  ZOri = 0.00;
+  Area = 20;
+  Speed = 300;
+  Priority = 1;
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 17;
+  Name = "WP3";
+  Desc = "";
+  Targets = [19];
+  Objects = [6];
+  XPos = 25278.317;
+  YPos = 500.000;
+  ZPos = 28708.410;
+  XOri = 0.00;
+  YOri = 135.40;
+  ZOri = 0.00;
+  Area = 20;
+  Speed = 300;
+  Priority = 1;
+}
+
+
+
+MCU_CMD_Land
+{
+  Index = 19;
+  Name = "command Land";
+  Desc = "Attention * bien aligner la com";
+  Targets = [];
+  Objects = [6];
+  XPos = 23450.911;
+  YPos = 149.887;
+  ZPos = 30469.834;
+  XOri = 0.00;
+  YOri = 126.28;
+  ZOri = 0.00;
+  Priority = 1;
+}
+
+
+
+Plane
+{
+  Name = "chasse ailier";
+  Index = 21;
+  LinkTrId = 22;
+  XPos = 28986.064;
+  YPos = 108.584;
+  ZPos = 20001.063;
+  XOri = 0.00;
+  YOri = 71.95;
+  ZOri = 0.00;
+  Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
+  Model = "graphics\planes\bf109f4\bf109f4.mgm";
+  Country = 201;
+  Desc = "";
+  Skin = "";
+  AILevel = 2;
+  CoopStart = 0;
+  NumberInFormation = 1;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  StartInAir = 1;
+  Callsign = 0;
+  Callnum = 0;
+  Time = 60;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  PayloadId = 0;
+  WMMask = 1;
+  AiRTBDecision = 0;
+  DeleteAfterDeath = 1;
+  Spotter = -1;
+  Fuel = 1;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 22;
+  Name = "chasse entity";
+  Desc = "";
+  Targets = [6];
+  Objects = [];
+  XPos = 28986.064;
+  YPos = 108.784;
+  ZPos = 20001.063;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 21;
+}
+
+
+# end of file

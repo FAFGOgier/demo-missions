@@ -1,0 +1,538 @@
+# Mission File Version = 1.0;
+
+Options
+{
+  LCName = 0;
+  LCDesc = 1;
+  LCAuthor = 2;
+  PlayerConfig = "";
+  Time = 12:30:0;
+  Date = 19.11.1942;
+  HMap = "graphics\landscape\height.hini";
+  Textures = "graphics\landscape\textures.tini";
+  Forests = "graphics\landscape\trees\woods.wds";
+  Layers = "";
+  GuiMap = "lapino-winter";
+  SeasonPrefix = "wi";
+  MissionType = 0;
+  AqmId = 0;
+  CloudLevel = 500;
+  CloudHeight = 200;
+  PrecLevel = 0;
+  PrecType = 0;
+  CloudConfig = "winter\00_clear_00\sky.ini";
+  SeaState = 0;
+  Turbulence = 0;
+  TempPressLevel = 0;
+  Temperature = -15;
+  Pressure = 760;
+  WindLayers
+  {
+    0 :     0 :     0;
+    500 :     0 :     0;
+    1000 :     0 :     0;
+    2000 :     0 :     0;
+    5000 :     0 :     0;
+  }
+  Countries
+  {
+    0 : 0;
+    101 : 1;
+    201 : 2;
+  }
+}
+
+Vehicle
+{
+  Name = "Vehicle";
+  Index = 2;
+  LinkTrId = 3;
+  XPos = 46678.399;
+  YPos = 56.100;
+  ZPos = 28183.187;
+  XOri = 359.26;
+  YOri = 0.00;
+  ZOri = 1.22;
+  Script = "LuaScripts\WorldObjects\vehicles\_t34-76stz.txt";
+  Model = "graphics\vehicles\_t34-76stz\_t34-76stz.mgm";
+  Desc = "";
+  Country = 101;
+  NumberInFormation = 0;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  AILevel = 0;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  DeleteAfterDeath = 1;
+  CoopStart = 0;
+  Spotter = -1;
+  BeaconChannel = 0;
+  Callsign = 0;
+  PayloadId = 0;
+  WMMask = 1;
+  Fuel = 1;
+  Callnum = 0;
+  Skin = "";
+  RepairFriendlies = 0;
+  RearmFriendlies = 0;
+  RefuelFriendlies = 0;
+  RepairTime = 0;
+  RearmTime = 0;
+  RefuelTime = 0;
+  MaintenanceRadius = 10;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 3;
+  Name = "Vehicle entity";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 46678.399;
+  YPos = 56.300;
+  ZPos = 28183.187;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 2;
+}
+
+
+
+MCU_Icon
+{
+  Index = 5;
+  Targets = [6];
+  Objects = [];
+  XPos = 40237.640;
+  YPos = 80.782;
+  ZPos = 9534.653;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 3;
+  LCDesc = 4;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 6;
+  Targets = [8];
+  Objects = [];
+  XPos = 41394.314;
+  YPos = 80.782;
+  ZPos = 6211.446;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 5;
+  LCDesc = 6;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 8;
+  Targets = [10];
+  Objects = [];
+  XPos = 39616.844;
+  YPos = 80.782;
+  ZPos = 4771.082;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 7;
+  LCDesc = 8;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 10;
+  Targets = [12];
+  Objects = [];
+  XPos = 36919.993;
+  YPos = 80.782;
+  ZPos = 7375.996;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 9;
+  LCDesc = 10;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 12;
+  Targets = [14];
+  Objects = [];
+  XPos = 34284.434;
+  YPos = 80.782;
+  ZPos = 9582.510;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 11;
+  LCDesc = 12;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 14;
+  Targets = [16];
+  Objects = [];
+  XPos = 31894.043;
+  YPos = 80.782;
+  ZPos = 7621.164;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 13;
+  LCDesc = 14;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 16;
+  Targets = [];
+  Objects = [];
+  XPos = 32231.149;
+  YPos = 80.782;
+  ZPos = 4219.454;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 15;
+  LCDesc = 16;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 18;
+  Targets = [19,20,21];
+  Objects = [];
+  XPos = 37318.391;
+  YPos = 80.782;
+  ZPos = 15221.381;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 17;
+  LCDesc = 18;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 19;
+  Targets = [20];
+  Objects = [];
+  XPos = 37349.037;
+  YPos = 80.782;
+  ZPos = 18898.905;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 19;
+  LCDesc = 20;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 20;
+  Targets = [];
+  Objects = [];
+  XPos = 39862.012;
+  YPos = 80.782;
+  ZPos = 16723.037;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 21;
+  LCDesc = 22;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 21;
+  Targets = [25];
+  Objects = [];
+  XPos = 34805.416;
+  YPos = 80.782;
+  ZPos = 16110.116;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 23;
+  LCDesc = 24;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 25;
+  Targets = [];
+  Objects = [];
+  XPos = 34866.708;
+  YPos = 80.782;
+  ZPos = 17427.895;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 25;
+  LCDesc = 26;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 27;
+  Targets = [28];
+  Objects = [];
+  XPos = 32721.486;
+  YPos = 80.782;
+  ZPos = 22116.739;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 27;
+  LCDesc = 28;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 28;
+  Targets = [30,31];
+  Objects = [];
+  XPos = 38697.463;
+  YPos = 80.782;
+  ZPos = 22208.677;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 29;
+  LCDesc = 30;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 30;
+  Targets = [33];
+  Objects = [];
+  XPos = 41424.960;
+  YPos = 80.782;
+  ZPos = 26652.352;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 31;
+  LCDesc = 32;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 33;
+  Targets = [31];
+  Objects = [];
+  XPos = 38053.896;
+  YPos = 80.782;
+  ZPos = 28491.115;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 33;
+  LCDesc = 34;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 31;
+  Targets = [36];
+  Objects = [];
+  XPos = 36245.780;
+  YPos = 80.782;
+  ZPos = 25242.635;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 35;
+  LCDesc = 36;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+
+MCU_Icon
+{
+  Index = 36;
+  Targets = [];
+  Objects = [];
+  XPos = 32445.671;
+  YPos = 80.782;
+  ZPos = 27847.548;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 37;
+  LCDesc = 38;
+  IconId = 0;
+  RColor = 255;
+  GColor = 0;
+  BColor = 0;
+  LineType = 1;
+  Coalitions = [1, 2];
+}
+
+
+# end of file

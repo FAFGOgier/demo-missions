@@ -1,0 +1,35 @@
+#1CGS Location Database file
+
+AirObjective
+{
+  Name = "Base adverse";
+  Desc = "";
+  XPos = 14409.282;
+  YPos = 118.420;
+  ZPos = 15136.913;
+  OY = 0.000;
+  Length = 1000;
+  Width = 1000;
+  ReconFlight = 0;
+  BomberFlight = 0;
+  FighterPatrolFlight = 0;
+  Dogfight = 0;
+  DuelOpponent = 0;
+  Balloon = 0;
+}
+
+Airfield
+{
+  Name = "Maison";
+  Desc = "";
+  XPos = 39442.423;
+  YPos = 138.946;
+  ZPos = 33930.343;
+  OY = 0.000;
+  Length = 10;
+  Width = 10;
+  GrassField = 0;
+  WaterField = 0;
+}
+
+#end of file

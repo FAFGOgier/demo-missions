@@ -1,0 +1,76 @@
+Group
+{
+  Name = "plan de vol pointilles";
+  Index = 28;
+  Desc = "";
+  MCU_Icon
+  {
+    Index = 2;
+    Targets = [26];
+    Objects = [];
+    XPos = 23224.165;
+    YPos = 1000.000;
+    ZPos = 21533.231;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 3;
+    LCDesc = 4;
+    IconId = 901;
+    RColor = 255;
+    GColor = 0;
+    BColor = 0;
+    LineType = 15;
+    Coalitions = [1, 2];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 26;
+    Targets = [27];
+    Objects = [];
+    XPos = 25377.608;
+    YPos = 1000.000;
+    ZPos = 21773.782;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 31;
+    LCDesc = 32;
+    IconId = 901;
+    RColor = 255;
+    GColor = 0;
+    BColor = 0;
+    LineType = 15;
+    Coalitions = [1, 2];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 27;
+    Targets = [];
+    Objects = [];
+    XPos = 27316.169;
+    YPos = 1000.000;
+    ZPos = 23047.289;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 33;
+    LCDesc = 34;
+    IconId = 901;
+    RColor = 255;
+    GColor = 0;
+    BColor = 0;
+    LineType = 15;
+    Coalitions = [1, 2];
+  }
+  
+
+}
+

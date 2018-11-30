@@ -1,0 +1,351 @@
+Group
+{
+  Name = "searchLights allemandes";
+  Index = 43;
+  Desc = "";
+  Group
+  {
+    Name = "T";
+    Index = 44;
+    Desc = "";
+    Vehicle
+    {
+      Name = "T";
+      Index = 45;
+      LinkTrId = 0;
+      XPos = 22904.770;
+      YPos = 149.887;
+      ZPos = 30949.142;
+      XOri = 0.00;
+      YOri = 35.70;
+      ZOri = 0.00;
+      Script = "LuaScripts\WorldObjects\vehicles\land_canvas.txt";
+      Model = "graphics\vehicles\land_canvas\land_canvas.mgm";
+      Desc = "";
+      Country = 0;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      Callnum = 0;
+      Skin = "";
+      RepairFriendlies = 0;
+      RearmFriendlies = 0;
+      RefuelFriendlies = 0;
+      RepairTime = 0;
+      RearmTime = 0;
+      RefuelTime = 0;
+      MaintenanceRadius = 10;
+    }
+    
+
+    Vehicle
+    {
+      Name = "T";
+      Index = 46;
+      LinkTrId = 0;
+      XPos = 22912.867;
+      YPos = 149.887;
+      ZPos = 30954.953;
+      XOri = 0.00;
+      YOri = 35.70;
+      ZOri = 0.00;
+      Script = "LuaScripts\WorldObjects\vehicles\land_canvas.txt";
+      Model = "graphics\vehicles\land_canvas\land_canvas.mgm";
+      Desc = "";
+      Country = 0;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      Callnum = 0;
+      Skin = "";
+      RepairFriendlies = 0;
+      RearmFriendlies = 0;
+      RefuelFriendlies = 0;
+      RepairTime = 0;
+      RearmTime = 0;
+      RefuelTime = 0;
+      MaintenanceRadius = 10;
+    }
+    
+
+    Vehicle
+    {
+      Name = "T";
+      Index = 47;
+      LinkTrId = 0;
+      XPos = 22905.729;
+      YPos = 149.887;
+      ZPos = 30957.002;
+      XOri = 0.00;
+      YOri = 124.81;
+      ZOri = 0.00;
+      Script = "LuaScripts\WorldObjects\vehicles\land_canvas.txt";
+      Model = "graphics\vehicles\land_canvas\land_canvas.mgm";
+      Desc = "";
+      Country = 0;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      Callnum = 0;
+      Skin = "";
+      RepairFriendlies = 0;
+      RearmFriendlies = 0;
+      RefuelFriendlies = 0;
+      RepairTime = 0;
+      RearmTime = 0;
+      RefuelTime = 0;
+      MaintenanceRadius = 10;
+    }
+    
+
+  }
+  
+
+  Vehicle
+  {
+    Name = "Vehicle";
+    Index = 48;
+    LinkTrId = 49;
+    XPos = 22912.903;
+    YPos = 149.887;
+    ZPos = 30899.108;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\vehicles\searchlightger.txt";
+    Model = "graphics\artillery\searchlightger\searchlightger.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 49;
+    Name = "Vehicle entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 22912.903;
+    YPos = 150.087;
+    ZPos = 30899.108;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 48;
+  }
+  
+
+  MCU_TR_ComplexTrigger
+  {
+    Index = 51;
+    Name = "detecte avion russes";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 22898.308;
+    YPos = 149.887;
+    ZPos = 30852.018;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    Enabled = 1;
+    Cylinder = 1;
+    Radius = 15000;
+    DamageThreshold = 1;
+    DamageReport = 50;
+    CheckVehicles = 0;
+    CheckPlanes = 1;
+    EventsFilterSpawned = 0;
+    EventsFilterEnteredSimple = 1;
+    EventsFilterEnteredAlive = 0;
+    EventsFilterLeftSimple = 0;
+    EventsFilterLeftAlive = 0;
+    EventsFilterFinishedSimple = 0;
+    EventsFilterFinishedAlive = 0;
+    EventsFilterStationaryAndAlive = 0;
+    EventsFilterFinishedStationaryAndAlive = 0;
+    EventsFilterTookOff = 0;
+    EventsFilterDamaged = 0;
+    EventsFilterCriticallyDamaged = 0;
+    EventsFilterRepaired = 0;
+    EventsFilterKilled = 0;
+    EventsFilterDropedBombs = 0;
+    EventsFilterFiredFlare = 0;
+    EventsFilterFiredRockets = 0;
+    EventsFilterDroppedCargoContainers = 0;
+    EventsFilterDeliveredCargo = 0;
+    EventsFilterParatrooperJumped = 0;
+    EventsFilterParatrooperLandedAlive = 0;
+    Country = 101;
+    OnEvents
+    {
+      OnEvent
+      {
+        Type = 58;
+        TarId = 52;
+      }
+    }
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 52;
+    Name = "avions detectes";
+    Desc = "";
+    Targets = [54];
+    Objects = [];
+    XPos = 22880.133;
+    YPos = 149.887;
+    ZPos = 30851.743;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  MCU_CMD_ForceComplete
+  {
+    Index = 54;
+    Name = "allumer lampes";
+    Desc = "";
+    Targets = [];
+    Objects = [49,56];
+    XPos = 22868.292;
+    YPos = 149.887;
+    ZPos = 30883.687;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Priority = 2;
+    EmergencyOrdnanceDrop = 0;
+  }
+  
+
+  Vehicle
+  {
+    Name = "Vehicle";
+    Index = 57;
+    LinkTrId = 56;
+    XPos = 22925.846;
+    YPos = 149.887;
+    ZPos = 31053.594;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\vehicles\searchlightger.txt";
+    Model = "graphics\artillery\searchlightger\searchlightger.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 56;
+    Name = "Vehicle entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 22925.846;
+    YPos = 150.087;
+    ZPos = 31053.594;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 57;
+  }
+  
+
+}
+

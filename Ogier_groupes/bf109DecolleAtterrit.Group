@@ -1,0 +1,251 @@
+Group
+{
+  Name = "BF109_decolleAtterrit";
+  Index = 44;
+  Desc = "decollage en catastrophe.";
+  Plane
+  {
+    Name = "chasse leader";
+    Index = 45;
+    LinkTrId = 46;
+    XPos = 31456.756;
+    YPos = 108.584;
+    ZPos = 15299.140;
+    XOri = 0.00;
+    YOri = 71.95;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
+    Model = "graphics\planes\bf109f4\bf109f4.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 1;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 46;
+    Name = "chasse entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 31456.756;
+    YPos = 108.784;
+    ZPos = 15299.140;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 45;
+    OnEvents
+    {
+      OnEvent
+      {
+        Type = 6;
+        TarId = 48;
+      }
+    }
+  }
+  
+
+  MCU_TR_MissionBegin
+  {
+    Index = 49;
+    Name = "BEGIN";
+    Desc = "Permet de lancer les operations";
+    Targets = [50];
+    Objects = [];
+    XPos = 31902.497;
+    YPos = 108.584;
+    ZPos = 15068.895;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+  }
+  
+
+  MCU_CMD_TakeOff
+  {
+    Index = 51;
+    Name = "command Take off";
+    Desc = "";
+    Targets = [];
+    Objects = [46];
+    XPos = 31490.450;
+    YPos = 108.584;
+    ZPos = 15385.202;
+    XOri = 0.00;
+    YOri = 239.11;
+    ZOri = 0.00;
+    NoTaxiTakeoff = 0;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 50;
+    Name = "IN";
+    Desc = "On attend un peu avant de lance";
+    Targets = [51];
+    Objects = [];
+    XPos = 31744.922;
+    YPos = 108.584;
+    ZPos = 15067.279;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 48;
+    Name = "WP 1";
+    Desc = "ds axe de piste";
+    Targets = [54];
+    Objects = [46];
+    XPos = 32831.015;
+    YPos = 500.000;
+    ZPos = 18765.351;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 300;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 54;
+    Name = "WP 2";
+    Desc = "attaque tt adversaire sur le ch";
+    Targets = [56];
+    Objects = [46];
+    XPos = 30224.664;
+    YPos = 1000.000;
+    ZPos = 22240.150;
+    XOri = 0.00;
+    YOri = 143.67;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 300;
+    Priority = 0;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 56;
+    Name = "WP3 LAND";
+    Desc = "";
+    Targets = [58];
+    Objects = [46];
+    XPos = 27697.262;
+    YPos = 500.000;
+    ZPos = 23944.756;
+    XOri = 0.00;
+    YOri = 135.40;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 300;
+    Priority = 0;
+  }
+  
+
+  MCU_CMD_Land
+  {
+    Index = 58;
+    Name = "Land";
+    Desc = "Attention * bien aligner la com";
+    Targets = [];
+    Objects = [46];
+    XPos = 25869.856;
+    YPos = 149.887;
+    ZPos = 25706.180;
+    XOri = 0.00;
+    YOri = 126.28;
+    ZOri = 0.00;
+    Priority = 1;
+  }
+  
+
+  Plane
+  {
+    Name = "chasse ailier";
+    Index = 60;
+    LinkTrId = 61;
+    XPos = 31405.009;
+    YPos = 108.584;
+    ZPos = 15237.409;
+    XOri = 0.00;
+    YOri = 71.95;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
+    Model = "graphics\planes\bf109f4\bf109f4.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 1;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 1;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 61;
+    Name = "chasse entity";
+    Desc = "";
+    Targets = [46];
+    Objects = [];
+    XPos = 31405.009;
+    YPos = 108.784;
+    ZPos = 15237.409;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 60;
+  }
+  
+
+}
+

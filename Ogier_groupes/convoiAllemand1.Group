@@ -1,0 +1,388 @@
+Group
+{
+  Name = "Convoi";
+  Index = 263;
+  Desc = "";
+  MCU_Timer
+  {
+    Index = 264;
+    Name = "CONVOI IN";
+    Desc = "";
+    Targets = [265];
+    Objects = [];
+    XPos = 36012.123;
+    YPos = 77.998;
+    ZPos = 20964.040;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  Vehicle
+  {
+    Name = "convoi-tete";
+    Index = 266;
+    LinkTrId = 267;
+    XPos = 35610.065;
+    YPos = 47.665;
+    ZPos = 21359.137;
+    XOri = 358.69;
+    YOri = 0.00;
+    ZOri = 2.00;
+    Script = "LuaScripts\WorldObjects\vehicles\opel-blitz.txt";
+    Model = "graphics\vehicles\opel\opel-blitz.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 267;
+    Name = "convoi-tete entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 35610.065;
+    YPos = 47.865;
+    ZPos = 21359.137;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 266;
+  }
+  
+
+  Vehicle
+  {
+    Name = "convoi-1";
+    Index = 269;
+    LinkTrId = 270;
+    XPos = 35656.935;
+    YPos = 49.682;
+    ZPos = 21371.543;
+    XOri = 358.59;
+    YOri = 0.00;
+    ZOri = 2.51;
+    Script = "LuaScripts\WorldObjects\vehicles\opel-blitz.txt";
+    Model = "graphics\vehicles\opel\opel-blitz.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 1;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 270;
+    Name = "convoi-tete entity";
+    Desc = "";
+    Targets = [267];
+    Objects = [];
+    XPos = 35656.935;
+    YPos = 49.882;
+    ZPos = 21371.543;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 269;
+  }
+  
+
+  Vehicle
+  {
+    Name = "convoi-2";
+    Index = 272;
+    LinkTrId = 273;
+    XPos = 35668.723;
+    YPos = 49.397;
+    ZPos = 21337.732;
+    XOri = 358.73;
+    YOri = 0.00;
+    ZOri = 2.51;
+    Script = "LuaScripts\WorldObjects\vehicles\sdkfz10-flak38.txt";
+    Model = "graphics\vehicles\sdkfz10-flak38\sdkfz10-flak38.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 2;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 273;
+    Name = "convoi-2 entity";
+    Desc = "";
+    Targets = [267];
+    Objects = [];
+    XPos = 35668.723;
+    YPos = 49.597;
+    ZPos = 21337.732;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 272;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 265;
+    Name = "attente1";
+    Desc = "";
+    Targets = [276];
+    Objects = [];
+    XPos = 35865.402;
+    YPos = 72.694;
+    ZPos = 20961.088;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+  MCU_CMD_Formation
+  {
+    Index = 277;
+    Name = "formation route";
+    Desc = "";
+    Targets = [];
+    Objects = [267];
+    XPos = 35553.496;
+    YPos = 71.436;
+    ZPos = 21124.756;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  FormationType = 4;
+  FormationDensity = 0;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 276;
+    Name = "demarrage";
+    Desc = "";
+    Targets = [279,280];
+    Objects = [];
+    XPos = 35778.076;
+    YPos = 72.355;
+    ZPos = 20962.278;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0;
+    Random = 100;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 279;
+    Name = "WP 1";
+    Desc = "";
+    Targets = [282];
+    Objects = [267];
+    XPos = 35779.098;
+    YPos = 75.770;
+    ZPos = 21547.205;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 20;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 282;
+    Name = "WP 2";
+    Desc = "";
+    Targets = [300];
+    Objects = [267];
+    XPos = 35583.472;
+    YPos = 73.572;
+    ZPos = 24026.073;
+    XOri = 0.00;
+    YOri = 22.15;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 20;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 300;
+    Name = "WP3";
+    Desc = "";
+    Targets = [302];
+    Objects = [267];
+    XPos = 38105.039;
+    YPos = 38.506;
+    ZPos = 33066.045;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 20;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 302;
+    Name = "WP4";
+    Desc = "";
+    Targets = [304];
+    Objects = [267];
+    XPos = 36677.620;
+    YPos = 38.506;
+    ZPos = 37548.675;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 20;
+    Priority = 1;
+  }
+  
+
+  MCU_CMD_Formation
+  {
+    Index = 304;
+    Name = "Command Formation";
+    Desc = "";
+    Targets = [];
+    Objects = [267];
+    XPos = 35891.856;
+    YPos = 39.609;
+    ZPos = 38188.678;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  FormationType = 9;
+  FormationDensity = 0;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 280;
+    Name = "demarr*";
+    Desc = "";
+    Targets = [277];
+    Objects = [];
+    XPos = 35666.808;
+    YPos = 71.852;
+    ZPos = 20970.016;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+  MCU_TR_MissionBegin
+  {
+    Index = 307;
+    Name = "Translator Mission Begin";
+    Desc = "";
+    Targets = [264];
+    Objects = [];
+    XPos = 36149.142;
+    YPos = 81.298;
+    ZPos = 20965.597;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+  }
+  
+
+}
+

@@ -1,0 +1,795 @@
+# Mission File Version = 1.0;
+
+Options
+{
+  LCName = 0;
+  LCDesc = 1;
+  LCAuthor = 2;
+  PlayerConfig = "";
+  Time = 12:30:0;
+  Date = 25.8.1942;
+  HMap = "graphics\LANDSCAPE_summer\height.hini";
+  Textures = "graphics\LANDSCAPE_summer\textures.tini";
+  Forests = "graphics\LANDSCAPE_summer\trees\woods.wds";
+  Layers = "";
+  GuiMap = "lapino-summer";
+  SeasonPrefix = "su";
+  MissionType = 0;
+  AqmId = 0;
+  CloudLevel = 500;
+  CloudHeight = 200;
+  PrecLevel = 0;
+  PrecType = 0;
+  CloudConfig = "summer\00_clear_00\sky.ini";
+  SeaState = 0;
+  Turbulence = 0;
+  TempPressLevel = 0;
+  Temperature = 25;
+  Pressure = 760;
+  WindLayers
+  {
+    0 :     0 :     0;
+    500 :     0 :     0;
+    1000 :     0 :     0;
+    2000 :     0 :     0;
+    5000 :     0 :     0;
+  }
+  Countries
+  {
+    0 : 0;
+    101 : 1;
+    201 : 2;
+  }
+}
+
+Vehicle
+{
+  Name = "Joueur";
+  Index = 2;
+  LinkTrId = 3;
+  XPos = 38919.309;
+  YPos = 138.946;
+  ZPos = 32832.922;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Script = "LuaScripts\WorldObjects\vehicles\_t34-76stz.txt";
+  Model = "graphics\vehicles\_t34-76stz\_t34-76stz.mgm";
+  Desc = "";
+  Country = 101;
+  NumberInFormation = 0;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  AILevel = 0;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  DeleteAfterDeath = 1;
+  CoopStart = 0;
+  Spotter = -1;
+  BeaconChannel = 0;
+  Callsign = 0;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 3;
+  Name = "Joueur entity";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 38919.309;
+  YPos = 139.146;
+  ZPos = 32832.922;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 2;
+}
+
+
+
+MCU_TR_MissionBegin
+{
+  Index = 5;
+  Name = "Mission Begin";
+  Desc = "";
+  Targets = [6];
+  Objects = [];
+  XPos = 36297.805;
+  YPos = 82.599;
+  ZPos = 10529.708;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+}
+
+
+
+Group
+{
+  Name = "Convoi";
+  Index = 7;
+  Desc = "";
+  MCU_Timer
+  {
+    Index = 6;
+    Name = "CONVOI IN";
+    Desc = "";
+    Targets = [9];
+    Objects = [];
+    XPos = 35238.459;
+    YPos = 77.998;
+    ZPos = 9927.318;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  Vehicle
+  {
+    Name = "convoi-tete";
+    Index = 10;
+    LinkTrId = 11;
+    XPos = 34737.620;
+    YPos = 70.925;
+    ZPos = 10326.846;
+    XOri = 359.62;
+    YOri = 0.00;
+    ZOri = 1.78;
+    Script = "LuaScripts\WorldObjects\vehicles\opel-blitz.txt";
+    Model = "graphics\vehicles\opel\opel-blitz.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 11;
+    Name = "convoi-tete entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 34737.620;
+    YPos = 71.125;
+    ZPos = 10326.846;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 10;
+  }
+  
+
+  Vehicle
+  {
+    Name = "convoi-1";
+    Index = 13;
+    LinkTrId = 14;
+    XPos = 34759.367;
+    YPos = 71.278;
+    ZPos = 10356.645;
+    XOri = 0.68;
+    YOri = 0.00;
+    ZOri = 359.36;
+    Script = "LuaScripts\WorldObjects\vehicles\opel-blitz.txt";
+    Model = "graphics\vehicles\opel\opel-blitz.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 1;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 14;
+    Name = "convoi-tete entity";
+    Desc = "";
+    Targets = [11];
+    Objects = [];
+    XPos = 34759.367;
+    YPos = 71.478;
+    ZPos = 10356.645;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13;
+  }
+  
+
+  Vehicle
+  {
+    Name = "convoi-2";
+    Index = 16;
+    LinkTrId = 17;
+    XPos = 34762.942;
+    YPos = 71.466;
+    ZPos = 10337.811;
+    XOri = 0.70;
+    YOri = 0.00;
+    ZOri = 359.36;
+    Script = "LuaScripts\WorldObjects\vehicles\sdkfz10-flak38.txt";
+    Model = "graphics\vehicles\sdkfz10-flak38\sdkfz10-flak38.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 2;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 17;
+    Name = "convoi-2 entity";
+    Desc = "";
+    Targets = [11];
+    Objects = [];
+    XPos = 34762.942;
+    YPos = 71.666;
+    ZPos = 10337.811;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 16;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 9;
+    Name = "attente1";
+    Desc = "";
+    Targets = [21];
+    Objects = [];
+    XPos = 35091.738;
+    YPos = 72.694;
+    ZPos = 9924.366;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+  MCU_CMD_Formation
+  {
+    Index = 20;
+    Name = "formation route";
+    Desc = "";
+    Targets = [];
+    Objects = [11];
+    XPos = 34779.832;
+    YPos = 71.436;
+    ZPos = 10088.034;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  FormationType = 4;
+  FormationDensity = 0;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 21;
+    Name = "demarrage";
+    Desc = "";
+    Targets = [24,59];
+    Objects = [];
+    XPos = 35004.412;
+    YPos = 72.355;
+    ZPos = 9925.556;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0;
+    Random = 100;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 24;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [25];
+    Objects = [11];
+    XPos = 34536.418;
+    YPos = 75.770;
+    ZPos = 11273.010;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 25;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [27];
+    Objects = [11];
+    XPos = 34459.166;
+    YPos = 73.572;
+    ZPos = 12984.723;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 27;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [29];
+    Objects = [11];
+    XPos = 35292.546;
+    YPos = 60.619;
+    ZPos = 15643.105;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 29;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [31];
+    Objects = [11];
+    XPos = 35639.425;
+    YPos = 57.014;
+    ZPos = 15843.771;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 31;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [33];
+    Objects = [11];
+    XPos = 35355.719;
+    YPos = 52.566;
+    ZPos = 16542.528;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 33;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [35];
+    Objects = [11];
+    XPos = 34831.506;
+    YPos = 21.023;
+    ZPos = 17811.355;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 35;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [37];
+    Objects = [11];
+    XPos = 34594.460;
+    YPos = 35.642;
+    ZPos = 18589.162;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 37;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [39];
+    Objects = [11];
+    XPos = 34539.111;
+    YPos = 38.506;
+    ZPos = 19971.878;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 39;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [41];
+    Objects = [11];
+    XPos = 35191.432;
+    YPos = 38.506;
+    ZPos = 23844.896;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 41;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [43];
+    Objects = [11];
+    XPos = 39140.696;
+    YPos = 38.506;
+    ZPos = 24964.221;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 43;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [45];
+    Objects = [11];
+    XPos = 38721.771;
+    YPos = 38.506;
+    ZPos = 29524.048;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 45;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [47];
+    Objects = [11];
+    XPos = 36622.271;
+    YPos = 38.506;
+    ZPos = 35952.174;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_CMD_Formation
+  {
+    Index = 47;
+    Name = "Command Formation";
+    Desc = "";
+    Targets = [];
+    Objects = [11];
+    XPos = 35703.860;
+    YPos = 39.609;
+    ZPos = 36371.098;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  FormationType = 9;
+  FormationDensity = 0;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 59;
+    Name = "demarr*";
+    Desc = "";
+    Targets = [20];
+    Objects = [];
+    XPos = 34893.144;
+    YPos = 71.852;
+    ZPos = 9933.294;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+}
+
+
+
+Group
+{
+  Name = "pont1";
+  Index = 49;
+  Desc = "";
+  Bridge
+  {
+    Name = "Bridge";
+    Index = 50;
+    LinkTrId = 0;
+    XPos = 34811.553;
+    YPos = 27.318;
+    ZPos = 17871.551;
+    XOri = 0.00;
+    YOri = 108.72;
+    ZOri = 0.00;
+    Model = "graphics\bridges\ferry_pontoon_end.mgm";
+    Script = "LuaScripts\WorldObjects\Bridges\ferry_pontoon_end.txt";
+    Country = 0;
+    Desc = "";
+    Durability = 15000;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+  }
+  
+
+  Bridge
+  {
+    Name = "Bridge";
+    Index = 51;
+    LinkTrId = 0;
+    XPos = 34780.799;
+    YPos = 27.318;
+    ZPos = 17962.425;
+    XOri = 0.00;
+    YOri = 108.68;
+    ZOri = 0.00;
+    Model = "graphics\bridges\ferry_pontoon_part.mgm";
+    Script = "LuaScripts\WorldObjects\Bridges\ferry_pontoon_part.txt";
+    Country = 0;
+    Desc = "";
+    Durability = 15000;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+  }
+  
+
+  Bridge
+  {
+    Name = "Bridge";
+    Index = 52;
+    LinkTrId = 0;
+    XPos = 34700.604;
+    YPos = 27.318;
+    ZPos = 18198.585;
+    XOri = 0.00;
+    YOri = 288.85;
+    ZOri = 0.00;
+    Model = "graphics\bridges\ferry_pontoon_end.mgm";
+    Script = "LuaScripts\WorldObjects\Bridges\ferry_pontoon_end.txt";
+    Country = 0;
+    Desc = "";
+    Durability = 15000;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+  }
+  
+
+  Bridge
+  {
+    Name = "Bridge";
+    Index = 53;
+    LinkTrId = 0;
+    XPos = 34730.774;
+    YPos = 27.318;
+    ZPos = 18109.577;
+    XOri = 0.00;
+    YOri = 288.68;
+    ZOri = 0.00;
+    Model = "graphics\bridges\ferry_pontoon_part.mgm";
+    Script = "LuaScripts\WorldObjects\Bridges\ferry_pontoon_part.txt";
+    Country = 0;
+    Desc = "";
+    Durability = 15000;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+  }
+  
+
+}
+
+
+
+Group
+{
+  Name = "pont2";
+  Index = 54;
+  Desc = "";
+  Bridge
+  {
+    Name = "Bridge";
+    Index = 55;
+    LinkTrId = 0;
+    XPos = 38727.182;
+    YPos = 24.600;
+    ZPos = 18579.793;
+    XOri = 0.00;
+    YOri = 115.66;
+    ZOri = 0.00;
+    Model = "graphics\bridges\ferry_pontoon_end.mgm";
+    Script = "LuaScripts\WorldObjects\Bridges\ferry_pontoon_end.txt";
+    Country = 0;
+    Desc = "";
+    Durability = 15000;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+  }
+  
+
+  Bridge
+  {
+    Name = "Bridge";
+    Index = 56;
+    LinkTrId = 0;
+    XPos = 38688.133;
+    YPos = 24.600;
+    ZPos = 18666.540;
+    XOri = 0.00;
+    YOri = 113.87;
+    ZOri = 0.00;
+    Model = "graphics\bridges\ferry_pontoon_part.mgm";
+    Script = "LuaScripts\WorldObjects\Bridges\ferry_pontoon_part.txt";
+    Country = 0;
+    Desc = "";
+    Durability = 15000;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+  }
+  
+
+  Bridge
+  {
+    Name = "Bridge";
+    Index = 57;
+    LinkTrId = 0;
+    XPos = 38607.030;
+    YPos = 24.600;
+    ZPos = 18852.481;
+    XOri = 0.00;
+    YOri = 292.79;
+    ZOri = 0.00;
+    Model = "graphics\bridges\ferry_pontoon_end.mgm";
+    Script = "LuaScripts\WorldObjects\Bridges\ferry_pontoon_end.txt";
+    Country = 0;
+    Desc = "";
+    Durability = 15000;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+  }
+  
+
+  Bridge
+  {
+    Name = "Bridge";
+    Index = 58;
+    LinkTrId = 0;
+    XPos = 38643.895;
+    YPos = 24.600;
+    ZPos = 18766.860;
+    XOri = 0.00;
+    YOri = 293.52;
+    ZOri = 0.00;
+    Model = "graphics\bridges\ferry_pontoon_part.mgm";
+    Script = "LuaScripts\WorldObjects\Bridges\ferry_pontoon_part.txt";
+    Country = 0;
+    Desc = "";
+    Durability = 15000;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+  }
+  
+
+}
+
+
+# end of file

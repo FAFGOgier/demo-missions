@@ -1,0 +1,765 @@
+Group
+{
+  Name = "BomberEscort";
+  Index = 47;
+  Desc = "";
+  Group
+  {
+    Name = "Escort";
+    Index = 48;
+    Desc = "";
+    Plane
+    {
+      Name = "escort lead";
+      Index = 49;
+      LinkTrId = 50;
+      XPos = 947.071;
+      YPos = 4000.000;
+      ZPos = 32283.257;
+      XOri = 0.08;
+      YOri = 0.00;
+      ZOri = 11.59;
+      Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+      Model = "graphics\planes\bf109e7\bf109e7.mgm";
+      Country = 201;
+      Desc = "";
+      Skin = "";
+      AILevel = 1;
+      CoopStart = 0;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 1;
+      DeleteAfterDeath = 1;
+      Spotter = -1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 50;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 947.071;
+      YPos = 4000.200;
+      ZPos = 32283.257;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 49;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 52;
+      Name = "escort approach";
+      Desc = "";
+      Targets = [53];
+      Objects = [50];
+      XPos = -11.211;
+      YPos = 4000.000;
+      ZPos = 36510.722;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 100;
+      Priority = 1;
+    }
+    
+
+    MCU_CMD_Land
+    {
+      Index = 53;
+      Name = "escort land";
+      Desc = "";
+      Targets = [];
+      Objects = [50];
+      XPos = -1021.535;
+      YPos = 118.420;
+      ZPos = 36285.296;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Priority = 1;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 55;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [52];
+      Objects = [50];
+      XPos = 15392.696;
+      YPos = 4000.000;
+      ZPos = 20718.953;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 100;
+      Priority = 1;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 56;
+      Name = "arret escorte";
+      Desc = "";
+      Targets = [55];
+      Objects = [50];
+      XPos = 25975.654;
+      YPos = 4000.000;
+      ZPos = 20781.770;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 300;
+      Priority = 1;
+    }
+    
+
+    MCU_TR_MissionBegin
+    {
+      Index = 57;
+      Name = "BEGIN";
+      Desc = "";
+      Targets = [58];
+      Objects = [];
+      XPos = 2872.232;
+      YPos = 147.278;
+      ZPos = 29638.942;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 58;
+      Name = "1s";
+      Desc = "";
+      Targets = [60,61];
+      Objects = [];
+      XPos = 1646.391;
+      YPos = 131.808;
+      ZPos = 29638.942;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 1;
+      Random = 100;
+    }
+    
+
+    MCU_CMD_Formation
+    {
+      Index = 60;
+      Name = "Command Formation";
+      Desc = "";
+      Targets = [];
+      Objects = [50];
+      XPos = 1646.391;
+      YPos = 202.612;
+      ZPos = 30083.251;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    FormationType = 0;
+    FormationDensity = 0;
+    }
+    
+
+    Plane
+    {
+      Name = "escort";
+      Index = 63;
+      LinkTrId = 64;
+      XPos = 226.913;
+      YPos = 4000.000;
+      ZPos = 32298.807;
+      XOri = 0.08;
+      YOri = 0.00;
+      ZOri = 11.59;
+      Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+      Model = "graphics\planes\bf109e7\bf109e7.mgm";
+      Country = 201;
+      Desc = "";
+      Skin = "";
+      AILevel = 1;
+      CoopStart = 0;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 1;
+      DeleteAfterDeath = 1;
+      Spotter = -1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 64;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [50];
+      Objects = [];
+      XPos = 226.913;
+      YPos = 4000.200;
+      ZPos = 32298.807;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 63;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 61;
+      Name = "2s";
+      Desc = "";
+      Targets = [67];
+      Objects = [];
+      XPos = 1157.382;
+      YPos = 157.983;
+      ZPos = 29635.112;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 2;
+      Random = 100;
+    }
+    
+
+    MCU_CMD_Cover
+    {
+      Index = 67;
+      Name = "Cover";
+      Desc = "";
+      Targets = [69];
+      Objects = [50];
+      XPos = 783.370;
+      YPos = 191.923;
+      ZPos = 30009.124;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      CoverGroup = 1;
+      Priority = 2;
+    }
+    
+
+  }
+  
+
+  Group
+  {
+    Name = "he111";
+    Index = 70;
+    Desc = "";
+    MCU_Waypoint
+    {
+      Index = 71;
+      Name = "HE WP3";
+      Desc = "";
+      Targets = [72];
+      Objects = [69];
+      XPos = 35695.233;
+      YPos = 3500.000;
+      ZPos = 26169.448;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 250;
+      Priority = 1;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 73;
+      Name = "HE WP2";
+      Desc = "";
+      Targets = [74];
+      Objects = [69];
+      XPos = 14900.442;
+      YPos = 3500.000;
+      ZPos = 36822.927;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 250;
+      Priority = 1;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 75;
+      Name = "HE WP1";
+      Desc = "";
+      Targets = [73];
+      Objects = [69];
+      XPos = 8502.958;
+      YPos = 3500.000;
+      ZPos = 32799.887;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 250;
+      Priority = 1;
+    }
+    
+
+    Plane
+    {
+      Name = "he111 lead";
+      Index = 76;
+      LinkTrId = 69;
+      XPos = 4512.240;
+      YPos = 3500.000;
+      ZPos = 25078.716;
+      XOri = 356.43;
+      YOri = 0.00;
+      ZOri = 11.35;
+      Script = "LuaScripts\WorldObjects\Planes\he111h6.txt";
+      Model = "graphics\planes\he111h6\he111h6.mgm";
+      Country = 201;
+      Desc = "";
+      Skin = "";
+      AILevel = 2;
+      CoopStart = 1;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 10;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 1;
+      DeleteAfterDeath = 1;
+      Spotter = -1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 69;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 4512.240;
+      YPos = 3500.200;
+      ZPos = 25078.716;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 76;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 9;
+          TarId = 78;
+        }
+      }
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 72;
+      Name = "HE WP4";
+      Desc = "";
+      Targets = [80,81];
+      Objects = [69];
+      XPos = 37137.099;
+      YPos = 500.000;
+      ZPos = 14393.431;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 5000;
+      Speed = 250;
+      Priority = 1;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 80;
+      Name = "HE WP5";
+      Desc = "";
+      Targets = [83];
+      Objects = [69];
+      XPos = 38140.227;
+      YPos = 500.000;
+      ZPos = 7396.251;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 250;
+      Priority = 1;
+    }
+    
+
+    MCU_CMD_Land
+    {
+      Index = 83;
+      Name = "HE111  land";
+      Desc = "";
+      Targets = [];
+      Objects = [69];
+      XPos = 37994.055;
+      YPos = 82.599;
+      ZPos = 3926.805;
+      XOri = 0.00;
+      YOri = 267.19;
+      ZOri = 0.00;
+      Priority = 1;
+    }
+    
+
+    MCU_TR_MissionBegin
+    {
+      Index = 85;
+      Name = "BEGIN";
+      Desc = "";
+      Targets = [86];
+      Objects = [];
+      XPos = 4749.264;
+      YPos = 130.146;
+      ZPos = 28093.211;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 86;
+      Name = "1s";
+      Desc = "";
+      Targets = [88,89];
+      Objects = [];
+      XPos = 4298.697;
+      YPos = 110.169;
+      ZPos = 28082.543;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 1;
+      Random = 100;
+    }
+    
+
+    MCU_CMD_Formation
+    {
+      Index = 88;
+      Name = "Form";
+      Desc = "";
+      Targets = [];
+      Objects = [69];
+      XPos = 4288.417;
+      YPos = 103.639;
+      ZPos = 27590.470;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    FormationType = 3;
+    FormationDensity = 1;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 89;
+      Name = "2s";
+      Desc = "";
+      Targets = [75];
+      Objects = [];
+      XPos = 3911.361;
+      YPos = 87.131;
+      ZPos = 28093.211;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 2;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 81;
+      Name = "1s";
+      Desc = "";
+      Targets = [56];
+      Objects = [];
+      XPos = 35099.256;
+      YPos = 21.037;
+      ZPos = 14387.974;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 1;
+      Random = 100;
+    }
+    
+
+    Plane
+    {
+      Name = "he111";
+      Index = 93;
+      LinkTrId = 94;
+      XPos = 4103.178;
+      YPos = 3500.000;
+      ZPos = 25150.059;
+      XOri = 356.43;
+      YOri = 0.00;
+      ZOri = 11.35;
+      Script = "LuaScripts\WorldObjects\Planes\he111h6.txt";
+      Model = "graphics\planes\he111h6\he111h6.mgm";
+      Country = 201;
+      Desc = "";
+      Skin = "";
+      AILevel = 2;
+      CoopStart = 1;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 10;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 1;
+      DeleteAfterDeath = 1;
+      Spotter = -1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 94;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [69];
+      Objects = [];
+      XPos = 4103.178;
+      YPos = 3500.200;
+      ZPos = 25150.059;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 93;
+    }
+    
+
+    Plane
+    {
+      Name = "he111";
+      Index = 96;
+      LinkTrId = 97;
+      XPos = 3781.545;
+      YPos = 3500.000;
+      ZPos = 25149.867;
+      XOri = 356.43;
+      YOri = 0.00;
+      ZOri = 11.35;
+      Script = "LuaScripts\WorldObjects\Planes\he111h6.txt";
+      Model = "graphics\planes\he111h6\he111h6.mgm";
+      Country = 201;
+      Desc = "";
+      Skin = "";
+      AILevel = 2;
+      CoopStart = 1;
+      NumberInFormation = 2;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 10;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 1;
+      DeleteAfterDeath = 1;
+      Spotter = -1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 97;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [69];
+      Objects = [];
+      XPos = 3781.545;
+      YPos = 3500.200;
+      ZPos = 25149.867;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 96;
+    }
+    
+
+    Plane
+    {
+      Name = "he111";
+      Index = 99;
+      LinkTrId = 100;
+      XPos = 3477.800;
+      YPos = 3500.000;
+      ZPos = 25160.415;
+      XOri = 356.43;
+      YOri = 0.00;
+      ZOri = 11.35;
+      Script = "LuaScripts\WorldObjects\Planes\he111h6.txt";
+      Model = "graphics\planes\he111h6\he111h6.mgm";
+      Country = 201;
+      Desc = "";
+      Skin = "";
+      AILevel = 2;
+      CoopStart = 1;
+      NumberInFormation = 3;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 10;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 1;
+      DeleteAfterDeath = 1;
+      Spotter = -1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 100;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [69];
+      Objects = [];
+      XPos = 3477.800;
+      YPos = 3500.200;
+      ZPos = 25160.415;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 99;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 74;
+      Name = "bombarder";
+      Desc = "";
+      Targets = [];
+      Objects = [69];
+      XPos = 29872.072;
+      YPos = 3500.000;
+      ZPos = 31744.880;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      AttackGround = 1;
+      AttackAir = 0;
+      AttackGTargets = 0;
+      AttackArea = 1000;
+      Time = 600;
+      Priority = 2;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 78;
+      Name = "bingo bombs";
+      Desc = "";
+      Targets = [71];
+      Objects = [];
+      XPos = 33853.757;
+      YPos = 79.658;
+      ZPos = 28890.604;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 60;
+      Random = 100;
+    }
+    
+
+  }
+  
+
+}
+

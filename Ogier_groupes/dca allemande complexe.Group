@@ -1,0 +1,611 @@
+Group
+{
+  Name = "dca allemande complexe";
+  Index = 143;
+  Desc = "creation a la demande";
+  MCU_TR_ComplexTrigger
+  {
+    Index = 144;
+    Name = "Translator Complex Trigger";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 30967.491;
+    YPos = 0.000;
+    ZPos = 33547.150;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    Enabled = 1;
+    Cylinder = 1;
+    Radius = 8000;
+    DamageThreshold = 1;
+    DamageReport = 50;
+    CheckVehicles = 0;
+    CheckPlanes = 1;
+    EventsFilterSpawned = 0;
+    EventsFilterEnteredSimple = 1;
+    EventsFilterEnteredAlive = 0;
+    EventsFilterLeftSimple = 0;
+    EventsFilterLeftAlive = 0;
+    EventsFilterFinishedSimple = 0;
+    EventsFilterFinishedAlive = 0;
+    EventsFilterStationaryAndAlive = 0;
+    EventsFilterFinishedStationaryAndAlive = 0;
+    EventsFilterTookOff = 0;
+    EventsFilterDamaged = 0;
+    EventsFilterCriticallyDamaged = 0;
+    EventsFilterRepaired = 0;
+    EventsFilterKilled = 0;
+    EventsFilterDropedBombs = 0;
+    EventsFilterFiredFlare = 0;
+    EventsFilterFiredRockets = 0;
+    EventsFilterDroppedCargoContainers = 0;
+    EventsFilterDeliveredCargo = 0;
+    EventsFilterParatrooperJumped = 0;
+    EventsFilterParatrooperLandedAlive = 0;
+    Country = 101;
+    OnEvents
+    {
+      OnEvent
+      {
+        Type = 58;
+        TarId = 145;
+      }
+    }
+  }
+  
+
+  Vehicle
+  {
+    Name = "flak";
+    Index = 146;
+    LinkTrId = 147;
+    XPos = 33566.734;
+    YPos = 146.051;
+    ZPos = 33224.330;
+    XOri = 0.91;
+    YOri = 0.00;
+    ZOri = 358.86;
+    Script = "LuaScripts\WorldObjects\vehicles\flak37.txt";
+    Model = "graphics\artillery\flak37\flak37.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 147;
+    Name = "flak entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 33566.734;
+    YPos = 146.251;
+    ZPos = 33224.330;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 0;
+    MisObjID = 146;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 145;
+    Name = "1s";
+    Desc = "";
+    Targets = [150,151];
+    Objects = [];
+    XPos = 31294.319;
+    YPos = 0.000;
+    ZPos = 33539.619;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 151;
+    Name = "2s";
+    Desc = "";
+    Targets = [153];
+    Objects = [];
+    XPos = 31559.988;
+    YPos = 0.000;
+    ZPos = 33539.619;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 5;
+    Random = 100;
+  }
+  
+
+  MCU_Activate
+  {
+    Index = 150;
+    Name = "Activate";
+    Desc = "";
+    Targets = [];
+    Objects = [147,155,156,157,158,159,160];
+    XPos = 31759.838;
+    YPos = 0.000;
+    ZPos = 32522.684;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+  Vehicle
+  {
+    Name = "flak";
+    Index = 161;
+    LinkTrId = 155;
+    XPos = 31427.054;
+    YPos = 146.051;
+    ZPos = 31337.906;
+    XOri = 3.87;
+    YOri = 0.00;
+    ZOri = 357.26;
+    Script = "LuaScripts\WorldObjects\vehicles\flak37.txt";
+    Model = "graphics\artillery\flak37\flak37.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 1;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 155;
+    Name = "flak entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 31427.054;
+    YPos = 146.251;
+    ZPos = 31337.906;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 0;
+    MisObjID = 161;
+  }
+  
+
+  MCU_CMD_ForceComplete
+  {
+    Index = 153;
+    Name = "start protection";
+    Desc = "";
+    Targets = [];
+    Objects = [155,147,156,164,157,158,159,160];
+    XPos = 32140.479;
+    YPos = 0.000;
+    ZPos = 32334.631;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Priority = 0;
+    EmergencyOrdnanceDrop = 0;
+  }
+  
+
+  Vehicle
+  {
+    Name = "flak";
+    Index = 165;
+    LinkTrId = 156;
+    XPos = 34059.865;
+    YPos = 146.051;
+    ZPos = 30539.768;
+    XOri = 358.40;
+    YOri = 0.00;
+    ZOri = 357.04;
+    Script = "LuaScripts\WorldObjects\vehicles\flak36.txt";
+    Model = "graphics\artillery\flak36\flak36.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 3;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 156;
+    Name = "flak entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 34059.865;
+    YPos = 146.251;
+    ZPos = 30539.768;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 0;
+    MisObjID = 165;
+  }
+  
+
+  Vehicle
+  {
+    Name = "flak";
+    Index = 167;
+    LinkTrId = 157;
+    XPos = 34263.957;
+    YPos = 146.051;
+    ZPos = 32200.727;
+    XOri = 359.09;
+    YOri = 0.00;
+    ZOri = 5.24;
+    Script = "LuaScripts\WorldObjects\vehicles\flak37.txt";
+    Model = "graphics\artillery\flak37\flak37.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 2;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 157;
+    Name = "flak entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 34263.957;
+    YPos = 146.251;
+    ZPos = 32200.727;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 0;
+    MisObjID = 167;
+  }
+  
+
+  Vehicle
+  {
+    Name = "flak";
+    Index = 169;
+    LinkTrId = 158;
+    XPos = 34300.404;
+    YPos = 146.051;
+    ZPos = 31650.533;
+    XOri = 2.05;
+    YOri = 0.00;
+    ZOri = 4.33;
+    Script = "LuaScripts\WorldObjects\vehicles\flak37.txt";
+    Model = "graphics\artillery\flak37\flak37.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 3;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 158;
+    Name = "flak entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 34300.404;
+    YPos = 146.251;
+    ZPos = 31650.533;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 0;
+    MisObjID = 169;
+  }
+  
+
+  Vehicle
+  {
+    Name = "flak";
+    Index = 171;
+    LinkTrId = 164;
+    XPos = 32756.277;
+    YPos = 146.051;
+    ZPos = 34593.391;
+    XOri = 0.00;
+    YOri = 359.94;
+    ZOri = 2.51;
+    Script = "LuaScripts\WorldObjects\vehicles\flak37.txt";
+    Model = "graphics\artillery\flak37\flak37.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 1;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 164;
+    Name = "flak entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 32756.277;
+    YPos = 146.251;
+    ZPos = 34593.391;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 0;
+    MisObjID = 171;
+  }
+  
+
+  Vehicle
+  {
+    Name = "flak";
+    Index = 173;
+    LinkTrId = 159;
+    XPos = 33350.559;
+    YPos = 146.051;
+    ZPos = 30158.135;
+    XOri = 359.92;
+    YOri = 356.79;
+    ZOri = 1.37;
+    Script = "LuaScripts\WorldObjects\vehicles\flak37.txt";
+    Model = "graphics\artillery\flak37\flak37.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 4;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 159;
+    Name = "flak entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 33350.559;
+    YPos = 146.251;
+    ZPos = 30158.135;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 0;
+    MisObjID = 173;
+  }
+  
+
+  Vehicle
+  {
+    Name = "flak";
+    Index = 175;
+    LinkTrId = 160;
+    XPos = 32728.355;
+    YPos = 146.051;
+    ZPos = 30127.512;
+    XOri = 359.56;
+    YOri = 356.79;
+    ZOri = 359.75;
+    Script = "LuaScripts\WorldObjects\vehicles\flak37.txt";
+    Model = "graphics\artillery\flak37\flak37.mgm";
+    Desc = "";
+    Country = 201;
+    NumberInFormation = 5;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 160;
+    Name = "flak entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 32728.355;
+    YPos = 146.251;
+    ZPos = 30127.512;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 0;
+    MisObjID = 175;
+  }
+  
+
+}
+

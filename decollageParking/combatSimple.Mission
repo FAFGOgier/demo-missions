@@ -1,0 +1,392 @@
+# Mission File Version = 1.0;
+
+Options
+{
+  LCName = 0;
+  LCDesc = 1;
+  LCAuthor = 2;
+  PlayerConfig = "LuaScripts\WorldObjects\Planes\lagg3s29.txt";
+  Time = 12:30:0;
+  Date = 25.8.1942;
+  HMap = "graphics\LANDSCAPE_summer\height.hini";
+  Textures = "graphics\LANDSCAPE_summer\textures.tini";
+  Forests = "graphics\LANDSCAPE_summer\trees\woods.wds";
+  Layers = "";
+  GuiMap = "lapino-summer";
+  SeasonPrefix = "su";
+  MissionType = 0;
+  AqmId = 0;
+  CloudLevel = 500;
+  CloudHeight = 200;
+  PrecLevel = 0;
+  PrecType = 0;
+  CloudConfig = "summer\00_clear_00\sky.ini";
+  SeaState = 0;
+  Turbulence = 0;
+  TempPressLevel = 0;
+  Temperature = 25;
+  Pressure = 760;
+  WindLayers
+  {
+    0 :     0 :     0;
+    500 :     0 :     0;
+    1000 :     0 :     0;
+    2000 :     0 :     0;
+    5000 :     0 :     0;
+  }
+  Countries
+  {
+    0 : 0;
+    101 : 1;
+    201 : 2;
+  }
+}
+
+Plane
+{
+  Name = "BFLeader";
+  Index = 2;
+  LinkTrId = 3;
+  XPos = 14918.397;
+  YPos = 3000.000;
+  ZPos = 9320.409;
+  XOri = 2.09;
+  YOri = 0.00;
+  ZOri = 12.80;
+  Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
+  Model = "graphics\planes\bf109f4\bf109f4.mgm";
+  Country = 201;
+  Desc = "";
+  Skin = "";
+  AILevel = 2;
+  CoopStart = 0;
+  NumberInFormation = 0;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  StartInAir = 0;
+  Callsign = 0;
+  Callnum = 0;
+  Time = 60;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  PayloadId = 0;
+  WMMask = 1;
+  AiRTBDecision = 0;
+  DeleteAfterDeath = 1;
+  Spotter = -1;
+  Fuel = 1;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 3;
+  Name = "Plane entity";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 14918.397;
+  YPos = 3000.200;
+  ZPos = 9320.409;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 2;
+}
+
+
+
+Plane
+{
+  Name = "BF ailier";
+  Index = 5;
+  LinkTrId = 6;
+  XPos = 14902.744;
+  YPos = 3000.000;
+  ZPos = 9252.728;
+  XOri = 4.06;
+  YOri = 1.24;
+  ZOri = 358.07;
+  Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
+  Model = "graphics\planes\bf109f4\bf109f4.mgm";
+  Country = 201;
+  Desc = "";
+  Skin = "";
+  AILevel = 2;
+  CoopStart = 0;
+  NumberInFormation = 1;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  StartInAir = 0;
+  Callsign = 0;
+  Callnum = 0;
+  Time = 60;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  PayloadId = 0;
+  WMMask = 1;
+  AiRTBDecision = 0;
+  DeleteAfterDeath = 1;
+  Spotter = -1;
+  Fuel = 1;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 6;
+  Name = "Plane entity";
+  Desc = "";
+  Targets = [3];
+  Objects = [];
+  XPos = 14902.744;
+  YPos = 3000.200;
+  ZPos = 9252.728;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 5;
+}
+
+
+
+MCU_TR_MissionBegin
+{
+  Index = 8;
+  Name = "Translator Mission Begin";
+  Desc = "";
+  Targets = [9];
+  Objects = [];
+  XPos = 46958.563;
+  YPos = 79.715;
+  ZPos = 3974.429;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+}
+
+
+
+MCU_Timer
+{
+  Index = 9;
+  Name = "Timer 2s";
+  Desc = "";
+  Targets = [11,12];
+  Objects = [];
+  XPos = 43065.281;
+  YPos = 106.878;
+  ZPos = 3856.019;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 2;
+  Random = 100;
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 11;
+  Name = "WP1";
+  Desc = "";
+  Targets = [14];
+  Objects = [3];
+  XPos = 36046.186;
+  YPos = 3100.000;
+  ZPos = 9173.526;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Area = 20;
+  Speed = 350;
+  Priority = 1;
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 14;
+  Name = "WP2 Bleu";
+  Desc = "";
+  Targets = [16];
+  Objects = [3];
+  XPos = 33930.589;
+  YPos = 3100.000;
+  ZPos = 20686.523;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Area = 20;
+  Speed = 350;
+  Priority = 1;
+}
+
+
+
+Plane
+{
+  Name = "Lagg Leader";
+  Index = 17;
+  LinkTrId = 18;
+  XPos = 46287.134;
+  YPos = 3000.000;
+  ZPos = 43405.223;
+  XOri = 0.65;
+  YOri = 231.11;
+  ZOri = 11.99;
+  Script = "LuaScripts\WorldObjects\Planes\lagg3s29.txt";
+  Model = "graphics\planes\lagg3s29\lagg3s29.mgm";
+  Country = 101;
+  Desc = "";
+  Skin = "";
+  AILevel = 2;
+  CoopStart = 0;
+  NumberInFormation = 0;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  StartInAir = 0;
+  Callsign = 0;
+  Callnum = 0;
+  Time = 60;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  PayloadId = 0;
+  WMMask = 1;
+  AiRTBDecision = 0;
+  DeleteAfterDeath = 1;
+  Spotter = -1;
+  Fuel = 1;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 18;
+  Name = "Plane entity";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 46287.134;
+  YPos = 3000.200;
+  ZPos = 43405.223;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 17;
+}
+
+
+
+Plane
+{
+  Name = "Lagg JOUEUR";
+  Index = 20;
+  LinkTrId = 21;
+  XPos = 46390.404;
+  YPos = 3000.000;
+  ZPos = 43377.691;
+  XOri = 358.80;
+  YOri = 231.11;
+  ZOri = 13.36;
+  Script = "LuaScripts\WorldObjects\Planes\lagg3s29.txt";
+  Model = "graphics\planes\lagg3s29\lagg3s29.mgm";
+  Country = 101;
+  Desc = "";
+  Skin = "";
+  AILevel = 0;
+  CoopStart = 0;
+  NumberInFormation = 1;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  StartInAir = 0;
+  Callsign = 0;
+  Callnum = 0;
+  Time = 60;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  PayloadId = 0;
+  WMMask = 1;
+  AiRTBDecision = 0;
+  DeleteAfterDeath = 1;
+  Spotter = -1;
+  Fuel = 1;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 21;
+  Name = "Plane entity";
+  Desc = "";
+  Targets = [18];
+  Objects = [];
+  XPos = 46390.404;
+  YPos = 3000.200;
+  ZPos = 43377.691;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 20;
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 12;
+  Name = "WP1 Joueur";
+  Desc = "";
+  Targets = [];
+  Objects = [18];
+  XPos = 38102.520;
+  YPos = 3100.000;
+  ZPos = 36176.269;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Area = 20;
+  Speed = 350;
+  Priority = 1;
+}
+
+
+
+MCU_CMD_AttackArea
+{
+  Index = 16;
+  Name = "command AttackArea";
+  Desc = "";
+  Targets = [];
+  Objects = [3];
+  XPos = 34061.424;
+  YPos = 3000.000;
+  ZPos = 34068.746;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  AttackGround = 0;
+  AttackAir = 1;
+  AttackGTargets = 0;
+  AttackArea = 10000;
+  Time = 2700;
+  Priority = 1;
+}
+
+
+# end of file

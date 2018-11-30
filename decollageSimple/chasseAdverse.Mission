@@ -1,0 +1,295 @@
+# Mission File Version = 1.0;
+
+Options
+{
+  LCName = 0;
+  LCDesc = 1;
+  LCAuthor = 2;
+  PlayerConfig = "LuaScripts\WorldObjects\Planes\mig3s24.txt";
+  Time = 12:30:0;
+  Date = 25.8.1942;
+  HMap = "graphics\LANDSCAPE_summer\height.hini";
+  Textures = "graphics\LANDSCAPE_summer\textures.tini";
+  Forests = "graphics\LANDSCAPE_summer\trees\woods.wds";
+  Layers = "";
+  GuiMap = "lapino-summer";
+  SeasonPrefix = "su";
+  MissionType = 0;
+  AqmId = 0;
+  CloudLevel = 500;
+  CloudHeight = 200;
+  PrecLevel = 0;
+  PrecType = 0;
+  CloudConfig = "summer\00_clear_00\sky.ini";
+  SeaState = 0;
+  Turbulence = 0;
+  TempPressLevel = 0;
+  Temperature = 25;
+  Pressure = 760;
+  WindLayers
+  {
+    0 :     0 :     0;
+    500 :     0 :     0;
+    1000 :     0 :     0;
+    2000 :     0 :     0;
+    5000 :     0 :     0;
+  }
+  Countries
+  {
+    0 : 0;
+    101 : 1;
+    201 : 2;
+  }
+}
+
+Plane
+{
+  Name = "Joueur";
+  Index = 2;
+  LinkTrId = 3;
+  XPos = 33038.699;
+  YPos = 4000.000;
+  ZPos = 37555.947;
+  XOri = 1.93;
+  YOri = 271.71;
+  ZOri = 10.39;
+  Script = "LuaScripts\WorldObjects\Planes\mig3s24.txt";
+  Model = "graphics\planes\mig3s24\mig3s24.mgm";
+  Country = 101;
+  Desc = "";
+  Skin = "";
+  AILevel = 0;
+  CoopStart = 0;
+  NumberInFormation = 0;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  StartInAir = 0;
+  Callsign = 0;
+  Callnum = 0;
+  Time = 60;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  PayloadId = 0;
+  WMMask = 1;
+  AiRTBDecision = 0;
+  DeleteAfterDeath = 1;
+  Spotter = -1;
+  Fuel = 1;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 3;
+  Name = "Plane entity";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 33038.699;
+  YPos = 4000.200;
+  ZPos = 37555.947;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 2;
+}
+
+
+
+Plane
+{
+  Name = "Chasse";
+  Index = 5;
+  LinkTrId = 6;
+  XPos = 34171.654;
+  YPos = 5000.000;
+  ZPos = 14610.143;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 14.30;
+  Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+  Model = "graphics\planes\bf109e7\bf109e7.mgm";
+  Country = 201;
+  Desc = "";
+  Skin = "";
+  AILevel = 2;
+  CoopStart = 0;
+  NumberInFormation = 0;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  StartInAir = 0;
+  Callsign = 0;
+  Callnum = 0;
+  Time = 60;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  PayloadId = 0;
+  WMMask = 1;
+  AiRTBDecision = 1;
+  DeleteAfterDeath = 1;
+  Spotter = -1;
+  Fuel = 1;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 6;
+  Name = "Chasse entity";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 34171.654;
+  YPos = 5000.200;
+  ZPos = 14610.143;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 5;
+}
+
+
+
+MCU_TR_MissionBegin
+{
+  Index = 8;
+  Name = "Translator Mission Begin";
+  Desc = "";
+  Targets = [9];
+  Objects = [];
+  XPos = 39451.365;
+  YPos = 76.032;
+  ZPos = 14786.133;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+}
+
+
+
+MCU_Timer
+{
+  Index = 9;
+  Name = "2s";
+  Desc = "";
+  Targets = [11];
+  Objects = [];
+  XPos = 37339.481;
+  YPos = 73.976;
+  ZPos = 14742.136;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 2;
+  Random = 100;
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 11;
+  Name = "WP 1";
+  Desc = "(probablement pas n*cessaire)";
+  Targets = [13,14];
+  Objects = [6];
+  XPos = 33847.093;
+  YPos = 5000.000;
+  ZPos = 18984.543;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Area = 20;
+  Speed = 100;
+  Priority = 1;
+}
+
+
+
+MCU_CMD_AttackArea
+{
+  Index = 13;
+  Name = "command AttackArea";
+  Desc = "commande d*attaque de zone";
+  Targets = [];
+  Objects = [6];
+  XPos = 34039.662;
+  YPos = 250.000;
+  ZPos = 22573.706;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  AttackGround = 0;
+  AttackAir = 1;
+  AttackGTargets = 0;
+  AttackArea = 15000;
+  Time = 600;
+  Priority = 1;
+}
+
+
+
+MCU_Timer
+{
+  Index = 14;
+  Name = "10m10s";
+  Desc = "apres 10m d*attaque, on rentre";
+  Targets = [17];
+  Objects = [];
+  XPos = 31223.816;
+  YPos = 55.866;
+  ZPos = 22661.701;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 610;
+  Random = 100;
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 17;
+  Name = "Trigger Waypoint";
+  Desc = "";
+  Targets = [19];
+  Objects = [6];
+  XPos = 26298.117;
+  YPos = 500.000;
+  ZPos = 27418.719;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Area = 20;
+  Speed = 200;
+  Priority = 1;
+}
+
+
+
+MCU_CMD_Land
+{
+  Index = 19;
+  Name = "command Land";
+  Desc = "";
+  Targets = [];
+  Objects = [6];
+  XPos = 23407.845;
+  YPos = 149.887;
+  ZPos = 30527.603;
+  XOri = 0.00;
+  YOri = 134.86;
+  ZOri = 0.00;
+  Priority = 1;
+}
+
+
+# end of file

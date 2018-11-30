@@ -1,0 +1,99 @@
+Group
+{
+  Name = "plan de vol";
+  Index = 6;
+  Desc = "";
+  MCU_Icon
+  {
+    Index = 2;
+    Targets = [3];
+    Objects = [];
+    XPos = 24101.470;
+    YPos = 1000.000;
+    ZPos = 21731.332;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 3;
+    LCDesc = 4;
+    IconId = 903;
+    RColor = 255;
+    GColor = 0;
+    BColor = 0;
+    LineType = 14;
+    Coalitions = [1, 2];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 3;
+    Targets = [4];
+    Objects = [];
+    XPos = 25120.276;
+    YPos = 1000.000;
+    ZPos = 21773.782;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 5;
+    LCDesc = 6;
+    IconId = 901;
+    RColor = 255;
+    GColor = 0;
+    BColor = 0;
+    LineType = 14;
+    Coalitions = [1, 2];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 4;
+    Targets = [5];
+    Objects = [];
+    XPos = 26209.832;
+    YPos = 1000.000;
+    ZPos = 22410.536;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 7;
+    LCDesc = 8;
+    IconId = 901;
+    RColor = 255;
+    GColor = 0;
+    BColor = 0;
+    LineType = 14;
+    Coalitions = [1, 2];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 5;
+    Targets = [];
+    Objects = [];
+    XPos = 26945.636;
+    YPos = 1000.000;
+    ZPos = 23033.139;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 9;
+    LCDesc = 10;
+    IconId = 904;
+    RColor = 255;
+    GColor = 0;
+    BColor = 0;
+    LineType = 14;
+    Coalitions = [1, 2];
+  }
+  
+
+}
+

@@ -1,0 +1,133 @@
+Group
+{
+  Name = "T";
+  Index = 7;
+  Desc = "";
+  Vehicle
+  {
+    Name = "T";
+    Index = 4;
+    LinkTrId = 0;
+    XPos = 22980.440;
+    YPos = 149.887;
+    ZPos = 31019.549;
+    XOri = 0.00;
+    YOri = 35.70;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\vehicles\land_canvas.txt";
+    Model = "graphics\vehicles\land_canvas\land_canvas.mgm";
+    Desc = "";
+    Country = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  Vehicle
+  {
+    Name = "T";
+    Index = 5;
+    LinkTrId = 0;
+    XPos = 22988.537;
+    YPos = 149.887;
+    ZPos = 31025.360;
+    XOri = 0.00;
+    YOri = 35.70;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\vehicles\land_canvas.txt";
+    Model = "graphics\vehicles\land_canvas\land_canvas.mgm";
+    Desc = "";
+    Country = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  Vehicle
+  {
+    Name = "T";
+    Index = 6;
+    LinkTrId = 0;
+    XPos = 22981.399;
+    YPos = 149.887;
+    ZPos = 31027.409;
+    XOri = 0.00;
+    YOri = 124.81;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\vehicles\land_canvas.txt";
+    Model = "graphics\vehicles\land_canvas\land_canvas.mgm";
+    Desc = "";
+    Country = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+}
+
