@@ -7,12 +7,12 @@ Options
   LCAuthor = 2;
   PlayerConfig = "LuaScripts\WorldObjects\Planes\yak1s69.txt";
   Time = 12:30:0;
-  Date = 19.11.1942;
-  HMap = "graphics\landscape\height.hini";
-  Textures = "graphics\landscape\textures.tini";
-  Forests = "graphics\landscape\trees\woods.wds";
+  Date = 20.11.1942;
+  HMap = "graphics\LANDSCAPE_velikie_luki\height.hini";
+  Textures = "graphics\LANDSCAPE_velikie_luki\textures.tini";
+  Forests = "graphics\LANDSCAPE_velikie_luki\trees\woods.wds";
   Layers = "";
-  GuiMap = "lapino-winter";
+  GuiMap = "vluki";
   SeasonPrefix = "wi";
   MissionType = 0;
   AqmId = 0;
@@ -47,11 +47,11 @@ Plane
   Name = "Joueur";
   Index = 2;
   LinkTrId = 3;
-  XPos = 26765.769;
+  XPos = 49096.030;
   YPos = 4000.000;
-  ZPos = 23861.847;
+  ZPos = 150686.577;
   XOri = 1.91;
-  YOri = 90.00;
+  YOri = 270.00;
   ZOri = 9.98;
   Script = "LuaScripts\WorldObjects\Planes\yak1s69.txt";
   Model = "graphics\planes\yak1s69\yak1s69.mgm";
@@ -87,9 +87,9 @@ MCU_TR_Entity
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 26765.769;
+  XPos = 49096.030;
   YPos = 4000.200;
-  ZPos = 23861.847;
+  ZPos = 150686.577;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -101,14 +101,14 @@ MCU_TR_Entity
 
 MCU_Waypoint
 {
-  Index = 4;
+  Index = 5;
   Name = "Trigger Waypoint";
   Desc = "";
-  Targets = [5];
+  Targets = [6];
   Objects = [3];
-  XPos = 26647.278;
+  XPos = 55404.425;
   YPos = 4000.000;
-  ZPos = 49670.681;
+  ZPos = 43787.080;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -121,14 +121,14 @@ MCU_Waypoint
 
 MCU_Waypoint
 {
-  Index = 5;
+  Index = 6;
   Name = "Trigger Waypoint";
   Desc = "";
-  Targets = [6];
+  Targets = [8];
   Objects = [3];
-  XPos = 16417.161;
+  XPos = 55622.202;
   YPos = 500.000;
-  ZPos = 16606.536;
+  ZPos = 72178.301;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -141,16 +141,16 @@ MCU_Waypoint
 
 MCU_CMD_Land
 {
-  Index = 6;
+  Index = 8;
   Name = "command Land";
   Desc = "";
   Targets = [];
   Objects = [3];
-  XPos = 15190.356;
+  XPos = 55979.172;
   YPos = 118.420;
-  ZPos = 15711.708;
+  ZPos = 71887.075;
   XOri = 0.00;
-  YOri = 215.49;
+  YOri = 329.05;
   ZOri = 0.00;
   Priority = 1;
 }
@@ -160,11 +160,11 @@ MCU_CMD_Land
 Plane
 {
   Name = "HE111";
-  Index = 7;
-  LinkTrId = 8;
-  XPos = 26733.539;
+  Index = 10;
+  LinkTrId = 11;
+  XPos = 48249.382;
   YPos = 3500.000;
-  ZPos = 31117.580;
+  ZPos = 148908.259;
   XOri = 0.28;
   YOri = 270.00;
   ZOri = 8.03;
@@ -197,33 +197,33 @@ Plane
 
 MCU_TR_Entity
 {
-  Index = 8;
+  Index = 11;
   Name = "Plane entity";
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 26733.539;
+  XPos = 48249.382;
   YPos = 3500.200;
-  ZPos = 31117.580;
+  ZPos = 148908.259;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
   Enabled = 1;
-  MisObjID = 7;
+  MisObjID = 10;
 }
 
 
 
 MCU_Waypoint
 {
-  Index = 9;
+  Index = 13;
   Name = "Trigger Waypoint";
   Desc = "";
-  Targets = [10];
-  Objects = [8];
-  XPos = 26902.802;
+  Targets = [14];
+  Objects = [11];
+  XPos = 55400.342;
   YPos = 3500.000;
-  ZPos = 984.273;
+  ZPos = 43647.277;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -236,14 +236,14 @@ MCU_Waypoint
 
 MCU_Waypoint
 {
-  Index = 10;
+  Index = 14;
   Name = "Trigger Waypoint";
   Desc = "";
-  Targets = [12];
-  Objects = [8];
-  XPos = 43625.871;
+  Targets = [16];
+  Objects = [11];
+  XPos = 46076.125;
   YPos = 500.000;
-  ZPos = 6508.889;
+  ZPos = 16720.954;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -256,16 +256,16 @@ MCU_Waypoint
 
 MCU_CMD_Land
 {
-  Index = 11;
+  Index = 17;
   Name = "command Land";
   Desc = "";
   Targets = [];
-  Objects = [8];
-  XPos = 43655.443;
+  Objects = [11];
+  XPos = 22637.658;
   YPos = 82.599;
-  ZPos = 7615.735;
+  ZPos = 152678.951;
   XOri = 0.00;
-  YOri = 88.82;
+  YOri = 160.02;
   ZOri = 0.00;
   Priority = 1;
 }
@@ -274,14 +274,14 @@ MCU_CMD_Land
 
 MCU_Waypoint
 {
-  Index = 12;
+  Index = 16;
   Name = "Trigger Waypoint";
   Desc = "";
-  Targets = [];
-  Objects = [8];
-  XPos = 43656.877;
+  Targets = [17];
+  Objects = [11];
+  XPos = 30216.582;
   YPos = 500.000;
-  ZPos = 7803.882;
+  ZPos = 150768.964;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -294,14 +294,14 @@ MCU_Waypoint
 
 MCU_TR_MissionBegin
 {
-  Index = 13;
+  Index = 19;
   Name = "Translator Mission Begin";
   Desc = "";
-  Targets = [14];
+  Targets = [20];
   Objects = [];
-  XPos = 35183.871;
+  XPos = 66104.414;
   YPos = 65.153;
-  ZPos = 13854.076;
+  ZPos = 141408.735;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -312,14 +312,14 @@ MCU_TR_MissionBegin
 
 MCU_Timer
 {
-  Index = 14;
+  Index = 20;
   Name = "2s";
   Desc = "";
-  Targets = [9,4];
+  Targets = [13,5];
   Objects = [];
-  XPos = 32932.004;
+  XPos = 63852.547;
   YPos = 66.185;
-  ZPos = 14034.225;
+  ZPos = 141588.884;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
