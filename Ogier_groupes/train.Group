@@ -1,0 +1,206 @@
+Group
+{
+  Name = "Train";
+  Index = 7;
+  Desc = "";
+  MCU_Timer
+  {
+    Index = 6;
+    Name = "CONVOI IN";
+    Desc = "";
+    Targets = [9];
+    Objects = [];
+    XPos = 34231.785;
+    YPos = 77.998;
+    ZPos = 19267.024;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 9;
+    Name = "attente1";
+    Desc = "";
+    Targets = [11];
+    Objects = [];
+    XPos = 33846.985;
+    YPos = 72.694;
+    ZPos = 19266.979;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 11;
+    Name = "demarrage";
+    Desc = "";
+    Targets = [13,14];
+    Objects = [];
+    XPos = 33621.291;
+    YPos = 72.355;
+    ZPos = 19267.719;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 13;
+    Name = "demarr*";
+    Desc = "";
+    Targets = [16];
+    Objects = [];
+    XPos = 33417.029;
+    YPos = 71.852;
+    ZPos = 19273.000;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+  Train
+  {
+    Name = "Train";
+    Index = 17;
+    LinkTrId = 18;
+    XPos = 33972.132;
+    YPos = 155.494;
+    ZPos = 19370.554;
+    XOri = 0.00;
+    YOri = 89.44;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\Trains\g8.txt";
+    Model = "graphics\trains\g8\g8.mgm";
+    Desc = "";
+    Country = 201;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    Carriages
+    {
+      "LuaScripts\WorldObjects\Trains\g8t.txt";
+      "LuaScripts\WorldObjects\Trains\platformaa-flak38.txt";
+      "LuaScripts\WorldObjects\Trains\tankb.txt";
+    }
+    
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 18;
+    Name = "Train entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 33972.132;
+    YPos = 155.694;
+    ZPos = 19370.554;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 17;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 16;
+    Name = "WP1";
+    Desc = "";
+    Targets = [21];
+    Objects = [18];
+    XPos = 32416.872;
+    YPos = 89.673;
+    ZPos = 28495.962;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 21;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [23];
+    Objects = [18];
+    XPos = 35564.099;
+    YPos = 89.673;
+    ZPos = 37127.741;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_CMD_Formation
+  {
+    Index = 14;
+    Name = "Formation START";
+    Desc = "";
+    Targets = [];
+    Objects = [18];
+    XPos = 33601.460;
+    YPos = 38.512;
+    ZPos = 19439.551;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  FormationType = 7;
+  FormationDensity = 0;
+  }
+  
+
+  MCU_CMD_Formation
+  {
+    Index = 23;
+    Name = "Command STOP";
+    Desc = "";
+    Targets = [];
+    Objects = [18];
+    XPos = 35589.509;
+    YPos = 21.234;
+    ZPos = 37032.322;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  FormationType = 9;
+  FormationDensity = 0;
+  }
+  
+
+}
+

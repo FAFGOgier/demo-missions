@@ -1,0 +1,196 @@
+Group
+{
+  Name = "Avion Coop";
+  Index = 7889;
+  Desc = "Si IA, se reposera imm*diatemen";
+  MCU_TR_MissionBegin
+  {
+    Index = 7877;
+    Name = "Translator Mission Begin";
+    Desc = "";
+    Targets = [7878];
+    Objects = [];
+    XPos = 182337.802;
+    YPos = 20.375;
+    ZPos = 237885.015;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 7878;
+    Name = "Trigger Timer";
+    Desc = "";
+    Targets = [7881];
+    Objects = [];
+    XPos = 182312.611;
+    YPos = 20.375;
+    ZPos = 237885.015;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 900;
+    Random = 100;
+  }
+  
+
+  MCU_CMD_TakeOff
+  {
+    Index = 7881;
+    Name = "command Take off";
+    Desc = "";
+    Targets = [];
+    Objects = [7854];
+    XPos = 182302.945;
+    YPos = 20.375;
+    ZPos = 237960.323;
+    XOri = 0.00;
+    YOri = 43.03;
+    ZOri = 0.00;
+    NoTaxiTakeoff = 0;
+  }
+  
+
+  Plane
+  {
+    Name = "chasse joueur";
+    Index = 7853;
+    LinkTrId = 7854;
+    XPos = 182277.762;
+    YPos = 20.375;
+    ZPos = 237937.537;
+    XOri = 0.00;
+    YOri = 45.09;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\Planes\p47d28.txt";
+    Model = "graphics\planes\p47d28\p47d28.mgm";
+    Country = 101;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 1;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 2;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 7854;
+    Name = "chasse joueur entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 182277.762;
+    YPos = 20.575;
+    ZPos = 237937.537;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 7853;
+    OnEvents
+    {
+      OnEvent
+      {
+        Type = 6;
+        TarId = 7882;
+      }
+    }
+  }
+  
+
+  MCU_CMD_Land
+  {
+    Index = 7887;
+    Name = "command Land";
+    Desc = "";
+    Targets = [];
+    Objects = [7854];
+    XPos = 182207.910;
+    YPos = 20.375;
+    ZPos = 237891.798;
+    XOri = 0.00;
+    YOri = 47.81;
+    ZOri = 0.00;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 7886;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [7887];
+    Objects = [7854];
+    XPos = 180906.433;
+    YPos = 800.000;
+    ZPos = 236576.774;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 300;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 7882;
+    Name = "WP1";
+    Desc = "";
+    Targets = [7885];
+    Objects = [7854];
+    XPos = 184378.759;
+    YPos = 800.000;
+    ZPos = 239756.527;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 300;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 7885;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [7886];
+    Objects = [7854];
+    XPos = 184046.363;
+    YPos = 800.000;
+    ZPos = 240123.114;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 300;
+    Priority = 1;
+  }
+  
+
+}
+
