@@ -1,0 +1,398 @@
+Group
+{
+  Name = "chasseur decollage";
+  Index = 1416;
+  Desc = "";
+  Plane
+  {
+    Name = "chasseur";
+    Index = 1417;
+    LinkTrId = 1418;
+    XPos = 13837.440;
+    YPos = 119.950;
+    ZPos = 15544.850;
+    XOri = 0.00;
+    YOri = 312.85;
+    ZOri = 14.80;
+    Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
+    Model = "graphics\planes\bf109f4\bf109f4.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 2;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 0.5;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 1418;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 13837.440;
+    YPos = 120.150;
+    ZPos = 15544.850;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 1417;
+    OnEvents
+    {
+      OnEvent
+      {
+        Type = 6;
+        TarId = 1420;
+      }
+    }
+  }
+  
+
+  MCU_Activate
+  {
+    Index = 1421;
+    Name = "Trigger Activate";
+    Desc = "";
+    Targets = [];
+    Objects = [1418];
+    XPos = 13992.457;
+    YPos = 118.420;
+    ZPos = 15537.631;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 1422;
+    Name = "IN chasseur";
+    Desc = "";
+    Targets = [1421,1423];
+    Objects = [];
+    XPos = 14133.049;
+    YPos = 118.420;
+    ZPos = 15599.511;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 1423;
+    Name = "chasseur pret";
+    Desc = "";
+    Targets = [1425];
+    Objects = [];
+    XPos = 13958.475;
+    YPos = 118.420;
+    ZPos = 15608.932;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 5;
+    Random = 100;
+  }
+  
+
+  MCU_CMD_TakeOff
+  {
+    Index = 1425;
+    Name = "chasseur decolage";
+    Desc = "";
+    Targets = [];
+    Objects = [1418];
+    XPos = 13923.220;
+    YPos = 118.420;
+    ZPos = 15459.604;
+    XOri = 0.00;
+    YOri = 137.31;
+    ZOri = 0.00;
+    NoTaxiTakeoff = 0;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 1427;
+    Name = "chasseur : WP landing";
+    Desc = "";
+    Targets = [1428];
+    Objects = [1418];
+    XPos = 13757.304;
+    YPos = 118.420;
+    ZPos = 14518.060;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_CMD_Land
+  {
+    Index = 1428;
+    Name = "chasseur pos*";
+    Desc = "";
+    Targets = [];
+    Objects = [1418];
+    XPos = 14329.047;
+    YPos = 118.420;
+    ZPos = 15075.816;
+    XOri = 0.00;
+    YOri = 35.11;
+    ZOri = 0.00;
+    Priority = 1;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 1430;
+    Name = "chasseur abandon";
+    Desc = "";
+    Targets = [1427];
+    Objects = [];
+    XPos = 15095.202;
+    YPos = 113.471;
+    ZPos = 13492.392;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1210;
+    Random = 100;
+  }
+  
+
+  MCU_CMD_AttackArea
+  {
+    Index = 1431;
+    Name = "chasseur Attaque";
+    Desc = "";
+    Targets = [];
+    Objects = [1418];
+    XPos = 15047.354;
+    YPos = 118.414;
+    ZPos = 13964.039;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    AttackGround = 0;
+    AttackAir = 1;
+    AttackGTargets = 0;
+    AttackArea = 6000;
+    Time = 1200;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 1420;
+    Name = "chasseur WP 1: en vol";
+    Desc = "";
+    Targets = [1431,1430];
+    Objects = [1418];
+    XPos = 15520.608;
+    YPos = 600.000;
+    ZPos = 14030.715;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_TR_ComplexTrigger
+  {
+    Index = 1433;
+    Name = "ordre_decollage";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 14368.087;
+    YPos = 118.420;
+    ZPos = 15570.849;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    Enabled = 1;
+    Cylinder = 1;
+    Radius = 8000;
+    DamageThreshold = 1;
+    DamageReport = 50;
+    CheckVehicles = 0;
+    CheckPlanes = 1;
+    EventsFilterSpawned = 0;
+    EventsFilterEnteredSimple = 1;
+    EventsFilterEnteredAlive = 0;
+    EventsFilterLeftSimple = 0;
+    EventsFilterLeftAlive = 0;
+    EventsFilterFinishedSimple = 0;
+    EventsFilterFinishedAlive = 0;
+    EventsFilterStationaryAndAlive = 0;
+    EventsFilterFinishedStationaryAndAlive = 0;
+    EventsFilterTookOff = 0;
+    EventsFilterDamaged = 0;
+    EventsFilterCriticallyDamaged = 0;
+    EventsFilterRepaired = 0;
+    EventsFilterKilled = 0;
+    EventsFilterDropedBombs = 0;
+    EventsFilterFiredFlare = 0;
+    EventsFilterFiredRockets = 0;
+    EventsFilterDroppedCargoContainers = 0;
+    EventsFilterDeliveredCargo = 0;
+    EventsFilterParatrooperJumped = 0;
+    EventsFilterParatrooperLandedAlive = 0;
+    Country = 101;
+    OnEvents
+    {
+      OnEvent
+      {
+        Type = 58;
+        TarId = 1422;
+      }
+    }
+  }
+  
+
+  Plane
+  {
+    Name = "chasseur";
+    Index = 1434;
+    LinkTrId = 1435;
+    XPos = 13820.779;
+    YPos = 119.950;
+    ZPos = 15539.497;
+    XOri = 0.00;
+    YOri = 312.85;
+    ZOri = 14.80;
+    Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
+    Model = "graphics\planes\bf109f4\bf109f4.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 1;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 2;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 0.5;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 1435;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [1418];
+    Objects = [];
+    XPos = 13820.779;
+    YPos = 120.150;
+    ZPos = 15539.497;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 1434;
+  }
+  
+
+  Plane
+  {
+    Name = "chasseur";
+    Index = 1437;
+    LinkTrId = 1438;
+    XPos = 13820.889;
+    YPos = 119.950;
+    ZPos = 15561.412;
+    XOri = 0.00;
+    YOri = 312.85;
+    ZOri = 14.80;
+    Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
+    Model = "graphics\planes\bf109f4\bf109f4.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 2;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 2;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 0.5;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 1438;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [1418];
+    Objects = [];
+    XPos = 13820.889;
+    YPos = 120.150;
+    ZPos = 15561.412;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 1437;
+  }
+  
+
+}
+
