@@ -1,0 +1,192 @@
+Group
+{
+  Name = "Landing Flare Russian";
+  Index = 1022;
+  Desc = "";
+  MCU_CMD_Flare
+  {
+    Index = 1023;
+    Name = "command Flare";
+    Desc = "";
+    Targets = [];
+    Objects = [1024];
+    XPos = 79013.133;
+    YPos = 155.230;
+    ZPos = 121539.548;
+    XOri = 0.00;
+    YOri = 99.61;
+    ZOri = 0.00;
+    Color = 1;
+  }
+  
+
+  Vehicle
+  {
+    Name = "Vehicle";
+    Index = 1025;
+    LinkTrId = 1024;
+    XPos = 79020.021;
+    YPos = 176.157;
+    ZPos = 121539.713;
+    XOri = 0.00;
+    YOri = 242.75;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\vehicles\fake_vehicle.txt";
+    Model = "graphics\vehicles\fake_vehicle\fake_vehicle.mgm";
+    Desc = "";
+    Country = 101;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 1024;
+    Name = "Vehicle entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 79020.021;
+    YPos = 176.357;
+    ZPos = 121539.713;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 1025;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 1027;
+    Name = "Russian return base";
+    Desc = "";
+    Targets = [1023,1028];
+    Objects = [];
+    XPos = 78712.220;
+    YPos = 155.230;
+    ZPos = 121721.732;
+    XOri = 0.00;
+    YOri = 99.61;
+    ZOri = 0.00;
+    Time = 3;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 1028;
+    Name = "15s";
+    Desc = "";
+    Targets = [1023,1030];
+    Objects = [];
+    XPos = 78701.186;
+    YPos = 155.230;
+    ZPos = 121721.909;
+    XOri = 0.00;
+    YOri = 99.61;
+    ZOri = 0.00;
+    Time = 15;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 1030;
+    Name = "30s";
+    Desc = "";
+    Targets = [1023];
+    Objects = [];
+    XPos = 78691.856;
+    YPos = 155.230;
+    ZPos = 121721.906;
+    XOri = 0.00;
+    YOri = 99.61;
+    ZOri = 0.00;
+    Time = 30;
+    Random = 100;
+  }
+  
+
+  MCU_TR_ComplexTrigger
+  {
+    Index = 3771;
+    Name = "Detect Russian Return";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 78716.206;
+    YPos = 176.157;
+    ZPos = 121681.460;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    Enabled = 1;
+    Cylinder = 1;
+    Radius = 7000;
+    DamageThreshold = 1;
+    DamageReport = 50;
+    CheckVehicles = 0;
+    CheckPlanes = 1;
+    EventsFilterSpawned = 0;
+    EventsFilterEnteredSimple = 1;
+    EventsFilterEnteredAlive = 0;
+    EventsFilterLeftSimple = 0;
+    EventsFilterLeftAlive = 0;
+    EventsFilterFinishedSimple = 0;
+    EventsFilterFinishedAlive = 0;
+    EventsFilterStationaryAndAlive = 0;
+    EventsFilterFinishedStationaryAndAlive = 0;
+    EventsFilterTookOff = 0;
+    EventsFilterDamaged = 0;
+    EventsFilterCriticallyDamaged = 0;
+    EventsFilterRepaired = 0;
+    EventsFilterKilled = 0;
+    EventsFilterDropedBombs = 0;
+    EventsFilterFiredFlare = 0;
+    EventsFilterFiredRockets = 0;
+    EventsFilterDroppedCargoContainers = 0;
+    EventsFilterDeliveredCargo = 0;
+    EventsFilterParatrooperJumped = 0;
+    EventsFilterParatrooperLandedAlive = 0;
+    Country = 101;
+    OnEvents
+    {
+      OnEvent
+      {
+        Type = 58;
+        TarId = 1027;
+      }
+    }
+  }
+  
+
+}
+
