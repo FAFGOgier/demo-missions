@@ -1,11 +1,11 @@
 Airfield
 {
   Name = "Dubki";
-  Index = 1128;
-  LinkTrId = 1129;
-  XPos = 38921.000;
-  YPos = 138.946;
-  ZPos = 33354.000;
+  Index = 8;
+  LinkTrId = 9;
+  XPos = 56430.876;
+  YPos = 159.128;
+  ZPos = 43944.204;
   XOri = 0.00;
   YOri = 21.00;
   ZOri = 0.00;
@@ -525,6 +525,146 @@ Airfield
       Callsign = 0;
       Callnum = 0;
     }
+    Plane
+    {
+      SetIndex = 0;
+      Number = -1;
+      AILevel = 2;
+      StartInAir = 2;
+      Engageable = 1;
+      Vulnerable = 1;
+      LimitAmmo = 1;
+      AIRTBDecision = 1;
+      Renewable = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      RouteTime = 0;
+      RenewTime = 1800;
+      Altitude = 500;
+      Spotter = -1;
+      Model = "graphics\planes\yak7bs36\yak7bs36.mgm";
+      Script = "LuaScripts\WorldObjects\Planes\yak7bs36.txt";
+      Name = "";
+      Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
+      Callsign = 0;
+      Callnum = 0;
+    }
+    Plane
+    {
+      SetIndex = 0;
+      Number = -1;
+      AILevel = 2;
+      StartInAir = 2;
+      Engageable = 1;
+      Vulnerable = 1;
+      LimitAmmo = 1;
+      AIRTBDecision = 1;
+      Renewable = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      RouteTime = 0;
+      RenewTime = 1800;
+      Altitude = 500;
+      Spotter = -1;
+      Model = "graphics\planes\p47d28\p47d28.mgm";
+      Script = "LuaScripts\WorldObjects\Planes\p47d28.txt";
+      Name = "";
+      Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
+      Callsign = 0;
+      Callnum = 0;
+    }
+    Plane
+    {
+      SetIndex = 0;
+      Number = -1;
+      AILevel = 2;
+      StartInAir = 2;
+      Engageable = 1;
+      Vulnerable = 1;
+      LimitAmmo = 1;
+      AIRTBDecision = 1;
+      Renewable = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      RouteTime = 0;
+      RenewTime = 1800;
+      Altitude = 500;
+      Spotter = -1;
+      Model = "graphics\planes\sopcamel\sopcamel.mgm";
+      Script = "LuaScripts\WorldObjects\Planes\sopcamel.txt";
+      Name = "";
+      Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
+      Callsign = 0;
+      Callnum = 0;
+    }
+    Plane
+    {
+      SetIndex = 0;
+      Number = -1;
+      AILevel = 2;
+      StartInAir = 2;
+      Engageable = 1;
+      Vulnerable = 1;
+      LimitAmmo = 1;
+      AIRTBDecision = 1;
+      Renewable = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      RouteTime = 0;
+      RenewTime = 1800;
+      Altitude = 500;
+      Spotter = -1;
+      Model = "graphics\planes\sopdolphin\sopdolphin.mgm";
+      Script = "LuaScripts\WorldObjects\Planes\sopdolphin.txt";
+      Name = "";
+      Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
+      Callsign = 0;
+      Callnum = 0;
+    }
+    Plane
+    {
+      SetIndex = 0;
+      Number = -1;
+      AILevel = 2;
+      StartInAir = 2;
+      Engageable = 1;
+      Vulnerable = 1;
+      LimitAmmo = 1;
+      AIRTBDecision = 1;
+      Renewable = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      RouteTime = 0;
+      RenewTime = 1800;
+      Altitude = 500;
+      Spotter = -1;
+      Model = "graphics\planes\spad13\spad13.mgm";
+      Script = "LuaScripts\WorldObjects\Planes\spad13.txt";
+      Name = "";
+      Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
+      Callsign = 0;
+      Callnum = 0;
+    }
   }
   Chart
   {
@@ -656,18 +796,18 @@ Airfield
 
 MCU_TR_Entity
 {
-  Index = 1129;
+  Index = 9;
   Name = "Airfield entity";
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 38921.000;
-  YPos = 139.146;
-  ZPos = 33354.000;
+  XPos = 56430.876;
+  YPos = 159.328;
+  ZPos = 43944.204;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
   Enabled = 1;
-  MisObjID = 1128;
+  MisObjID = 8;
 }
 

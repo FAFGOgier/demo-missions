@@ -1,150 +1,16 @@
 Group
 {
   Name = "searchLights russes";
-  Index = 5;
+  Index = 13647;
   Desc = "";
-  Group
-  {
-    Name = "T";
-    Index = 6;
-    Desc = "";
-    Vehicle
-    {
-      Name = "T";
-      Index = 7;
-      LinkTrId = 0;
-      XPos = 22980.440;
-      YPos = 149.887;
-      ZPos = 31019.549;
-      XOri = 0.00;
-      YOri = 35.70;
-      ZOri = 0.00;
-      Script = "LuaScripts\WorldObjects\vehicles\land_canvas.txt";
-      Model = "graphics\vehicles\land_canvas\land_canvas.mgm";
-      Desc = "";
-      Country = 0;
-      NumberInFormation = 0;
-      Vulnerable = 1;
-      Engageable = 1;
-      LimitAmmo = 1;
-      AILevel = 2;
-      DamageReport = 50;
-      DamageThreshold = 1;
-      DeleteAfterDeath = 1;
-      CoopStart = 0;
-      Spotter = -1;
-      BeaconChannel = 0;
-      Callsign = 0;
-      PayloadId = 0;
-      WMMask = 1;
-      Fuel = 1;
-      Callnum = 0;
-      Skin = "";
-      RepairFriendlies = 0;
-      RearmFriendlies = 0;
-      RefuelFriendlies = 0;
-      RepairTime = 0;
-      RearmTime = 0;
-      RefuelTime = 0;
-      MaintenanceRadius = 10;
-    }
-    
-
-    Vehicle
-    {
-      Name = "T";
-      Index = 8;
-      LinkTrId = 0;
-      XPos = 22988.537;
-      YPos = 149.887;
-      ZPos = 31025.360;
-      XOri = 0.00;
-      YOri = 35.70;
-      ZOri = 0.00;
-      Script = "LuaScripts\WorldObjects\vehicles\land_canvas.txt";
-      Model = "graphics\vehicles\land_canvas\land_canvas.mgm";
-      Desc = "";
-      Country = 0;
-      NumberInFormation = 0;
-      Vulnerable = 1;
-      Engageable = 1;
-      LimitAmmo = 1;
-      AILevel = 2;
-      DamageReport = 50;
-      DamageThreshold = 1;
-      DeleteAfterDeath = 1;
-      CoopStart = 0;
-      Spotter = -1;
-      BeaconChannel = 0;
-      Callsign = 0;
-      PayloadId = 0;
-      WMMask = 1;
-      Fuel = 1;
-      Callnum = 0;
-      Skin = "";
-      RepairFriendlies = 0;
-      RearmFriendlies = 0;
-      RefuelFriendlies = 0;
-      RepairTime = 0;
-      RearmTime = 0;
-      RefuelTime = 0;
-      MaintenanceRadius = 10;
-    }
-    
-
-    Vehicle
-    {
-      Name = "T";
-      Index = 9;
-      LinkTrId = 0;
-      XPos = 22981.399;
-      YPos = 149.887;
-      ZPos = 31027.409;
-      XOri = 0.00;
-      YOri = 124.81;
-      ZOri = 0.00;
-      Script = "LuaScripts\WorldObjects\vehicles\land_canvas.txt";
-      Model = "graphics\vehicles\land_canvas\land_canvas.mgm";
-      Desc = "";
-      Country = 0;
-      NumberInFormation = 0;
-      Vulnerable = 1;
-      Engageable = 1;
-      LimitAmmo = 1;
-      AILevel = 2;
-      DamageReport = 50;
-      DamageThreshold = 1;
-      DeleteAfterDeath = 1;
-      CoopStart = 0;
-      Spotter = -1;
-      BeaconChannel = 0;
-      Callsign = 0;
-      PayloadId = 0;
-      WMMask = 1;
-      Fuel = 1;
-      Callnum = 0;
-      Skin = "";
-      RepairFriendlies = 0;
-      RearmFriendlies = 0;
-      RefuelFriendlies = 0;
-      RepairTime = 0;
-      RearmTime = 0;
-      RefuelTime = 0;
-      MaintenanceRadius = 10;
-    }
-    
-
-  }
-  
-
   Vehicle
   {
     Name = "light";
-    Index = 10;
-    LinkTrId = 11;
-    XPos = 22988.573;
-    YPos = 149.887;
-    ZPos = 30969.515;
+    Index = 13652;
+    LinkTrId = 13653;
+    XPos = 259398.028;
+    YPos = 19.762;
+    ZPos = 110811.043;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -181,32 +47,32 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 11;
+    Index = 13653;
     Name = "Vehicle entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 22988.573;
-    YPos = 150.087;
-    ZPos = 30969.515;
+    XPos = 259398.028;
+    YPos = 19.962;
+    ZPos = 110811.043;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 10;
+    MisObjID = 13652;
   }
   
 
   MCU_TR_ComplexTrigger
   {
-    Index = 13;
+    Index = 13655;
     Name = "detecte avion allemands";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 22973.978;
+    XPos = 259383.433;
     YPos = 149.887;
-    ZPos = 30922.425;
+    ZPos = 110763.953;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -245,7 +111,7 @@ Group
       OnEvent
       {
         Type = 58;
-        TarId = 14;
+        TarId = 13656;
       }
     }
   }
@@ -253,14 +119,14 @@ Group
 
   MCU_Timer
   {
-    Index = 14;
+    Index = 13656;
     Name = "avions detectes";
     Desc = "";
-    Targets = [16];
+    Targets = [13658];
     Objects = [];
-    XPos = 22948.894;
+    XPos = 259358.349;
     YPos = 149.887;
-    ZPos = 30919.559;
+    ZPos = 110761.087;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -271,18 +137,18 @@ Group
 
   MCU_CMD_ForceComplete
   {
-    Index = 16;
+    Index = 13658;
     Name = "allumer lampes";
     Desc = "";
     Targets = [];
-    Objects = [11,41];
-    XPos = 22943.962;
+    Objects = [13653,13660];
+    XPos = 259353.417;
     YPos = 149.887;
-    ZPos = 30954.094;
+    ZPos = 110795.622;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
-    Priority = 2;
+    Priority = 0;
     EmergencyOrdnanceDrop = 0;
   }
   
@@ -290,11 +156,11 @@ Group
   Vehicle
   {
     Name = "light";
-    Index = 40;
-    LinkTrId = 41;
-    XPos = 22885.695;
-    YPos = 149.887;
-    ZPos = 31045.437;
+    Index = 13661;
+    LinkTrId = 13660;
+    XPos = 259295.150;
+    YPos = 19.762;
+    ZPos = 110886.965;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -331,19 +197,19 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 41;
+    Index = 13660;
     Name = "Vehicle entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 22885.695;
-    YPos = 150.087;
-    ZPos = 31045.437;
+    XPos = 259295.150;
+    YPos = 19.962;
+    ZPos = 110886.965;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 40;
+    MisObjID = 13661;
   }
   
 

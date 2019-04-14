@@ -1,0 +1,741 @@
+Group
+{
+  Name = "RunWay_fires";
+  Index = 13289;
+  Desc = "";
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13230;
+    LinkTrId = 13231;
+    XPos = 216444.629;
+    YPos = 47.071;
+    ZPos = 291653.487;
+    XOri = 0.00;
+    YOri = 2.64;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13231;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 216444.629;
+    YPos = 47.271;
+    ZPos = 291653.487;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13230;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13232;
+    LinkTrId = 13233;
+    XPos = 216538.968;
+    YPos = 47.071;
+    ZPos = 291591.515;
+    XOri = 0.00;
+    YOri = 2.81;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13233;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 216538.968;
+    YPos = 47.271;
+    ZPos = 291591.515;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13232;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13235;
+    LinkTrId = 13236;
+    XPos = 216632.528;
+    YPos = 47.071;
+    ZPos = 291535.567;
+    XOri = 0.00;
+    YOri = 2.81;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13236;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 216632.528;
+    YPos = 47.271;
+    ZPos = 291535.567;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13235;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13238;
+    LinkTrId = 13239;
+    XPos = 216750.299;
+    YPos = 47.071;
+    ZPos = 291487.661;
+    XOri = 0.00;
+    YOri = 2.81;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13239;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 216750.299;
+    YPos = 47.271;
+    ZPos = 291487.661;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13238;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13241;
+    LinkTrId = 13242;
+    XPos = 216872.676;
+    YPos = 47.071;
+    ZPos = 291425.739;
+    XOri = 0.00;
+    YOri = 2.81;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13242;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 216872.676;
+    YPos = 47.271;
+    ZPos = 291425.739;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13241;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13244;
+    LinkTrId = 13245;
+    XPos = 216982.819;
+    YPos = 47.071;
+    ZPos = 291363.883;
+    XOri = 0.00;
+    YOri = 2.81;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13245;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 216982.819;
+    YPos = 47.271;
+    ZPos = 291363.883;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13244;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13247;
+    LinkTrId = 13248;
+    XPos = 217078.028;
+    YPos = 47.071;
+    ZPos = 291303.517;
+    XOri = 0.00;
+    YOri = 2.81;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13248;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 217078.028;
+    YPos = 47.271;
+    ZPos = 291303.517;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13247;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13250;
+    LinkTrId = 13251;
+    XPos = 217171.589;
+    YPos = 47.071;
+    ZPos = 291247.569;
+    XOri = 0.00;
+    YOri = 2.81;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13251;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 217171.589;
+    YPos = 47.271;
+    ZPos = 291247.569;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13250;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13253;
+    LinkTrId = 13254;
+    XPos = 217289.359;
+    YPos = 47.071;
+    ZPos = 291199.663;
+    XOri = 0.00;
+    YOri = 2.81;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13254;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 217289.359;
+    YPos = 47.271;
+    ZPos = 291199.663;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13253;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13256;
+    LinkTrId = 13257;
+    XPos = 217411.737;
+    YPos = 47.071;
+    ZPos = 291137.741;
+    XOri = 0.00;
+    YOri = 2.81;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13257;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 217411.737;
+    YPos = 47.271;
+    ZPos = 291137.741;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13256;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13259;
+    LinkTrId = 13260;
+    XPos = 216529.360;
+    YPos = 47.071;
+    ZPos = 291889.942;
+    XOri = 0.00;
+    YOri = 2.70;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13260;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 216529.360;
+    YPos = 47.271;
+    ZPos = 291889.942;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13259;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13262;
+    LinkTrId = 13263;
+    XPos = 216624.460;
+    YPos = 47.071;
+    ZPos = 291829.403;
+    XOri = 0.00;
+    YOri = 2.70;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13263;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 216624.460;
+    YPos = 47.271;
+    ZPos = 291829.403;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13262;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13265;
+    LinkTrId = 13266;
+    XPos = 216717.918;
+    YPos = 47.071;
+    ZPos = 291773.284;
+    XOri = 0.00;
+    YOri = 2.70;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13266;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 216717.918;
+    YPos = 47.271;
+    ZPos = 291773.284;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13265;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13268;
+    LinkTrId = 13269;
+    XPos = 216835.601;
+    YPos = 47.071;
+    ZPos = 291725.163;
+    XOri = 0.00;
+    YOri = 2.70;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13269;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 216835.601;
+    YPos = 47.271;
+    ZPos = 291725.163;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13268;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13271;
+    LinkTrId = 13272;
+    XPos = 216957.866;
+    YPos = 47.071;
+    ZPos = 291663.018;
+    XOri = 0.00;
+    YOri = 2.70;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13272;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 216957.866;
+    YPos = 47.271;
+    ZPos = 291663.018;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13271;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13274;
+    LinkTrId = 13275;
+    XPos = 217067.894;
+    YPos = 47.071;
+    ZPos = 291600.961;
+    XOri = 0.00;
+    YOri = 2.70;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13275;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 217067.894;
+    YPos = 47.271;
+    ZPos = 291600.961;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13274;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13277;
+    LinkTrId = 13278;
+    XPos = 217162.994;
+    YPos = 47.071;
+    ZPos = 291540.422;
+    XOri = 0.00;
+    YOri = 2.70;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13278;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 217162.994;
+    YPos = 47.271;
+    ZPos = 291540.422;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13277;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13280;
+    LinkTrId = 13281;
+    XPos = 217256.452;
+    YPos = 47.071;
+    ZPos = 291484.303;
+    XOri = 0.00;
+    YOri = 2.70;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13281;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 217256.452;
+    YPos = 47.271;
+    ZPos = 291484.303;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13280;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13283;
+    LinkTrId = 13284;
+    XPos = 217374.135;
+    YPos = 47.071;
+    ZPos = 291436.182;
+    XOri = 0.00;
+    YOri = 2.70;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13284;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 217374.135;
+    YPos = 47.271;
+    ZPos = 291436.182;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13283;
+  }
+  
+
+  Effect
+  {
+    Name = "runwayfire";
+    Index = 13286;
+    LinkTrId = 13287;
+    XPos = 217496.400;
+    YPos = 47.071;
+    ZPos = 291374.037;
+    XOri = 0.00;
+    YOri = 2.70;
+    ZOri = 0.00;
+    Script = "luascripts\worldobjects\mapemitters\landfire.txt";
+    Model = "";
+    Desc = "";
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13287;
+    Name = "Effect entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 217496.400;
+    YPos = 47.271;
+    ZPos = 291374.037;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 13286;
+  }
+  
+
+  MCU_CMD_Effect
+  {
+    Index = 13290;
+    Name = "START Bonfire";
+    Desc = "";
+    Targets = [];
+    Objects = [13257,13254,13251,13248,13245,13242,13239,13236,13233,13231,13287,13284,13281,13278,13275,13272,13269,13266,13263,13260];
+    XPos = 217469.571;
+    YPos = 47.071;
+    ZPos = 290903.227;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    ActionType = 0;
+  }
+  
+
+  MCU_CMD_Effect
+  {
+    Index = 13291;
+    Name = "STOP Bonfire";
+    Desc = "";
+    Targets = [];
+    Objects = [13257,13254,13251,13248,13245,13242,13239,13236,13233,13231,13287,13284,13281,13278,13275,13272,13269,13266,13263,13260];
+    XPos = 217309.243;
+    YPos = 47.071;
+    ZPos = 290888.652;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    ActionType = 1;
+  }
+  
+
+}
+

@@ -1,13 +1,13 @@
 Airfield
 {
   Name = "Nagibaevka";
-  Index = 1108;
-  LinkTrId = 1109;
-  XPos = 6163.000;
-  YPos = 17.795;
-  ZPos = 41667.000;
+  Index = 5;
+  LinkTrId = 6;
+  XPos = 97860.635;
+  YPos = 228.601;
+  ZPos = 116793.094;
   XOri = 0.00;
-  YOri = 355.00;
+  YOri = 54.51;
   ZOri = 0.00;
   Model = "graphics\airfields\fakefield.mgm";
   Script = "LuaScripts\WorldObjects\Airfields\fakefield.txt";
@@ -581,6 +581,146 @@ Airfield
       Callsign = 0;
       Callnum = 0;
     }
+    Plane
+    {
+      SetIndex = 0;
+      Number = -1;
+      AILevel = 2;
+      StartInAir = 2;
+      Engageable = 1;
+      Vulnerable = 1;
+      LimitAmmo = 1;
+      AIRTBDecision = 1;
+      Renewable = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      RouteTime = 0;
+      RenewTime = 1800;
+      Altitude = 500;
+      Spotter = -1;
+      Model = "graphics\planes\bf109k4\bf109k4.mgm";
+      Script = "LuaScripts\WorldObjects\Planes\bf109k4.txt";
+      Name = "";
+      Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
+      Callsign = 0;
+      Callnum = 0;
+    }
+    Plane
+    {
+      SetIndex = 0;
+      Number = -1;
+      AILevel = 2;
+      StartInAir = 2;
+      Engageable = 1;
+      Vulnerable = 1;
+      LimitAmmo = 1;
+      AIRTBDecision = 1;
+      Renewable = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      RouteTime = 0;
+      RenewTime = 1800;
+      Altitude = 500;
+      Spotter = -1;
+      Model = "graphics\planes\fokkerd7f\fokkerd7f.mgm";
+      Script = "LuaScripts\WorldObjects\Planes\fokkerd7f.txt";
+      Name = "";
+      Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
+      Callsign = 0;
+      Callnum = 0;
+    }
+    Plane
+    {
+      SetIndex = 0;
+      Number = -1;
+      AILevel = 2;
+      StartInAir = 2;
+      Engageable = 1;
+      Vulnerable = 1;
+      LimitAmmo = 1;
+      AIRTBDecision = 1;
+      Renewable = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      RouteTime = 0;
+      RenewTime = 1800;
+      Altitude = 500;
+      Spotter = -1;
+      Model = "graphics\planes\fokkerd7\fokkerd7.mgm";
+      Script = "LuaScripts\WorldObjects\Planes\fokkerd7.txt";
+      Name = "";
+      Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
+      Callsign = 0;
+      Callnum = 0;
+    }
+    Plane
+    {
+      SetIndex = 0;
+      Number = -1;
+      AILevel = 2;
+      StartInAir = 2;
+      Engageable = 1;
+      Vulnerable = 1;
+      LimitAmmo = 1;
+      AIRTBDecision = 1;
+      Renewable = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      RouteTime = 0;
+      RenewTime = 1800;
+      Altitude = 500;
+      Spotter = -1;
+      Model = "graphics\planes\fw190d9\fw190d9.mgm";
+      Script = "LuaScripts\WorldObjects\Planes\fw190d9.txt";
+      Name = "";
+      Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
+      Callsign = 0;
+      Callnum = 0;
+    }
+    Plane
+    {
+      SetIndex = 0;
+      Number = -1;
+      AILevel = 2;
+      StartInAir = 2;
+      Engageable = 1;
+      Vulnerable = 1;
+      LimitAmmo = 1;
+      AIRTBDecision = 1;
+      Renewable = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      RouteTime = 0;
+      RenewTime = 1800;
+      Altitude = 500;
+      Spotter = -1;
+      Model = "graphics\planes\pfalzd3a\pfalzd3a.mgm";
+      Script = "LuaScripts\WorldObjects\Planes\pfalzd3a.txt";
+      Name = "";
+      Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
+      Callsign = 0;
+      Callnum = 0;
+    }
   }
   Chart
   {
@@ -694,18 +834,18 @@ Airfield
 
 MCU_TR_Entity
 {
-  Index = 1109;
+  Index = 6;
   Name = "Airfield entity";
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 6163.000;
-  YPos = 17.995;
-  ZPos = 41667.000;
+  XPos = 97860.635;
+  YPos = 228.801;
+  ZPos = 116793.094;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
   Enabled = 1;
-  MisObjID = 1108;
+  MisObjID = 5;
 }
 
