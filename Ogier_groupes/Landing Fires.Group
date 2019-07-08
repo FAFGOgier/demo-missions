@@ -1,16 +1,16 @@
 Group
 {
   Name = "RunWay_fires";
-  Index = 13289;
+  Index = 179;
   Desc = "";
   Effect
   {
     Name = "runwayfire";
-    Index = 13230;
-    LinkTrId = 13231;
-    XPos = 216444.629;
+    Index = 180;
+    LinkTrId = 181;
+    XPos = 30466.961;
     YPos = 47.071;
-    ZPos = 291653.487;
+    ZPos = 30984.747;
     XOri = 0.00;
     YOri = 2.64;
     ZOri = 0.00;
@@ -22,30 +22,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13231;
+    Index = 181;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 216444.629;
+    XPos = 30466.961;
     YPos = 47.271;
-    ZPos = 291653.487;
+    ZPos = 30984.747;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13230;
+    MisObjID = 180;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13232;
-    LinkTrId = 13233;
-    XPos = 216538.968;
+    Index = 183;
+    LinkTrId = 184;
+    XPos = 30561.300;
     YPos = 47.071;
-    ZPos = 291591.515;
+    ZPos = 30922.775;
     XOri = 0.00;
     YOri = 2.81;
     ZOri = 0.00;
@@ -57,30 +57,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13233;
+    Index = 184;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 216538.968;
+    XPos = 30561.300;
     YPos = 47.271;
-    ZPos = 291591.515;
+    ZPos = 30922.775;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13232;
+    MisObjID = 183;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13235;
-    LinkTrId = 13236;
-    XPos = 216632.528;
+    Index = 186;
+    LinkTrId = 187;
+    XPos = 30654.860;
     YPos = 47.071;
-    ZPos = 291535.567;
+    ZPos = 30866.827;
     XOri = 0.00;
     YOri = 2.81;
     ZOri = 0.00;
@@ -92,30 +92,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13236;
+    Index = 187;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 216632.528;
+    XPos = 30654.860;
     YPos = 47.271;
-    ZPos = 291535.567;
+    ZPos = 30866.827;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13235;
+    MisObjID = 186;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13238;
-    LinkTrId = 13239;
-    XPos = 216750.299;
+    Index = 189;
+    LinkTrId = 190;
+    XPos = 30772.631;
     YPos = 47.071;
-    ZPos = 291487.661;
+    ZPos = 30818.921;
     XOri = 0.00;
     YOri = 2.81;
     ZOri = 0.00;
@@ -127,30 +127,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13239;
+    Index = 190;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 216750.299;
+    XPos = 30772.631;
     YPos = 47.271;
-    ZPos = 291487.661;
+    ZPos = 30818.921;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13238;
+    MisObjID = 189;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13241;
-    LinkTrId = 13242;
-    XPos = 216872.676;
+    Index = 192;
+    LinkTrId = 193;
+    XPos = 30895.008;
     YPos = 47.071;
-    ZPos = 291425.739;
+    ZPos = 30756.999;
     XOri = 0.00;
     YOri = 2.81;
     ZOri = 0.00;
@@ -162,30 +162,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13242;
+    Index = 193;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 216872.676;
+    XPos = 30895.008;
     YPos = 47.271;
-    ZPos = 291425.739;
+    ZPos = 30756.999;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13241;
+    MisObjID = 192;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13244;
-    LinkTrId = 13245;
-    XPos = 216982.819;
+    Index = 195;
+    LinkTrId = 196;
+    XPos = 31005.151;
     YPos = 47.071;
-    ZPos = 291363.883;
+    ZPos = 30695.143;
     XOri = 0.00;
     YOri = 2.81;
     ZOri = 0.00;
@@ -197,30 +197,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13245;
+    Index = 196;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 216982.819;
+    XPos = 31005.151;
     YPos = 47.271;
-    ZPos = 291363.883;
+    ZPos = 30695.143;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13244;
+    MisObjID = 195;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13247;
-    LinkTrId = 13248;
-    XPos = 217078.028;
+    Index = 198;
+    LinkTrId = 199;
+    XPos = 31100.360;
     YPos = 47.071;
-    ZPos = 291303.517;
+    ZPos = 30634.777;
     XOri = 0.00;
     YOri = 2.81;
     ZOri = 0.00;
@@ -232,30 +232,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13248;
+    Index = 199;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 217078.028;
+    XPos = 31100.360;
     YPos = 47.271;
-    ZPos = 291303.517;
+    ZPos = 30634.777;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13247;
+    MisObjID = 198;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13250;
-    LinkTrId = 13251;
-    XPos = 217171.589;
+    Index = 201;
+    LinkTrId = 202;
+    XPos = 31193.921;
     YPos = 47.071;
-    ZPos = 291247.569;
+    ZPos = 30578.829;
     XOri = 0.00;
     YOri = 2.81;
     ZOri = 0.00;
@@ -267,30 +267,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13251;
+    Index = 202;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 217171.589;
+    XPos = 31193.921;
     YPos = 47.271;
-    ZPos = 291247.569;
+    ZPos = 30578.829;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13250;
+    MisObjID = 201;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13253;
-    LinkTrId = 13254;
-    XPos = 217289.359;
+    Index = 204;
+    LinkTrId = 205;
+    XPos = 31311.691;
     YPos = 47.071;
-    ZPos = 291199.663;
+    ZPos = 30530.923;
     XOri = 0.00;
     YOri = 2.81;
     ZOri = 0.00;
@@ -302,30 +302,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13254;
+    Index = 205;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 217289.359;
+    XPos = 31311.691;
     YPos = 47.271;
-    ZPos = 291199.663;
+    ZPos = 30530.923;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13253;
+    MisObjID = 204;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13256;
-    LinkTrId = 13257;
-    XPos = 217411.737;
+    Index = 207;
+    LinkTrId = 208;
+    XPos = 31434.069;
     YPos = 47.071;
-    ZPos = 291137.741;
+    ZPos = 30469.001;
     XOri = 0.00;
     YOri = 2.81;
     ZOri = 0.00;
@@ -337,30 +337,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13257;
+    Index = 208;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 217411.737;
+    XPos = 31434.069;
     YPos = 47.271;
-    ZPos = 291137.741;
+    ZPos = 30469.001;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13256;
+    MisObjID = 207;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13259;
-    LinkTrId = 13260;
-    XPos = 216529.360;
+    Index = 210;
+    LinkTrId = 211;
+    XPos = 30551.692;
     YPos = 47.071;
-    ZPos = 291889.942;
+    ZPos = 31221.202;
     XOri = 0.00;
     YOri = 2.70;
     ZOri = 0.00;
@@ -372,30 +372,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13260;
+    Index = 211;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 216529.360;
+    XPos = 30551.692;
     YPos = 47.271;
-    ZPos = 291889.942;
+    ZPos = 31221.202;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13259;
+    MisObjID = 210;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13262;
-    LinkTrId = 13263;
-    XPos = 216624.460;
+    Index = 213;
+    LinkTrId = 214;
+    XPos = 30646.792;
     YPos = 47.071;
-    ZPos = 291829.403;
+    ZPos = 31160.663;
     XOri = 0.00;
     YOri = 2.70;
     ZOri = 0.00;
@@ -407,30 +407,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13263;
+    Index = 214;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 216624.460;
+    XPos = 30646.792;
     YPos = 47.271;
-    ZPos = 291829.403;
+    ZPos = 31160.663;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13262;
+    MisObjID = 213;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13265;
-    LinkTrId = 13266;
-    XPos = 216717.918;
+    Index = 216;
+    LinkTrId = 217;
+    XPos = 30740.250;
     YPos = 47.071;
-    ZPos = 291773.284;
+    ZPos = 31104.544;
     XOri = 0.00;
     YOri = 2.70;
     ZOri = 0.00;
@@ -442,30 +442,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13266;
+    Index = 217;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 216717.918;
+    XPos = 30740.250;
     YPos = 47.271;
-    ZPos = 291773.284;
+    ZPos = 31104.544;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13265;
+    MisObjID = 216;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13268;
-    LinkTrId = 13269;
-    XPos = 216835.601;
+    Index = 219;
+    LinkTrId = 220;
+    XPos = 30857.933;
     YPos = 47.071;
-    ZPos = 291725.163;
+    ZPos = 31056.423;
     XOri = 0.00;
     YOri = 2.70;
     ZOri = 0.00;
@@ -477,30 +477,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13269;
+    Index = 220;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 216835.601;
+    XPos = 30857.933;
     YPos = 47.271;
-    ZPos = 291725.163;
+    ZPos = 31056.423;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13268;
+    MisObjID = 219;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13271;
-    LinkTrId = 13272;
-    XPos = 216957.866;
+    Index = 222;
+    LinkTrId = 223;
+    XPos = 30980.198;
     YPos = 47.071;
-    ZPos = 291663.018;
+    ZPos = 30994.278;
     XOri = 0.00;
     YOri = 2.70;
     ZOri = 0.00;
@@ -512,30 +512,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13272;
+    Index = 223;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 216957.866;
+    XPos = 30980.198;
     YPos = 47.271;
-    ZPos = 291663.018;
+    ZPos = 30994.278;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13271;
+    MisObjID = 222;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13274;
-    LinkTrId = 13275;
-    XPos = 217067.894;
+    Index = 225;
+    LinkTrId = 226;
+    XPos = 31090.226;
     YPos = 47.071;
-    ZPos = 291600.961;
+    ZPos = 30932.221;
     XOri = 0.00;
     YOri = 2.70;
     ZOri = 0.00;
@@ -547,30 +547,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13275;
+    Index = 226;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 217067.894;
+    XPos = 31090.226;
     YPos = 47.271;
-    ZPos = 291600.961;
+    ZPos = 30932.221;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13274;
+    MisObjID = 225;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13277;
-    LinkTrId = 13278;
-    XPos = 217162.994;
+    Index = 228;
+    LinkTrId = 229;
+    XPos = 31185.326;
     YPos = 47.071;
-    ZPos = 291540.422;
+    ZPos = 30871.682;
     XOri = 0.00;
     YOri = 2.70;
     ZOri = 0.00;
@@ -582,30 +582,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13278;
+    Index = 229;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 217162.994;
+    XPos = 31185.326;
     YPos = 47.271;
-    ZPos = 291540.422;
+    ZPos = 30871.682;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13277;
+    MisObjID = 228;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13280;
-    LinkTrId = 13281;
-    XPos = 217256.452;
+    Index = 231;
+    LinkTrId = 232;
+    XPos = 31278.784;
     YPos = 47.071;
-    ZPos = 291484.303;
+    ZPos = 30815.563;
     XOri = 0.00;
     YOri = 2.70;
     ZOri = 0.00;
@@ -617,30 +617,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13281;
+    Index = 232;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 217256.452;
+    XPos = 31278.784;
     YPos = 47.271;
-    ZPos = 291484.303;
+    ZPos = 30815.563;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13280;
+    MisObjID = 231;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13283;
-    LinkTrId = 13284;
-    XPos = 217374.135;
+    Index = 234;
+    LinkTrId = 235;
+    XPos = 31396.467;
     YPos = 47.071;
-    ZPos = 291436.182;
+    ZPos = 30767.442;
     XOri = 0.00;
     YOri = 2.70;
     ZOri = 0.00;
@@ -652,30 +652,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13284;
+    Index = 235;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 217374.135;
+    XPos = 31396.467;
     YPos = 47.271;
-    ZPos = 291436.182;
+    ZPos = 30767.442;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13283;
+    MisObjID = 234;
   }
   
 
   Effect
   {
     Name = "runwayfire";
-    Index = 13286;
-    LinkTrId = 13287;
-    XPos = 217496.400;
+    Index = 237;
+    LinkTrId = 238;
+    XPos = 31518.732;
     YPos = 47.071;
-    ZPos = 291374.037;
+    ZPos = 30705.297;
     XOri = 0.00;
     YOri = 2.70;
     ZOri = 0.00;
@@ -687,32 +687,32 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 13287;
+    Index = 238;
     Name = "Effect entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 217496.400;
+    XPos = 31518.732;
     YPos = 47.271;
-    ZPos = 291374.037;
+    ZPos = 30705.297;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 13286;
+    MisObjID = 237;
   }
   
 
   MCU_CMD_Effect
   {
-    Index = 13290;
+    Index = 240;
     Name = "START Bonfire";
     Desc = "";
     Targets = [];
-    Objects = [13257,13254,13251,13248,13245,13242,13239,13236,13233,13231,13287,13284,13281,13278,13275,13272,13269,13266,13263,13260];
-    XPos = 217469.571;
+    Objects = [208,205,202,199,196,193,190,187,184,181,238,235,232,229,226,223,220,217,214,211];
+    XPos = 31491.903;
     YPos = 47.071;
-    ZPos = 290903.227;
+    ZPos = 30234.487;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -722,14 +722,14 @@ Group
 
   MCU_CMD_Effect
   {
-    Index = 13291;
+    Index = 241;
     Name = "STOP Bonfire";
     Desc = "";
     Targets = [];
-    Objects = [13257,13254,13251,13248,13245,13242,13239,13236,13233,13231,13287,13284,13281,13278,13275,13272,13269,13266,13263,13260];
-    XPos = 217309.243;
+    Objects = [208,205,202,199,196,193,190,187,184,181,238,235,232,229,226,223,220,217,214,211];
+    XPos = 31331.575;
     YPos = 47.071;
-    ZPos = 290888.652;
+    ZPos = 30219.912;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -737,5 +737,39 @@ Group
   }
   
 
+}
+
+MCU_Timer
+{
+  Index = 244;
+  Name = "IN Landing fires";
+  Desc = "";
+  Targets = [240];
+  Objects = [];
+  XPos = 31444.122;
+  YPos = 182.946;
+  ZPos = 29688.018;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 245;
+  Name = "OFF Landing Light";
+  Desc = "";
+  Targets = [241];
+  Objects = [];
+  XPos = 31068.227;
+  YPos = 181.946;
+  ZPos = 29703.774;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
 }
 

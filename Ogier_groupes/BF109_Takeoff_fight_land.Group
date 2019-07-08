@@ -1,0 +1,228 @@
+MCU_Timer
+{
+  Index = 260;
+  Name = "IN BF109";
+  Desc = "";
+  Targets = [238];
+  Objects = [];
+  XPos = 23721.350;
+  YPos = 23.709;
+  ZPos = 10075.865;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+Group
+{
+  Name = "BF109";
+  Index = 261;
+  Desc = "";
+  Plane
+  {
+    Name = "BF109 Lead";
+    Index = 234;
+    LinkTrId = 235;
+    XPos = 23376.952;
+    YPos = 5000.000;
+    ZPos = 12796.102;
+    XOri = 0.00;
+    YOri = 55.51;
+    ZOri = 14.30;
+    Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+    Model = "graphics\planes\bf109e7\bf109e7.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 1;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 235;
+    Name = "Chasse entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 23376.952;
+    YPos = 5000.200;
+    ZPos = 12796.102;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 234;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 238;
+    Name = "2s";
+    Desc = "";
+    Targets = [240,241];
+    Objects = [];
+    XPos = 23735.536;
+    YPos = 73.976;
+    ZPos = 12056.827;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 240;
+    Name = "WP 1";
+    Desc = "priority low: agressif en route";
+    Targets = [243,244];
+    Objects = [235];
+    XPos = 22372.449;
+    YPos = 5000.000;
+    ZPos = 16420.908;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 0;
+  }
+  
+
+  MCU_CMD_AttackArea
+  {
+    Index = 243;
+    Name = "BF109 Attack";
+    Desc = "commande d*attaque de zone";
+    Targets = [];
+    Objects = [235];
+    XPos = 22565.018;
+    YPos = 5000.000;
+    ZPos = 20010.071;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    AttackGround = 0;
+    AttackAir = 1;
+    AttackGTargets = 0;
+    AttackArea = 5000;
+    Time = 600;
+    Priority = 1;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 244;
+    Name = "10m10s";
+    Desc = "apres 10m d*attaque, on rentre";
+    Targets = [247];
+    Objects = [];
+    XPos = 21992.871;
+    YPos = 55.866;
+    ZPos = 17196.977;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 610;
+    Random = 100;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 247;
+    Name = "WP Land";
+    Desc = "";
+    Targets = [249];
+    Objects = [235];
+    XPos = 18939.704;
+    YPos = 500.000;
+    ZPos = 20080.865;
+    XOri = 0.00;
+    YOri = 358.78;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 200;
+    Priority = 1;
+  }
+  
+
+  MCU_CMD_Land
+  {
+    Index = 249;
+    Name = "command Land";
+    Desc = "";
+    Targets = [];
+    Objects = [235];
+    XPos = 17147.786;
+    YPos = 149.887;
+    ZPos = 22531.263;
+    XOri = 0.00;
+    YOri = 133.64;
+    ZOri = 0.00;
+    Priority = 1;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 241;
+    Name = "1s";
+    Desc = "";
+    Targets = [255];
+    Objects = [];
+    XPos = 23399.917;
+    YPos = 108.584;
+    ZPos = 12064.903;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  MCU_CMD_Formation
+  {
+    Index = 255;
+    Name = "Formation";
+    Desc = "";
+    Targets = [];
+    Objects = [235];
+    XPos = 23399.917;
+    YPos = 108.584;
+    ZPos = 12403.300;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  FormationType = 1;
+  FormationDensity = 1;
+  }
+  
+
+}
+

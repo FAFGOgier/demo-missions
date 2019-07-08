@@ -1,16 +1,16 @@
 Group
 {
-  Name = "chasseur decollage";
-  Index = 1416;
+  Name = "BF109_scramble";
+  Index = 59;
   Desc = "";
   Plane
   {
     Name = "chasseur";
-    Index = 1417;
-    LinkTrId = 1418;
-    XPos = 13837.440;
+    Index = 60;
+    LinkTrId = 61;
+    XPos = 25791.657;
     YPos = 119.950;
-    ZPos = 15544.850;
+    ZPos = 26633.316;
     XOri = 0.00;
     YOri = 312.85;
     ZOri = 14.80;
@@ -42,25 +42,25 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 1418;
+    Index = 61;
     Name = "Plane entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 13837.440;
+    XPos = 25791.657;
     YPos = 120.150;
-    ZPos = 15544.850;
+    ZPos = 26633.316;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 1417;
+    MisObjID = 60;
     OnEvents
     {
       OnEvent
       {
         Type = 6;
-        TarId = 1420;
+        TarId = 63;
       }
     }
   }
@@ -68,14 +68,14 @@ Group
 
   MCU_Activate
   {
-    Index = 1421;
+    Index = 64;
     Name = "Trigger Activate";
     Desc = "";
     Targets = [];
-    Objects = [1418];
-    XPos = 13992.457;
+    Objects = [61];
+    XPos = 25946.674;
     YPos = 118.420;
-    ZPos = 15537.631;
+    ZPos = 26626.097;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -84,14 +84,14 @@ Group
 
   MCU_Timer
   {
-    Index = 1422;
+    Index = 65;
     Name = "IN chasseur";
     Desc = "";
-    Targets = [1421,1423];
+    Targets = [64,66];
     Objects = [];
-    XPos = 14133.049;
+    XPos = 26087.266;
     YPos = 118.420;
-    ZPos = 15599.511;
+    ZPos = 26687.977;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -102,14 +102,14 @@ Group
 
   MCU_Timer
   {
-    Index = 1423;
+    Index = 66;
     Name = "chasseur pret";
     Desc = "";
-    Targets = [1425];
+    Targets = [68];
     Objects = [];
-    XPos = 13958.475;
+    XPos = 25912.692;
     YPos = 118.420;
-    ZPos = 15608.932;
+    ZPos = 26697.398;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -120,14 +120,14 @@ Group
 
   MCU_CMD_TakeOff
   {
-    Index = 1425;
+    Index = 68;
     Name = "chasseur decolage";
     Desc = "";
     Targets = [];
-    Objects = [1418];
-    XPos = 13923.220;
+    Objects = [61];
+    XPos = 25877.437;
     YPos = 118.420;
-    ZPos = 15459.604;
+    ZPos = 26548.070;
     XOri = 0.00;
     YOri = 137.31;
     ZOri = 0.00;
@@ -137,14 +137,14 @@ Group
 
   MCU_Waypoint
   {
-    Index = 1427;
+    Index = 70;
     Name = "chasseur : WP landing";
     Desc = "";
-    Targets = [1428];
-    Objects = [1418];
-    XPos = 13757.304;
+    Targets = [71];
+    Objects = [61];
+    XPos = 25711.521;
     YPos = 118.420;
-    ZPos = 14518.060;
+    ZPos = 25606.526;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -156,14 +156,14 @@ Group
 
   MCU_CMD_Land
   {
-    Index = 1428;
+    Index = 71;
     Name = "chasseur pos*";
     Desc = "";
     Targets = [];
-    Objects = [1418];
-    XPos = 14329.047;
+    Objects = [61];
+    XPos = 26283.264;
     YPos = 118.420;
-    ZPos = 15075.816;
+    ZPos = 26164.282;
     XOri = 0.00;
     YOri = 35.11;
     ZOri = 0.00;
@@ -173,14 +173,14 @@ Group
 
   MCU_Timer
   {
-    Index = 1430;
+    Index = 73;
     Name = "chasseur abandon";
     Desc = "";
-    Targets = [1427];
+    Targets = [70];
     Objects = [];
-    XPos = 15095.202;
+    XPos = 27049.419;
     YPos = 113.471;
-    ZPos = 13492.392;
+    ZPos = 24580.858;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -191,14 +191,14 @@ Group
 
   MCU_CMD_AttackArea
   {
-    Index = 1431;
+    Index = 74;
     Name = "chasseur Attaque";
     Desc = "";
     Targets = [];
-    Objects = [1418];
-    XPos = 15047.354;
+    Objects = [61];
+    XPos = 27001.571;
     YPos = 118.414;
-    ZPos = 13964.039;
+    ZPos = 25052.505;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -213,14 +213,14 @@ Group
 
   MCU_Waypoint
   {
-    Index = 1420;
+    Index = 63;
     Name = "chasseur WP 1: en vol";
     Desc = "";
-    Targets = [1431,1430];
-    Objects = [1418];
-    XPos = 15520.608;
+    Targets = [74,73];
+    Objects = [61];
+    XPos = 27474.825;
     YPos = 600.000;
-    ZPos = 14030.715;
+    ZPos = 25119.181;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -232,14 +232,14 @@ Group
 
   MCU_TR_ComplexTrigger
   {
-    Index = 1433;
+    Index = 76;
     Name = "ordre_decollage";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 14368.087;
+    XPos = 26322.304;
     YPos = 118.420;
-    ZPos = 15570.849;
+    ZPos = 26659.315;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -278,7 +278,7 @@ Group
       OnEvent
       {
         Type = 58;
-        TarId = 1422;
+        TarId = 65;
       }
     }
   }
@@ -287,11 +287,11 @@ Group
   Plane
   {
     Name = "chasseur";
-    Index = 1434;
-    LinkTrId = 1435;
-    XPos = 13820.779;
+    Index = 77;
+    LinkTrId = 78;
+    XPos = 25774.996;
     YPos = 119.950;
-    ZPos = 15539.497;
+    ZPos = 26627.963;
     XOri = 0.00;
     YOri = 312.85;
     ZOri = 14.80;
@@ -323,30 +323,30 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 1435;
+    Index = 78;
     Name = "Plane entity";
     Desc = "";
-    Targets = [1418];
+    Targets = [61];
     Objects = [];
-    XPos = 13820.779;
+    XPos = 25774.996;
     YPos = 120.150;
-    ZPos = 15539.497;
+    ZPos = 26627.963;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 1434;
+    MisObjID = 77;
   }
   
 
   Plane
   {
     Name = "chasseur";
-    Index = 1437;
-    LinkTrId = 1438;
-    XPos = 13820.889;
+    Index = 80;
+    LinkTrId = 81;
+    XPos = 25775.106;
     YPos = 119.950;
-    ZPos = 15561.412;
+    ZPos = 26649.878;
     XOri = 0.00;
     YOri = 312.85;
     ZOri = 14.80;
@@ -378,19 +378,19 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 1438;
+    Index = 81;
     Name = "Plane entity";
     Desc = "";
-    Targets = [1418];
+    Targets = [61];
     Objects = [];
-    XPos = 13820.889;
+    XPos = 25775.106;
     YPos = 120.150;
-    ZPos = 15561.412;
+    ZPos = 26649.878;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 1437;
+    MisObjID = 80;
   }
   
 

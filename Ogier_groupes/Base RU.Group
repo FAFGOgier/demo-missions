@@ -1,13 +1,13 @@
 Airfield
 {
-  Name = "Dubki";
-  Index = 8;
-  LinkTrId = 9;
-  XPos = 56430.876;
-  YPos = 159.128;
-  ZPos = 43944.204;
+  Name = "Base RU";
+  Index = 12196;
+  LinkTrId = 12197;
+  XPos = 142022.644;
+  YPos = 75.206;
+  ZPos = 239538.121;
   XOri = 0.00;
-  YOri = 21.00;
+  YOri = 220.20;
   ZOri = 0.00;
   Model = "graphics\airfields\fakefield.mgm";
   Script = "LuaScripts\WorldObjects\Airfields\fakefield.txt";
@@ -665,6 +665,34 @@ Airfield
       Callsign = 0;
       Callnum = 0;
     }
+    Plane
+    {
+      SetIndex = 0;
+      Number = -1;
+      AILevel = 2;
+      StartInAir = 2;
+      Engageable = 1;
+      Vulnerable = 1;
+      LimitAmmo = 1;
+      AIRTBDecision = 1;
+      Renewable = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      Fuel = 1;
+      RouteTime = 0;
+      RenewTime = 1800;
+      Altitude = 500;
+      Spotter = -1;
+      Model = "graphics\planes\se5a\se5a.mgm";
+      Script = "LuaScripts\WorldObjects\Planes\se5a.txt";
+      Name = "";
+      Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
+      Callsign = 0;
+      Callnum = 0;
+    }
   }
   Chart
   {
@@ -786,9 +814,11 @@ Airfield
   ReturnPlanes = 0;
   Hydrodrome = 0;
   RepairFriendlies = 0;
+  RehealFriendlies = 0;
   RearmFriendlies = 0;
   RefuelFriendlies = 0;
   RepairTime = 0;
+  RehealTime = 1;
   RearmTime = 0;
   RefuelTime = 0;
   MaintenanceRadius = 1000;
@@ -796,18 +826,18 @@ Airfield
 
 MCU_TR_Entity
 {
-  Index = 9;
+  Index = 12197;
   Name = "Airfield entity";
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 56430.876;
-  YPos = 159.328;
-  ZPos = 43944.204;
+  XPos = 142022.644;
+  YPos = 75.406;
+  ZPos = 239538.121;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
   Enabled = 1;
-  MisObjID = 8;
+  MisObjID = 12196;
 }
 

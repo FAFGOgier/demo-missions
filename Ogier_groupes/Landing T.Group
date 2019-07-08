@@ -1,16 +1,16 @@
 Group
 {
   Name = "T";
-  Index = 7;
+  Index = 317;
   Desc = "";
   Vehicle
   {
     Name = "T";
-    Index = 4;
+    Index = 318;
     LinkTrId = 0;
-    XPos = 22980.440;
+    XPos = 31800.831;
     YPos = 149.887;
-    ZPos = 31019.549;
+    ZPos = 33433.216;
     XOri = 0.00;
     YOri = 35.70;
     ZOri = 0.00;
@@ -48,11 +48,11 @@ Group
   Vehicle
   {
     Name = "T";
-    Index = 5;
+    Index = 319;
     LinkTrId = 0;
-    XPos = 22988.537;
+    XPos = 31808.928;
     YPos = 149.887;
-    ZPos = 31025.360;
+    ZPos = 33439.027;
     XOri = 0.00;
     YOri = 35.70;
     ZOri = 0.00;
@@ -90,11 +90,11 @@ Group
   Vehicle
   {
     Name = "T";
-    Index = 6;
+    Index = 320;
     LinkTrId = 0;
-    XPos = 22981.399;
+    XPos = 31801.790;
     YPos = 149.887;
-    ZPos = 31027.409;
+    ZPos = 33441.076;
     XOri = 0.00;
     YOri = 124.81;
     ZOri = 0.00;

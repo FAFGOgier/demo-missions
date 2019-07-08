@@ -1,0 +1,281 @@
+MCU_Timer
+{
+  Index = 317;
+  Name = "IN";
+  Desc = "";
+  Targets = [288];
+  Objects = [];
+  XPos = 25193.337;
+  YPos = 21.192;
+  ZPos = 9568.374;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 1;
+  Random = 100;
+}
+
+Group
+{
+  Name = "BF109";
+  Index = 318;
+  Desc = "";
+  Plane
+  {
+    Name = "BF109 Lead";
+    Index = 284;
+    LinkTrId = 285;
+    XPos = 24934.722;
+    YPos = 5000.000;
+    ZPos = 12316.078;
+    XOri = 0.00;
+    YOri = 55.51;
+    ZOri = 14.30;
+    Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+    Model = "graphics\planes\bf109e7\bf109e7.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 1;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 285;
+    Name = "Chasse entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 24934.722;
+    YPos = 5000.200;
+    ZPos = 12316.078;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 284;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 288;
+    Name = "2s";
+    Desc = "";
+    Targets = [290,291];
+    Objects = [];
+    XPos = 25293.306;
+    YPos = 73.976;
+    ZPos = 11576.803;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 290;
+    Name = "WP 1";
+    Desc = "priority low: agressif en route";
+    Targets = [293,294];
+    Objects = [285];
+    XPos = 23865.671;
+    YPos = 5000.000;
+    ZPos = 15535.153;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 0;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 295;
+    Name = "WP Land";
+    Desc = "";
+    Targets = [296];
+    Objects = [285];
+    XPos = 19935.664;
+    YPos = 500.000;
+    ZPos = 20098.155;
+    XOri = 0.00;
+    YOri = 358.78;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 200;
+    Priority = 1;
+  }
+  
+
+  MCU_CMD_Land
+  {
+    Index = 296;
+    Name = "command Land";
+    Desc = "";
+    Targets = [];
+    Objects = [285];
+    XPos = 18705.556;
+    YPos = 149.887;
+    ZPos = 22051.239;
+    XOri = 0.00;
+    YOri = 133.64;
+    ZOri = 0.00;
+    Priority = 1;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 291;
+    Name = "1s";
+    Desc = "";
+    Targets = [302];
+    Objects = [];
+    XPos = 24957.687;
+    YPos = 108.584;
+    ZPos = 11584.879;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  MCU_CMD_Formation
+  {
+    Index = 302;
+    Name = "Formation";
+    Desc = "";
+    Targets = [];
+    Objects = [285];
+    XPos = 24957.687;
+    YPos = 108.584;
+    ZPos = 11923.276;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  FormationType = 1;
+  FormationDensity = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 293;
+    Name = "WP 2 Patrouille";
+    Desc = "";
+    Targets = [308];
+    Objects = [285];
+    XPos = 24635.239;
+    YPos = 5000.000;
+    ZPos = 16510.060;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 0;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 308;
+    Name = "WP 3 Patrouille";
+    Desc = "";
+    Targets = [310];
+    Objects = [285];
+    XPos = 23349.572;
+    YPos = 5000.000;
+    ZPos = 20184.434;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 0;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 310;
+    Name = "WP 4 Patrouille";
+    Desc = "";
+    Targets = [290];
+    Objects = [285];
+    XPos = 22883.219;
+    YPos = 5000.000;
+    ZPos = 16786.694;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 0;
+  }
+  
+
+  MCU_Counter
+  {
+    Index = 294;
+    Name = "Compte tour";
+    Desc = "Arrete la patrouille apres N to";
+    Targets = [313];
+    Objects = [];
+    XPos = 23486.946;
+    YPos = 43.799;
+    ZPos = 15549.233;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Counter = 2;
+    Dropcount = 0;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 313;
+    Name = "2s";
+    Desc = "attends un peu pour desactiver";
+    Targets = [295];
+    Objects = [];
+    XPos = 23002.486;
+    YPos = 43.144;
+    ZPos = 15669.200;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2;
+    Random = 100;
+  }
+  
+
+}
+

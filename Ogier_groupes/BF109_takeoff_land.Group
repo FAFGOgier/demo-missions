@@ -1,19 +1,36 @@
+MCU_Timer
+{
+  Index = 17;
+  Name = "IN FIGHTER GROUP";
+  Desc = "On attend un peu avant de lance";
+  Targets = [18];
+  Objects = [];
+  XPos = 28982.722;
+  YPos = 108.584;
+  ZPos = 17514.154;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 2;
+  Random = 100;
+}
+
 Group
 {
-  Name = "BF109_decolleAtterrit";
-  Index = 44;
-  Desc = "decollage en catastrophe.";
+  Name = "Fighter Group GE";
+  Index = 19;
+  Desc = "Link IN to something. Takes off";
   Plane
   {
     Name = "chasse leader";
-    Index = 45;
-    LinkTrId = 46;
-    XPos = 31456.756;
-    YPos = 108.584;
-    ZPos = 15299.140;
-    XOri = 0.00;
+    Index = 20;
+    LinkTrId = 21;
+    XPos = 28430.922;
+    YPos = 115.282;
+    ZPos = 18075.027;
+    XOri = 358.22;
     YOri = 71.95;
-    ZOri = 0.00;
+    ZOri = 359.27;
     Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
     Model = "graphics\planes\bf109f4\bf109f4.mgm";
     Country = 201;
@@ -42,57 +59,40 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 46;
+    Index = 21;
     Name = "chasse entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 31456.756;
-    YPos = 108.784;
-    ZPos = 15299.140;
+    XPos = 28430.922;
+    YPos = 115.482;
+    ZPos = 18075.027;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 45;
+    MisObjID = 20;
     OnEvents
     {
       OnEvent
       {
         Type = 6;
-        TarId = 48;
+        TarId = 23;
       }
     }
   }
   
 
-  MCU_TR_MissionBegin
-  {
-    Index = 49;
-    Name = "BEGIN";
-    Desc = "Permet de lancer les operations";
-    Targets = [50];
-    Objects = [];
-    XPos = 31902.497;
-    YPos = 108.584;
-    ZPos = 15068.895;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-  }
-  
-
   MCU_CMD_TakeOff
   {
-    Index = 51;
+    Index = 18;
     Name = "command Take off";
     Desc = "";
     Targets = [];
-    Objects = [46];
-    XPos = 31490.450;
+    Objects = [21];
+    XPos = 28464.616;
     YPos = 108.584;
-    ZPos = 15385.202;
+    ZPos = 18161.089;
     XOri = 0.00;
     YOri = 239.11;
     ZOri = 0.00;
@@ -100,34 +100,16 @@ Group
   }
   
 
-  MCU_Timer
-  {
-    Index = 50;
-    Name = "IN";
-    Desc = "On attend un peu avant de lance";
-    Targets = [51];
-    Objects = [];
-    XPos = 31744.922;
-    YPos = 108.584;
-    ZPos = 15067.279;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 2;
-    Random = 100;
-  }
-  
-
   MCU_Waypoint
   {
-    Index = 48;
+    Index = 23;
     Name = "WP 1";
     Desc = "ds axe de piste";
-    Targets = [54];
-    Objects = [46];
-    XPos = 32831.015;
+    Targets = [26];
+    Objects = [21];
+    XPos = 29805.181;
     YPos = 500.000;
-    ZPos = 18765.351;
+    ZPos = 21541.238;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -139,14 +121,14 @@ Group
 
   MCU_Waypoint
   {
-    Index = 54;
+    Index = 26;
     Name = "WP 2";
     Desc = "attaque tt adversaire sur le ch";
-    Targets = [56];
-    Objects = [46];
-    XPos = 30224.664;
+    Targets = [28];
+    Objects = [21];
+    XPos = 27198.830;
     YPos = 1000.000;
-    ZPos = 22240.150;
+    ZPos = 25016.037;
     XOri = 0.00;
     YOri = 143.67;
     ZOri = 0.00;
@@ -158,14 +140,14 @@ Group
 
   MCU_Waypoint
   {
-    Index = 56;
+    Index = 28;
     Name = "WP3 LAND";
     Desc = "";
-    Targets = [58];
-    Objects = [46];
-    XPos = 27697.262;
+    Targets = [30];
+    Objects = [21];
+    XPos = 24671.428;
     YPos = 500.000;
-    ZPos = 23944.756;
+    ZPos = 26720.643;
     XOri = 0.00;
     YOri = 135.40;
     ZOri = 0.00;
@@ -177,14 +159,14 @@ Group
 
   MCU_CMD_Land
   {
-    Index = 58;
+    Index = 30;
     Name = "Land";
     Desc = "Attention * bien aligner la com";
     Targets = [];
-    Objects = [46];
-    XPos = 25869.856;
+    Objects = [21];
+    XPos = 22844.022;
     YPos = 149.887;
-    ZPos = 25706.180;
+    ZPos = 28482.067;
     XOri = 0.00;
     YOri = 126.28;
     ZOri = 0.00;
@@ -195,14 +177,14 @@ Group
   Plane
   {
     Name = "chasse ailier";
-    Index = 60;
-    LinkTrId = 61;
-    XPos = 31405.009;
-    YPos = 108.584;
-    ZPos = 15237.409;
-    XOri = 0.00;
+    Index = 32;
+    LinkTrId = 33;
+    XPos = 28379.175;
+    YPos = 115.282;
+    ZPos = 18013.296;
+    XOri = 0.03;
     YOri = 71.95;
-    ZOri = 0.00;
+    ZOri = 1.88;
     Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
     Model = "graphics\planes\bf109f4\bf109f4.mgm";
     Country = 201;
@@ -231,19 +213,19 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 61;
+    Index = 33;
     Name = "chasse entity";
     Desc = "";
-    Targets = [46];
+    Targets = [21];
     Objects = [];
-    XPos = 31405.009;
-    YPos = 108.784;
-    ZPos = 15237.409;
+    XPos = 28379.175;
+    YPos = 115.482;
+    ZPos = 18013.296;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 60;
+    MisObjID = 32;
   }
   
 

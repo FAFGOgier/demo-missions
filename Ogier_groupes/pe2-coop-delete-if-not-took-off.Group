@@ -1,0 +1,137 @@
+Group
+{
+  Name = "pe2-coop-clear";
+  Index = 3963;
+  Desc = "delete if did not take off";
+  Plane
+  {
+    Name = "Pe2-player";
+    Index = 3964;
+    LinkTrId = 3965;
+    XPos = 12572.557;
+    YPos = 143.546;
+    ZPos = 11985.501;
+    XOri = 0.00;
+    YOri = 321.49;
+    ZOri = 12.50;
+    Script = "LuaScripts\WorldObjects\Planes\pe2s35.txt";
+    Model = "graphics\planes\pe2s35\pe2s35.mgm";
+    Country = 101;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 1;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 2;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 3965;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 12572.557;
+    YPos = 143.746;
+    ZPos = 11985.501;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 3964;
+    OnEvents
+    {
+      OnEvent
+      {
+        Type = 6;
+        TarId = 3967;
+      }
+    }
+  }
+  
+
+  MCU_TR_MissionBegin
+  {
+    Index = 3968;
+    Name = "BEGIN-player";
+    Desc = "";
+    Targets = [3969];
+    Objects = [];
+    XPos = 12572.894;
+    YPos = 141.446;
+    ZPos = 11972.608;
+    XOri = 0.00;
+    YOri = 359.24;
+    ZOri = 0.00;
+    Enabled = 1;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 3969;
+    Name = "take off timeout";
+    Desc = "";
+    Targets = [3971];
+    Objects = [];
+    XPos = 12562.966;
+    YPos = 141.446;
+    ZPos = 11972.565;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 900;
+    Random = 100;
+  }
+  
+
+  MCU_Delete
+  {
+    Index = 3971;
+    Name = "remove-plane";
+    Desc = "";
+    Targets = [];
+    Objects = [3965];
+    XPos = 12554.859;
+    YPos = 141.446;
+    ZPos = 11972.758;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+  MCU_Deactivate
+  {
+    Index = 3967;
+    Name = "deactivate delete";
+    Desc = "";
+    Targets = [3969];
+    Objects = [];
+    XPos = 12562.808;
+    YPos = 141.446;
+    ZPos = 11968.106;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+}
+

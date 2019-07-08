@@ -1,19 +1,36 @@
+MCU_Timer
+{
+  Index = 527;
+  Name = "IN Convoy";
+  Desc = "";
+  Targets = [478,479];
+  Objects = [];
+  XPos = 19193.992;
+  YPos = 118.468;
+  ZPos = 17406.862;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
 Group
 {
-  Name = "Convoi";
-  Index = 18;
+  Name = "Convoy 2";
+  Index = 528;
   Desc = "";
   Vehicle
   {
     Name = "Vehicle";
-    Index = 19;
-    LinkTrId = 20;
-    XPos = 28212.036;
-    YPos = 108.584;
-    ZPos = 23506.680;
-    XOri = 0.00;
+    Index = 474;
+    LinkTrId = 475;
+    XPos = 21357.784;
+    YPos = 72.513;
+    ZPos = 17696.698;
+    XOri = 358.49;
     YOri = 63.74;
-    ZOri = 0.00;
+    ZOri = 357.79;
     Script = "LuaScripts\WorldObjects\vehicles\sdkfz251-1c.txt";
     Model = "graphics\vehicles\sdkfz251\sdkfz251-1c.mgm";
     Desc = "";
@@ -47,50 +64,33 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 20;
+    Index = 475;
     Name = "Vehicle entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 28212.036;
-    YPos = 108.784;
-    ZPos = 23506.680;
+    XPos = 21357.784;
+    YPos = 72.713;
+    ZPos = 17696.698;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 19;
-  }
-  
-
-  MCU_TR_MissionBegin
-  {
-    Index = 22;
-    Name = "BEGIN";
-    Desc = "";
-    Targets = [23,24];
-    Objects = [];
-    XPos = 28175.537;
-    YPos = 268.018;
-    ZPos = 23736.654;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
+    MisObjID = 474;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 25;
-    LinkTrId = 26;
-    XPos = 28187.098;
-    YPos = 108.584;
-    ZPos = 23429.280;
-    XOri = 0.00;
+    Index = 480;
+    LinkTrId = 481;
+    XPos = 21332.846;
+    YPos = 74.981;
+    ZPos = 17619.298;
+    XOri = 359.02;
     YOri = 63.74;
-    ZOri = 0.00;
+    ZOri = 0.39;
     Script = "LuaScripts\WorldObjects\vehicles\sdkfz10-flak38.txt";
     Model = "graphics\vehicles\sdkfz10-flak38\sdkfz10-flak38.mgm";
     Desc = "";
@@ -124,32 +124,32 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 26;
+    Index = 481;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [20];
+    Targets = [475];
     Objects = [];
-    XPos = 28187.098;
-    YPos = 108.784;
-    ZPos = 23429.280;
+    XPos = 21332.846;
+    YPos = 75.181;
+    ZPos = 17619.298;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 25;
+    MisObjID = 480;
   }
   
 
   MCU_Timer
   {
-    Index = 23;
-    Name = "IN";
+    Index = 478;
+    Name = "1s";
     Desc = "";
-    Targets = [29];
+    Targets = [484];
     Objects = [];
-    XPos = 28093.650;
+    XPos = 21181.827;
     YPos = 244.582;
-    ZPos = 23737.074;
+    ZPos = 17804.274;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -160,14 +160,14 @@ Group
 
   MCU_Timer
   {
-    Index = 24;
+    Index = 479;
     Name = "2s";
     Desc = "";
-    Targets = [31];
+    Targets = [486];
     Objects = [];
-    XPos = 28013.915;
+    XPos = 21159.663;
     YPos = 238.235;
-    ZPos = 23740.356;
+    ZPos = 17930.374;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -178,14 +178,14 @@ Group
 
   MCU_Waypoint
   {
-    Index = 29;
+    Index = 484;
     Name = "WP1";
     Desc = "";
-    Targets = [33];
-    Objects = [20];
-    XPos = 28385.598;
+    Targets = [488];
+    Objects = [475];
+    XPos = 21531.346;
     YPos = 221.823;
-    ZPos = 23850.729;
+    ZPos = 18040.747;
     XOri = 0.00;
     YOri = 62.92;
     ZOri = 0.00;
@@ -197,14 +197,14 @@ Group
 
   MCU_CMD_Formation
   {
-    Index = 31;
+    Index = 486;
     Name = "Command Formation";
     Desc = "";
     Targets = [];
-    Objects = [20];
-    XPos = 28035.976;
+    Objects = [475];
+    XPos = 21181.724;
     YPos = 224.945;
-    ZPos = 23849.608;
+    ZPos = 18039.626;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -216,14 +216,14 @@ Group
   Vehicle
   {
     Name = "Vehicle";
-    Index = 35;
-    LinkTrId = 36;
-    XPos = 28167.761;
-    YPos = 108.584;
-    ZPos = 23336.752;
-    XOri = 0.00;
+    Index = 490;
+    LinkTrId = 491;
+    XPos = 21313.509;
+    YPos = 73.654;
+    ZPos = 17526.770;
+    XOri = 359.38;
     YOri = 69.41;
-    ZOri = 0.00;
+    ZOri = 0.15;
     Script = "LuaScripts\WorldObjects\vehicles\opel-blitz.txt";
     Model = "graphics\vehicles\opel\opel-blitz.mgm";
     Desc = "";
@@ -257,33 +257,33 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 36;
+    Index = 491;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [20];
+    Targets = [475];
     Objects = [];
-    XPos = 28167.761;
-    YPos = 108.784;
-    ZPos = 23336.752;
+    XPos = 21313.509;
+    YPos = 73.854;
+    ZPos = 17526.770;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 35;
+    MisObjID = 490;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 38;
-    LinkTrId = 39;
-    XPos = 28147.720;
-    YPos = 108.584;
-    ZPos = 23290.887;
-    XOri = 0.00;
+    Index = 493;
+    LinkTrId = 494;
+    XPos = 21293.468;
+    YPos = 74.434;
+    ZPos = 17480.905;
+    XOri = 357.27;
     YOri = 69.34;
-    ZOri = 0.00;
+    ZOri = 357.58;
     Script = "LuaScripts\WorldObjects\vehicles\opel-blitz.txt";
     Model = "graphics\vehicles\opel\opel-blitz.mgm";
     Desc = "";
@@ -317,33 +317,33 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 39;
+    Index = 494;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [20];
+    Targets = [475];
     Objects = [];
-    XPos = 28147.720;
-    YPos = 108.784;
-    ZPos = 23290.887;
+    XPos = 21293.468;
+    YPos = 74.634;
+    ZPos = 17480.905;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 38;
+    MisObjID = 493;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 41;
-    LinkTrId = 42;
-    XPos = 28121.785;
-    YPos = 108.584;
-    ZPos = 23198.326;
-    XOri = 0.00;
+    Index = 496;
+    LinkTrId = 497;
+    XPos = 21267.533;
+    YPos = 75.035;
+    ZPos = 17388.344;
+    XOri = 359.24;
     YOri = 69.34;
-    ZOri = 0.00;
+    ZOri = 358.33;
     Script = "LuaScripts\WorldObjects\vehicles\opel-blitz.txt";
     Model = "graphics\vehicles\opel\opel-blitz.mgm";
     Desc = "";
@@ -377,33 +377,33 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 42;
+    Index = 497;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [20];
+    Targets = [475];
     Objects = [];
-    XPos = 28121.785;
-    YPos = 108.784;
-    ZPos = 23198.326;
+    XPos = 21267.533;
+    YPos = 75.235;
+    ZPos = 17388.344;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 41;
+    MisObjID = 496;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 44;
-    LinkTrId = 45;
-    XPos = 28091.236;
-    YPos = 108.584;
-    ZPos = 23139.971;
-    XOri = 0.00;
+    Index = 499;
+    LinkTrId = 500;
+    XPos = 21236.984;
+    YPos = 74.713;
+    ZPos = 17329.989;
+    XOri = 358.57;
     YOri = 70.97;
-    ZOri = 0.00;
+    ZOri = 359.57;
     Script = "LuaScripts\WorldObjects\vehicles\opel-blitz.txt";
     Model = "graphics\vehicles\opel\opel-blitz.mgm";
     Desc = "";
@@ -437,33 +437,33 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 45;
+    Index = 500;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [20];
+    Targets = [475];
     Objects = [];
-    XPos = 28091.236;
-    YPos = 108.784;
-    ZPos = 23139.971;
+    XPos = 21236.984;
+    YPos = 74.913;
+    ZPos = 17329.989;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 44;
+    MisObjID = 499;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 47;
-    LinkTrId = 48;
-    XPos = 27930.253;
-    YPos = 108.584;
-    ZPos = 22894.268;
-    XOri = 0.00;
+    Index = 502;
+    LinkTrId = 503;
+    XPos = 21076.001;
+    YPos = 82.336;
+    ZPos = 17084.286;
+    XOri = 359.06;
     YOri = 65.29;
-    ZOri = 0.00;
+    ZOri = 2.77;
     Script = "LuaScripts\WorldObjects\vehicles\sdkfz251-1c.txt";
     Model = "graphics\vehicles\sdkfz251\sdkfz251-1c.mgm";
     Desc = "";
@@ -497,33 +497,33 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 48;
+    Index = 503;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [20];
+    Targets = [475];
     Objects = [];
-    XPos = 27930.253;
-    YPos = 108.784;
-    ZPos = 22894.268;
+    XPos = 21076.001;
+    YPos = 82.536;
+    ZPos = 17084.286;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 47;
+    MisObjID = 502;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 50;
-    LinkTrId = 51;
-    XPos = 28060.337;
-    YPos = 108.584;
-    ZPos = 23080.246;
-    XOri = 0.00;
+    Index = 505;
+    LinkTrId = 506;
+    XPos = 21206.085;
+    YPos = 77.426;
+    ZPos = 17270.264;
+    XOri = 357.56;
     YOri = 65.29;
-    ZOri = 0.00;
+    ZOri = 355.94;
     Script = "LuaScripts\WorldObjects\vehicles\sdkfz10-flak38.txt";
     Model = "graphics\vehicles\sdkfz10-flak38\sdkfz10-flak38.mgm";
     Desc = "";
@@ -557,33 +557,33 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 51;
+    Index = 506;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [20];
+    Targets = [475];
     Objects = [];
-    XPos = 28060.337;
-    YPos = 108.784;
-    ZPos = 23080.246;
+    XPos = 21206.085;
+    YPos = 77.626;
+    ZPos = 17270.264;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 50;
+    MisObjID = 505;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 53;
-    LinkTrId = 54;
-    XPos = 28026.417;
-    YPos = 108.584;
-    ZPos = 23015.205;
-    XOri = 0.00;
+    Index = 508;
+    LinkTrId = 509;
+    XPos = 21172.165;
+    YPos = 76.788;
+    ZPos = 17205.223;
+    XOri = 0.92;
     YOri = 65.36;
-    ZOri = 0.00;
+    ZOri = 1.82;
     Script = "LuaScripts\WorldObjects\vehicles\opel-blitz.txt";
     Model = "graphics\vehicles\opel\opel-blitz.mgm";
     Desc = "";
@@ -617,33 +617,33 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 54;
+    Index = 509;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [20];
+    Targets = [475];
     Objects = [];
-    XPos = 28026.417;
-    YPos = 108.784;
-    ZPos = 23015.205;
+    XPos = 21172.165;
+    YPos = 76.988;
+    ZPos = 17205.223;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 53;
+    MisObjID = 508;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 56;
-    LinkTrId = 57;
-    XPos = 27977.558;
-    YPos = 108.584;
-    ZPos = 22938.491;
-    XOri = 0.00;
+    Index = 511;
+    LinkTrId = 512;
+    XPos = 21123.306;
+    YPos = 81.108;
+    ZPos = 17128.509;
+    XOri = 359.23;
     YOri = 65.36;
-    ZOri = 0.00;
+    ZOri = 354.58;
     Script = "LuaScripts\WorldObjects\vehicles\opel-blitz.txt";
     Model = "graphics\vehicles\opel\opel-blitz.mgm";
     Desc = "";
@@ -677,32 +677,32 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 57;
+    Index = 512;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [20];
+    Targets = [475];
     Objects = [];
-    XPos = 27977.558;
-    YPos = 108.784;
-    ZPos = 22938.491;
+    XPos = 21123.306;
+    YPos = 81.308;
+    ZPos = 17128.509;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 56;
+    MisObjID = 511;
   }
   
 
   MCU_Waypoint
   {
-    Index = 33;
+    Index = 488;
     Name = "WP2";
     Desc = "";
-    Targets = [60];
-    Objects = [20];
-    XPos = 26375.629;
+    Targets = [515];
+    Objects = [475];
+    XPos = 19521.377;
     YPos = 221.823;
-    ZPos = 26787.383;
+    ZPos = 20977.401;
     XOri = 0.00;
     YOri = 109.14;
     ZOri = 0.00;
@@ -714,14 +714,14 @@ Group
 
   MCU_Waypoint
   {
-    Index = 60;
+    Index = 515;
     Name = "WP N";
     Desc = "";
-    Targets = [62];
-    Objects = [20];
-    XPos = 26834.313;
+    Targets = [517];
+    Objects = [475];
+    XPos = 19980.061;
     YPos = 64.802;
-    ZPos = 30395.393;
+    ZPos = 24585.411;
     XOri = 0.00;
     YOri = 12.89;
     ZOri = 0.00;
@@ -733,14 +733,14 @@ Group
 
   MCU_Waypoint
   {
-    Index = 62;
+    Index = 517;
     Name = "arret";
     Desc = "";
-    Targets = [64,65];
-    Objects = [20];
-    XPos = 27622.047;
+    Targets = [519,520];
+    Objects = [475];
+    XPos = 20767.795;
     YPos = 64.802;
-    ZPos = 30527.069;
+    ZPos = 24717.087;
     XOri = 0.00;
     YOri = 3.98;
     ZOri = 0.00;
@@ -752,14 +752,14 @@ Group
 
   MCU_CMD_Formation
   {
-    Index = 64;
-    Name = "sortie de route";
+    Index = 519;
+    Name = "off the road";
     Desc = "";
     Targets = [];
-    Objects = [20];
-    XPos = 27772.235;
+    Objects = [475];
+    XPos = 20917.983;
     YPos = 36.531;
-    ZPos = 30620.821;
+    ZPos = 24810.839;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -770,14 +770,14 @@ Group
 
   MCU_Timer
   {
-    Index = 65;
+    Index = 520;
     Name = "3s";
     Desc = "";
-    Targets = [68];
+    Targets = [523];
     Objects = [];
-    XPos = 27674.020;
+    XPos = 20819.768;
     YPos = 38.945;
-    ZPos = 30650.141;
+    ZPos = 24840.159;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -788,14 +788,14 @@ Group
 
   MCU_Waypoint
   {
-    Index = 68;
+    Index = 523;
     Name = "garage";
     Desc = "";
-    Targets = [70];
-    Objects = [20];
-    XPos = 27602.580;
+    Targets = [525];
+    Objects = [475];
+    XPos = 20748.328;
     YPos = 64.802;
-    ZPos = 30657.507;
+    ZPos = 24847.525;
     XOri = 0.00;
     YOri = 328.32;
     ZOri = 0.00;
@@ -807,14 +807,14 @@ Group
 
   MCU_CMD_Formation
   {
-    Index = 70;
+    Index = 525;
     Name = "stop column";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 27556.561;
+    XPos = 20702.309;
     YPos = 40.214;
-    ZPos = 30722.176;
+    ZPos = 24912.194;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;

@@ -1,0 +1,99 @@
+Group
+{
+  Name = "attack arrow";
+  Index = 7807;
+  Desc = "";
+  MCU_Icon
+  {
+    Index = 7776;
+    Targets = [7778];
+    Objects = [];
+    XPos = 174931.515;
+    YPos = 192.974;
+    ZPos = 40194.297;
+    XOri = 0.00;
+    YOri = 359.92;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 31;
+    LCDesc = 32;
+    IconId = 0;
+    RColor = 0;
+    GColor = 0;
+    BColor = 255;
+    LineType = 11;
+    Coalitions = [1, 2];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 7778;
+    Targets = [];
+    Objects = [];
+    XPos = 168661.570;
+    YPos = 192.974;
+    ZPos = 43250.854;
+    XOri = 0.00;
+    YOri = 359.92;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 33;
+    LCDesc = 34;
+    IconId = 0;
+    RColor = 0;
+    GColor = 0;
+    BColor = 255;
+    LineType = 11;
+    Coalitions = [1, 2];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 7774;
+    Targets = [7776];
+    Objects = [];
+    XPos = 144882.260;
+    YPos = 192.974;
+    ZPos = 25962.410;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 29;
+    LCDesc = 30;
+    IconId = 0;
+    RColor = 0;
+    GColor = 0;
+    BColor = 255;
+    LineType = 11;
+    Coalitions = [1, 2];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 7773;
+    Targets = [7774];
+    Objects = [];
+    XPos = 139587.026;
+    YPos = 192.974;
+    ZPos = 24009.750;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 27;
+    LCDesc = 28;
+    IconId = 0;
+    RColor = 0;
+    GColor = 0;
+    BColor = 255;
+    LineType = 11;
+    Coalitions = [1, 2];
+  }
+  
+
+}
+

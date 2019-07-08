@@ -1,53 +1,51 @@
+MCU_TR_MissionBegin
+{
+  Index = 3;
+  Name = "Translator Mission Begin";
+  Desc = "";
+  Targets = [4];
+  Objects = [];
+  XPos = 31408.188;
+  YPos = 20.375;
+  ZPos = 11617.036;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+}
+
+MCU_Timer
+{
+  Index = 4;
+  Name = "IN";
+  Desc = "";
+  Targets = [6];
+  Objects = [];
+  XPos = 31031.295;
+  YPos = 20.375;
+  ZPos = 11611.318;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 900;
+  Random = 100;
+}
+
 Group
 {
-  Name = "Avion Coop";
-  Index = 7889;
-  Desc = "Si IA, se reposera imm*diatemen";
-  MCU_TR_MissionBegin
-  {
-    Index = 7877;
-    Name = "Translator Mission Begin";
-    Desc = "";
-    Targets = [7878];
-    Objects = [];
-    XPos = 182337.802;
-    YPos = 20.375;
-    ZPos = 237885.015;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 7878;
-    Name = "Trigger Timer";
-    Desc = "";
-    Targets = [7881];
-    Objects = [];
-    XPos = 182312.611;
-    YPos = 20.375;
-    ZPos = 237885.015;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 900;
-    Random = 100;
-  }
-  
-
+  Name = "Avions Coop";
+  Index = 17;
+  Desc = "";
   MCU_CMD_TakeOff
   {
-    Index = 7881;
-    Name = "command Take off";
+    Index = 6;
+    Name = "Take off";
     Desc = "";
     Targets = [];
-    Objects = [7854];
-    XPos = 182302.945;
+    Objects = [8];
+    XPos = 30955.864;
     YPos = 20.375;
-    ZPos = 237960.323;
+    ZPos = 11146.206;
     XOri = 0.00;
     YOri = 43.03;
     ZOri = 0.00;
@@ -57,15 +55,15 @@ Group
 
   Plane
   {
-    Name = "chasse joueur";
-    Index = 7853;
-    LinkTrId = 7854;
-    XPos = 182277.762;
-    YPos = 20.375;
-    ZPos = 237937.537;
-    XOri = 0.00;
+    Name = "avion joueur";
+    Index = 9;
+    LinkTrId = 8;
+    XPos = 30930.681;
+    YPos = 68.126;
+    ZPos = 11123.420;
+    XOri = 0.25;
     YOri = 45.09;
-    ZOri = 0.00;
+    ZOri = 359.44;
     Script = "LuaScripts\WorldObjects\Planes\p47d28.txt";
     Model = "graphics\planes\p47d28\p47d28.mgm";
     Country = 101;
@@ -94,25 +92,25 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 7854;
+    Index = 8;
     Name = "chasse joueur entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 182277.762;
-    YPos = 20.575;
-    ZPos = 237937.537;
+    XPos = 30930.681;
+    YPos = 68.326;
+    ZPos = 11123.420;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 7853;
+    MisObjID = 9;
     OnEvents
     {
       OnEvent
       {
         Type = 6;
-        TarId = 7882;
+        TarId = 11;
       }
     }
   }
@@ -120,14 +118,14 @@ Group
 
   MCU_CMD_Land
   {
-    Index = 7887;
-    Name = "command Land";
+    Index = 12;
+    Name = "Land";
     Desc = "";
     Targets = [];
-    Objects = [7854];
-    XPos = 182207.910;
+    Objects = [8];
+    XPos = 30860.829;
     YPos = 20.375;
-    ZPos = 237891.798;
+    ZPos = 11077.681;
     XOri = 0.00;
     YOri = 47.81;
     ZOri = 0.00;
@@ -137,14 +135,14 @@ Group
 
   MCU_Waypoint
   {
-    Index = 7886;
-    Name = "Trigger Waypoint";
+    Index = 13;
+    Name = "WP Land";
     Desc = "";
-    Targets = [7887];
-    Objects = [7854];
-    XPos = 180906.433;
+    Targets = [12];
+    Objects = [8];
+    XPos = 29559.352;
     YPos = 800.000;
-    ZPos = 236576.774;
+    ZPos = 9762.657;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -156,14 +154,14 @@ Group
 
   MCU_Waypoint
   {
-    Index = 7882;
+    Index = 11;
     Name = "WP1";
     Desc = "";
-    Targets = [7885];
-    Objects = [7854];
-    XPos = 184378.759;
+    Targets = [15];
+    Objects = [8];
+    XPos = 33031.678;
     YPos = 800.000;
-    ZPos = 239756.527;
+    ZPos = 12942.410;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -175,14 +173,14 @@ Group
 
   MCU_Waypoint
   {
-    Index = 7885;
-    Name = "Trigger Waypoint";
+    Index = 15;
+    Name = "WP";
     Desc = "";
-    Targets = [7886];
-    Objects = [7854];
-    XPos = 184046.363;
+    Targets = [13];
+    Objects = [8];
+    XPos = 32016.320;
     YPos = 800.000;
-    ZPos = 240123.114;
+    ZPos = 13899.874;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;

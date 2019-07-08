@@ -1,16 +1,16 @@
 Group
 {
   Name = "frontiere";
-  Index = 18;
+  Index = 2;
   Desc = "rouge a gauche";
   MCU_Icon
   {
-    Index = 2;
-    Targets = [16];
+    Index = 3;
+    Targets = [4];
     Objects = [];
-    XPos = 23224.165;
+    XPos = 7299.425;
     YPos = 1000.000;
-    ZPos = 21533.231;
+    ZPos = 8378.764;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -19,8 +19,8 @@ Group
     LCDesc = 4;
     IconId = 0;
     RColor = 255;
-    GColor = 0;
-    BColor = 0;
+    GColor = 255;
+    BColor = 255;
     LineType = 13;
     Coalitions = [1, 2];
   }
@@ -28,22 +28,22 @@ Group
 
   MCU_Icon
   {
-    Index = 16;
-    Targets = [17];
+    Index = 4;
+    Targets = [6];
     Objects = [];
-    XPos = 25207.807;
+    XPos = 4044.487;
     YPos = 1000.000;
-    ZPos = 21731.332;
+    ZPos = 20934.544;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    LCName = 21;
-    LCDesc = 22;
+    LCName = 5;
+    LCDesc = 6;
     IconId = 0;
     RColor = 255;
-    GColor = 0;
-    BColor = 0;
+    GColor = 255;
+    BColor = 255;
     LineType = 13;
     Coalitions = [1, 2];
   }
@@ -51,22 +51,22 @@ Group
 
   MCU_Icon
   {
-    Index = 17;
+    Index = 6;
     Targets = [];
     Objects = [];
-    XPos = 27287.869;
+    XPos = 7199.129;
     YPos = 1000.000;
-    ZPos = 22622.787;
+    ZPos = 35795.549;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    LCName = 23;
-    LCDesc = 24;
+    LCName = 7;
+    LCDesc = 8;
     IconId = 0;
     RColor = 255;
-    GColor = 0;
-    BColor = 0;
+    GColor = 255;
+    BColor = 255;
     LineType = 13;
     Coalitions = [1, 2];
   }

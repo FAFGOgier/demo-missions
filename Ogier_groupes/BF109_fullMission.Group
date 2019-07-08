@@ -1,16 +1,33 @@
+MCU_Timer
+{
+  Index = 187;
+  Name = "IN FIGHTERS";
+  Desc = "On attend un peu avant de lance";
+  Targets = [188];
+  Objects = [];
+  XPos = 38747.555;
+  YPos = 108.584;
+  ZPos = 27166.127;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 2;
+  Random = 100;
+}
+
 Group
 {
-  Name = "BF109_missionComplete";
-  Index = 44;
-  Desc = "decollage en catastrophe.";
+  Name = "BF109";
+  Index = 189;
+  Desc = "";
   Plane
   {
-    Name = "chasse leader";
-    Index = 45;
-    LinkTrId = 46;
-    XPos = 29019.509;
+    Name = "bf109 leader";
+    Index = 190;
+    LinkTrId = 191;
+    XPos = 38739.314;
     YPos = 128.794;
-    ZPos = 20013.881;
+    ZPos = 30003.967;
     XOri = 0.00;
     YOri = 71.95;
     ZOri = 0.00;
@@ -42,57 +59,40 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 46;
+    Index = 191;
     Name = "chasse entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 29019.509;
+    XPos = 38739.314;
     YPos = 128.994;
-    ZPos = 20013.881;
+    ZPos = 30003.967;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 45;
+    MisObjID = 190;
     OnEvents
     {
       OnEvent
       {
         Type = 6;
-        TarId = 67;
+        TarId = 193;
       }
     }
   }
   
 
-  MCU_TR_MissionBegin
-  {
-    Index = 49;
-    Name = "BEGIN";
-    Desc = "Permet de lancer les operations";
-    Targets = [50];
-    Objects = [];
-    XPos = 29263.665;
-    YPos = 108.584;
-    ZPos = 18824.426;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-  }
-  
-
   MCU_CMD_TakeOff
   {
-    Index = 51;
+    Index = 188;
     Name = "command Take off";
     Desc = "";
     Targets = [];
-    Objects = [46];
-    XPos = 29053.203;
+    Objects = [191];
+    XPos = 38773.008;
     YPos = 108.584;
-    ZPos = 20099.943;
+    ZPos = 30090.029;
     XOri = 0.00;
     YOri = 239.11;
     ZOri = 0.00;
@@ -100,34 +100,16 @@ Group
   }
   
 
-  MCU_Timer
-  {
-    Index = 50;
-    Name = "IN";
-    Desc = "On attend un peu avant de lance";
-    Targets = [51];
-    Objects = [];
-    XPos = 29106.090;
-    YPos = 108.584;
-    ZPos = 18822.810;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 2;
-    Random = 100;
-  }
-  
-
   MCU_Waypoint
   {
-    Index = 48;
+    Index = 195;
     Name = "WP 1";
     Desc = "ds axe de piste";
-    Targets = [54];
-    Objects = [46];
-    XPos = 31156.378;
+    Targets = [196];
+    Objects = [191];
+    XPos = 40876.183;
     YPos = 500.000;
-    ZPos = 25646.339;
+    ZPos = 35636.425;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -139,14 +121,14 @@ Group
 
   MCU_Waypoint
   {
-    Index = 54;
+    Index = 196;
     Name = "WP 2";
     Desc = "attaque tt adversaire sur le ch";
-    Targets = [63,64];
-    Objects = [46];
-    XPos = 32376.975;
+    Targets = [198,199];
+    Objects = [191];
+    XPos = 42096.780;
     YPos = 1000.000;
-    ZPos = 29739.608;
+    ZPos = 39729.694;
     XOri = 0.00;
     YOri = 143.67;
     ZOri = 0.00;
@@ -158,14 +140,14 @@ Group
 
   MCU_Waypoint
   {
-    Index = 56;
-    Name = "WP3 LAND";
+    Index = 200;
+    Name = "WP LAND";
     Desc = "";
-    Targets = [58];
-    Objects = [46];
-    XPos = 24929.588;
+    Targets = [201];
+    Objects = [191];
+    XPos = 34649.393;
     YPos = 500.000;
-    ZPos = 28911.405;
+    ZPos = 38901.491;
     XOri = 0.00;
     YOri = 135.40;
     ZOri = 0.00;
@@ -177,14 +159,14 @@ Group
 
   MCU_CMD_Land
   {
-    Index = 58;
+    Index = 201;
     Name = "Land";
     Desc = "Attention * bien aligner la com";
     Targets = [];
-    Objects = [46];
-    XPos = 23446.122;
+    Objects = [191];
+    XPos = 33165.927;
     YPos = 149.887;
-    ZPos = 30468.233;
+    ZPos = 40458.319;
     XOri = 0.00;
     YOri = 126.28;
     ZOri = 0.00;
@@ -192,71 +174,16 @@ Group
   }
   
 
-  Plane
-  {
-    Name = "chasse ailier";
-    Index = 60;
-    LinkTrId = 61;
-    XPos = 28967.762;
-    YPos = 128.794;
-    ZPos = 19952.150;
-    XOri = 0.00;
-    YOri = 71.95;
-    ZOri = 0.00;
-    Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
-    Model = "graphics\planes\bf109f4\bf109f4.mgm";
-    Country = 201;
-    Desc = "";
-    Skin = "";
-    AILevel = 2;
-    CoopStart = 0;
-    NumberInFormation = 1;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    StartInAir = 1;
-    Callsign = 0;
-    Callnum = 0;
-    Time = 60;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    PayloadId = 0;
-    WMMask = 1;
-    AiRTBDecision = 0;
-    DeleteAfterDeath = 1;
-    Spotter = -1;
-    Fuel = 1;
-  }
-  
-
-  MCU_TR_Entity
-  {
-    Index = 61;
-    Name = "chasse entity";
-    Desc = "";
-    Targets = [46];
-    Objects = [];
-    XPos = 28967.762;
-    YPos = 128.994;
-    ZPos = 19952.150;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-    MisObjID = 60;
-  }
-  
-
   MCU_CMD_AttackArea
   {
-    Index = 63;
+    Index = 198;
     Name = "AttackArea";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 33081.839;
+    XPos = 42801.644;
     YPos = 1000.000;
-    ZPos = 33070.608;
+    ZPos = 43060.694;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -271,14 +198,14 @@ Group
 
   MCU_Timer
   {
-    Index = 64;
-    Name = "10m5s";
+    Index = 199;
+    Name = "Stop Attack";
     Desc = "";
-    Targets = [56];
+    Targets = [200];
     Objects = [];
-    XPos = 31187.960;
+    XPos = 40907.765;
     YPos = 181.812;
-    ZPos = 30145.883;
+    ZPos = 40135.969;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -289,14 +216,14 @@ Group
 
   MCU_Timer
   {
-    Index = 67;
+    Index = 193;
     Name = "1s airborn";
     Desc = "";
-    Targets = [48,68];
+    Targets = [195,206];
     Objects = [];
-    XPos = 28832.044;
+    XPos = 38551.849;
     YPos = 108.584;
-    ZPos = 22407.945;
+    ZPos = 32398.031;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -307,14 +234,14 @@ Group
 
   MCU_Timer
   {
-    Index = 68;
+    Index = 206;
     Name = "2s";
     Desc = "";
-    Targets = [69];
+    Targets = [208];
     Objects = [];
-    XPos = 28519.798;
+    XPos = 38239.603;
     YPos = 108.584;
-    ZPos = 22410.254;
+    ZPos = 32400.340;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -325,14 +252,14 @@ Group
 
   MCU_CMD_Formation
   {
-    Index = 69;
+    Index = 208;
     Name = "Form";
     Desc = "";
     Targets = [];
-    Objects = [46];
-    XPos = 28190.709;
+    Objects = [191];
+    XPos = 37910.514;
     YPos = 108.584;
-    ZPos = 22402.774;
+    ZPos = 32392.860;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;

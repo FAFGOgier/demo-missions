@@ -1,18 +1,35 @@
+MCU_Timer
+{
+  Index = 357;
+  Name = "IN Landing Flares RU";
+  Desc = "";
+  Targets = [358];
+  Objects = [];
+  XPos = 33111.802;
+  YPos = 155.230;
+  ZPos = 31880.949;
+  XOri = 0.00;
+  YOri = 99.61;
+  ZOri = 0.00;
+  Time = 3;
+  Random = 100;
+}
+
 Group
 {
-  Name = "Landing Flare Russian";
-  Index = 3726;
+  Name = "Landing Flares RU";
+  Index = 361;
   Desc = "";
   MCU_CMD_Flare
   {
-    Index = 3713;
+    Index = 348;
     Name = "command Flare";
     Desc = "";
     Targets = [];
-    Objects = [3714];
-    XPos = 98977.264;
+    Objects = [349];
+    XPos = 33071.658;
     YPos = 155.230;
-    ZPos = 139613.342;
+    ZPos = 31857.598;
     XOri = 0.00;
     YOri = 99.61;
     ZOri = 0.00;
@@ -23,14 +40,14 @@ Group
   Vehicle
   {
     Name = "Vehicle";
-    Index = 3715;
-    LinkTrId = 3714;
-    XPos = 98984.152;
-    YPos = 171.973;
-    ZPos = 139613.507;
-    XOri = 0.70;
+    Index = 350;
+    LinkTrId = 349;
+    XPos = 33078.546;
+    YPos = 143.275;
+    ZPos = 31857.763;
+    XOri = 0.54;
     YOri = 242.75;
-    ZOri = 359.41;
+    ZOri = 0.74;
     Script = "LuaScripts\WorldObjects\vehicles\fake_vehicle.txt";
     Model = "graphics\vehicles\fake_vehicle\fake_vehicle.mgm";
     Desc = "";
@@ -64,32 +81,32 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 3714;
+    Index = 349;
     Name = "Vehicle entity";
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 98984.152;
-    YPos = 172.173;
-    ZPos = 139613.507;
+    XPos = 33078.546;
+    YPos = 143.475;
+    ZPos = 31857.763;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 1;
-    MisObjID = 3715;
+    MisObjID = 350;
   }
   
 
   MCU_Timer
   {
-    Index = 3717;
+    Index = 352;
     Name = "3s";
     Desc = "";
-    Targets = [3713,3718];
+    Targets = [348,353];
     Objects = [];
-    XPos = 98988.314;
+    XPos = 33082.708;
     YPos = 155.230;
-    ZPos = 139676.869;
+    ZPos = 31921.125;
     XOri = 0.00;
     YOri = 99.61;
     ZOri = 0.00;
@@ -100,14 +117,14 @@ Group
 
   MCU_Timer
   {
-    Index = 3718;
+    Index = 353;
     Name = "15s";
     Desc = "";
-    Targets = [3713,3720];
+    Targets = [348,355];
     Objects = [];
-    XPos = 98977.280;
+    XPos = 33071.674;
     YPos = 155.230;
-    ZPos = 139677.046;
+    ZPos = 31921.302;
     XOri = 0.00;
     YOri = 99.61;
     ZOri = 0.00;
@@ -118,14 +135,14 @@ Group
 
   MCU_Timer
   {
-    Index = 3720;
+    Index = 355;
     Name = "30s";
     Desc = "";
-    Targets = [3713];
+    Targets = [348];
     Objects = [];
-    XPos = 98967.950;
+    XPos = 33062.344;
     YPos = 155.230;
-    ZPos = 139677.043;
+    ZPos = 31921.299;
     XOri = 0.00;
     YOri = 99.61;
     ZOri = 0.00;
@@ -134,51 +151,16 @@ Group
   }
   
 
-  MCU_Timer
-  {
-    Index = 3722;
-    Name = "3s";
-    Desc = "";
-    Targets = [3723];
-    Objects = [];
-    XPos = 99000.655;
-    YPos = 155.230;
-    ZPos = 139637.032;
-    XOri = 0.00;
-    YOri = 99.61;
-    ZOri = 0.00;
-    Time = 3;
-    Random = 100;
-  }
-  
-
-  MCU_TR_MissionBegin
-  {
-    Index = 3724;
-    Name = "Translator Mission Begin";
-    Desc = "";
-    Targets = [3722];
-    Objects = [];
-    XPos = 99008.698;
-    YPos = 155.230;
-    ZPos = 139636.909;
-    XOri = 0.00;
-    YOri = 99.61;
-    ZOri = 0.00;
-    Enabled = 1;
-  }
-  
-
   MCU_CheckZone
   {
-    Index = 3723;
+    Index = 358;
     Name = "Trigger Check Zone";
     Desc = "";
-    Targets = [3717];
+    Targets = [352];
     Objects = [];
-    XPos = 98993.230;
+    XPos = 33087.624;
     YPos = 155.230;
-    ZPos = 139637.280;
+    ZPos = 31881.536;
     XOri = 0.00;
     YOri = 99.61;
     ZOri = 0.00;
