@@ -1,0 +1,872 @@
+MCU_Timer
+{
+  Index = 78;
+  Name = "IN-CombatBox";
+  Desc = "";
+  Targets = [79,80];
+  Objects = [];
+  XPos = 14608.062;
+  YPos = 130.942;
+  ZPos = 69520.301;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0.1;
+  Random = 100;
+}
+
+Group
+{
+  Name = "Combat Box";
+  Index = 126;
+  Desc = "";
+  Plane
+  {
+    Name = "Box Lead1";
+    Index = 69;
+    LinkTrId = 70;
+    XPos = 3788.953;
+    YPos = 6000.000;
+    ZPos = 72508.916;
+    XOri = 1.61;
+    YOri = 89.52;
+    ZOri = 358.69;
+    Script = "LuaScripts\WorldObjects\Planes\b25draf.txt";
+    Model = "graphics\planes\b25draf\b25draf.mgm";
+    Country = 103;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 70;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 3788.953;
+    YPos = 6000.200;
+    ZPos = 72508.916;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 69;
+  }
+  
+
+  Plane
+  {
+    Name = "Plane";
+    Index = 72;
+    LinkTrId = 73;
+    XPos = 3808.815;
+    YPos = 6000.000;
+    ZPos = 72473.036;
+    XOri = 1.61;
+    YOri = 89.52;
+    ZOri = 358.69;
+    Script = "LuaScripts\WorldObjects\Planes\b25draf.txt";
+    Model = "graphics\planes\b25draf\b25draf.mgm";
+    Country = 103;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 1;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 73;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [70];
+    Objects = [];
+    XPos = 3808.815;
+    YPos = 6000.200;
+    ZPos = 72473.036;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 72;
+  }
+  
+
+  Plane
+  {
+    Name = "Plane";
+    Index = 75;
+    LinkTrId = 76;
+    XPos = 3769.955;
+    YPos = 6000.000;
+    ZPos = 72473.329;
+    XOri = 1.61;
+    YOri = 89.52;
+    ZOri = 358.69;
+    Script = "LuaScripts\WorldObjects\Planes\b25draf.txt";
+    Model = "graphics\planes\b25draf\b25draf.mgm";
+    Country = 103;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 2;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 76;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [70];
+    Objects = [];
+    XPos = 3769.955;
+    YPos = 6000.200;
+    ZPos = 72473.329;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 75;
+  }
+  
+
+  MCU_CMD_Formation
+  {
+    Index = 79;
+    Name = "Command Formation";
+    Desc = "";
+    Targets = [];
+    Objects = [70,82,83,84];
+    XPos = 3877.750;
+    YPos = 132.606;
+    ZPos = 72534.168;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  FormationType = 1;
+  FormationDensity = 0;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 80;
+    Name = "Timer Move";
+    Desc = "";
+    Targets = [86,87,88,89];
+    Objects = [];
+    XPos = 3880.614;
+    YPos = 129.985;
+    ZPos = 72616.496;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  Plane
+  {
+    Name = "Box Lead2";
+    Index = 90;
+    LinkTrId = 82;
+    XPos = 3858.715;
+    YPos = 6050.000;
+    ZPos = 72427.169;
+    XOri = 1.61;
+    YOri = 89.52;
+    ZOri = 358.69;
+    Script = "LuaScripts\WorldObjects\Planes\b25draf.txt";
+    Model = "graphics\planes\b25draf\b25draf.mgm";
+    Country = 103;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 82;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 3858.715;
+    YPos = 6050.200;
+    ZPos = 72427.169;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 90;
+  }
+  
+
+  Plane
+  {
+    Name = "Plane";
+    Index = 92;
+    LinkTrId = 93;
+    XPos = 3879.600;
+    YPos = 6050.000;
+    ZPos = 72408.448;
+    XOri = 1.61;
+    YOri = 89.52;
+    ZOri = 358.69;
+    Script = "LuaScripts\WorldObjects\Planes\b25draf.txt";
+    Model = "graphics\planes\b25draf\b25draf.mgm";
+    Country = 103;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 1;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 93;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [82];
+    Objects = [];
+    XPos = 3879.600;
+    YPos = 6050.200;
+    ZPos = 72408.448;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 92;
+  }
+  
+
+  Plane
+  {
+    Name = "Plane";
+    Index = 95;
+    LinkTrId = 96;
+    XPos = 3840.740;
+    YPos = 6050.000;
+    ZPos = 72408.741;
+    XOri = 1.61;
+    YOri = 89.52;
+    ZOri = 358.69;
+    Script = "LuaScripts\WorldObjects\Planes\b25draf.txt";
+    Model = "graphics\planes\b25draf\b25draf.mgm";
+    Country = 103;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 2;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 96;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [82];
+    Objects = [];
+    XPos = 3840.740;
+    YPos = 6050.200;
+    ZPos = 72408.741;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 95;
+  }
+  
+
+  Plane
+  {
+    Name = "Box Lead3";
+    Index = 98;
+    LinkTrId = 84;
+    XPos = 3730.133;
+    YPos = 5950.000;
+    ZPos = 72428.166;
+    XOri = 1.61;
+    YOri = 89.52;
+    ZOri = 358.69;
+    Script = "LuaScripts\WorldObjects\Planes\b25draf.txt";
+    Model = "graphics\planes\b25draf\b25draf.mgm";
+    Country = 103;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 84;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 3730.133;
+    YPos = 5950.200;
+    ZPos = 72428.166;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 98;
+  }
+  
+
+  Plane
+  {
+    Name = "Plane";
+    Index = 100;
+    LinkTrId = 101;
+    XPos = 3751.018;
+    YPos = 5950.000;
+    ZPos = 72409.445;
+    XOri = 1.61;
+    YOri = 89.52;
+    ZOri = 358.69;
+    Script = "LuaScripts\WorldObjects\Planes\b25draf.txt";
+    Model = "graphics\planes\b25draf\b25draf.mgm";
+    Country = 103;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 1;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 101;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [84];
+    Objects = [];
+    XPos = 3751.018;
+    YPos = 5950.200;
+    ZPos = 72409.445;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 100;
+  }
+  
+
+  Plane
+  {
+    Name = "Plane";
+    Index = 103;
+    LinkTrId = 104;
+    XPos = 3712.158;
+    YPos = 5950.000;
+    ZPos = 72409.738;
+    XOri = 1.61;
+    YOri = 89.52;
+    ZOri = 358.69;
+    Script = "LuaScripts\WorldObjects\Planes\b25draf.txt";
+    Model = "graphics\planes\b25draf\b25draf.mgm";
+    Country = 103;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 2;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 104;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [84];
+    Objects = [];
+    XPos = 3712.158;
+    YPos = 5950.200;
+    ZPos = 72409.738;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 103;
+  }
+  
+
+  Plane
+  {
+    Name = "Box Lead4";
+    Index = 106;
+    LinkTrId = 83;
+    XPos = 3795.919;
+    YPos = 5900.000;
+    ZPos = 72342.445;
+    XOri = 1.61;
+    YOri = 89.52;
+    ZOri = 358.69;
+    Script = "LuaScripts\WorldObjects\Planes\b25draf.txt";
+    Model = "graphics\planes\b25draf\b25draf.mgm";
+    Country = 103;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 83;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 3795.919;
+    YPos = 5900.200;
+    ZPos = 72342.445;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 106;
+  }
+  
+
+  Plane
+  {
+    Name = "Plane";
+    Index = 108;
+    LinkTrId = 109;
+    XPos = 3816.804;
+    YPos = 5900.000;
+    ZPos = 72323.724;
+    XOri = 1.61;
+    YOri = 89.52;
+    ZOri = 358.69;
+    Script = "LuaScripts\WorldObjects\Planes\b25draf.txt";
+    Model = "graphics\planes\b25draf\b25draf.mgm";
+    Country = 103;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 1;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 109;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [83];
+    Objects = [];
+    XPos = 3816.804;
+    YPos = 5900.200;
+    ZPos = 72323.724;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 108;
+  }
+  
+
+  Plane
+  {
+    Name = "Plane";
+    Index = 111;
+    LinkTrId = 112;
+    XPos = 3777.944;
+    YPos = 5900.000;
+    ZPos = 72324.017;
+    XOri = 1.61;
+    YOri = 89.52;
+    ZOri = 358.69;
+    Script = "LuaScripts\WorldObjects\Planes\b25draf.txt";
+    Model = "graphics\planes\b25draf\b25draf.mgm";
+    Country = 103;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 2;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 112;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [83];
+    Objects = [];
+    XPos = 3777.944;
+    YPos = 5900.200;
+    ZPos = 72324.017;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 111;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 89;
+    Name = "WP1-CombatBox-P4";
+    Desc = "";
+    Targets = [115];
+    Objects = [83];
+    XPos = 3659.239;
+    YPos = 5900.000;
+    ZPos = 88387.477;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 400;
+    Speed = 400;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 88;
+    Name = "WP1-CombatBox-P3";
+    Desc = "";
+    Targets = [117];
+    Objects = [84];
+    XPos = 3593.225;
+    YPos = 5950.000;
+    ZPos = 88473.146;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 400;
+    Speed = 400;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 86;
+    Name = "WP1-CombatBox-P1";
+    Desc = "";
+    Targets = [119];
+    Objects = [70];
+    XPos = 3662.556;
+    YPos = 6000.000;
+    ZPos = 88529.849;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 400;
+    Speed = 400;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 87;
+    Name = "WP1-CombatBox-P2";
+    Desc = "";
+    Targets = [121];
+    Objects = [82];
+    XPos = 3721.864;
+    YPos = 6050.000;
+    ZPos = 88472.869;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 400;
+    Speed = 400;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 117;
+    Name = "WP1-CombatBox-P3";
+    Desc = "";
+    Targets = [];
+    Objects = [84];
+    XPos = 25810.163;
+    YPos = 5950.000;
+    ZPos = 110408.739;
+    XOri = 0.00;
+    YOri = 293.54;
+    ZOri = 0.00;
+    Area = 400;
+    Speed = 400;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 115;
+    Name = "WP1-CombatBox-P4";
+    Desc = "";
+    Targets = [];
+    Objects = [83];
+    XPos = 25757.999;
+    YPos = 5900.000;
+    ZPos = 110313.998;
+    XOri = 0.00;
+    YOri = 293.54;
+    ZOri = 0.00;
+    Area = 400;
+    Speed = 400;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 121;
+    Name = "WP1-CombatBox-P2";
+    Desc = "";
+    Targets = [];
+    Objects = [82];
+    XPos = 25861.300;
+    YPos = 6050.000;
+    ZPos = 110290.701;
+    XOri = 0.00;
+    YOri = 293.54;
+    ZOri = 0.00;
+    Area = 400;
+    Speed = 400;
+    Priority = 1;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 119;
+    Name = "WP1-CombatBox-P1";
+    Desc = "";
+    Targets = [];
+    Objects = [70];
+    XPos = 25889.842;
+    YPos = 6000.000;
+    ZPos = 110367.834;
+    XOri = 0.00;
+    YOri = 293.54;
+    ZOri = 0.00;
+    Area = 400;
+    Speed = 400;
+    Priority = 1;
+  }
+  
+
+}
+
