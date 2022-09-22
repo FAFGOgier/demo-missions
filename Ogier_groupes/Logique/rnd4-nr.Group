@@ -1,0 +1,530 @@
+MCU_Timer
+{
+  Index = 84;
+  Name = "IN-RANDOM-LOOP";
+  Desc = "";
+  Targets = [85];
+  Objects = [];
+  XPos = 6265.194;
+  YPos = 108.585;
+  ZPos = 29783.391;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 86;
+  Name = "OUT-1";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 6270.769;
+  YPos = 75.364;
+  ZPos = 29758.285;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 87;
+  Name = "OUT-2";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 6268.356;
+  YPos = 75.364;
+  ZPos = 29758.372;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 88;
+  Name = "OUT-3";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 6265.773;
+  YPos = 75.364;
+  ZPos = 29758.687;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 89;
+  Name = "OUT-4";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 6261.798;
+  YPos = 75.364;
+  ZPos = 29759.047;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+Group
+{
+  Name = "Rnd4-sans-remise";
+  Index = 90;
+  Desc = "10%, 1mn";
+  MCU_Timer
+  {
+    Index = 91;
+    Name = "LOOP";
+    Desc = "";
+    Targets = [92,93,94,95,96,97];
+    Objects = [];
+    XPos = 6267.513;
+    YPos = 103.298;
+    ZPos = 29769.807;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 92;
+    Name = "WAIT";
+    Desc = "min: 20s";
+    Targets = [91];
+    Objects = [];
+    XPos = 6261.265;
+    YPos = 37.833;
+    ZPos = 29777.721;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 30;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 94;
+    Name = "CAS 1";
+    Desc = "";
+    Targets = [100];
+    Objects = [];
+    XPos = 6276.907;
+    YPos = 64.669;
+    ZPos = 29762.677;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 5;
+  }
+  
+
+  MCU_Counter
+  {
+    Index = 101;
+    Name = "all done";
+    Desc = "";
+    Targets = [102];
+    Objects = [];
+    XPos = 6270.758;
+    YPos = 65.433;
+    ZPos = 29767.410;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Counter = 4;
+    Dropcount = 0;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 102;
+    Name = "100ms";
+    Desc = "";
+    Targets = [104];
+    Objects = [];
+    XPos = 6270.771;
+    YPos = 52.807;
+    ZPos = 29768.561;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Deactivate
+  {
+    Index = 104;
+    Name = "deactivate";
+    Desc = "";
+    Targets = [91];
+    Objects = [];
+    XPos = 6270.748;
+    YPos = 21.768;
+    ZPos = 29769.816;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 100;
+    Name = "selected 1";
+    Desc = "";
+    Targets = [107,108];
+    Objects = [];
+    XPos = 6267.817;
+    YPos = 69.616;
+    ZPos = 29767.548;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 93;
+    Name = "15s";
+    Desc = "";
+    Targets = [110];
+    Objects = [];
+    XPos = 6264.649;
+    YPos = 74.893;
+    ZPos = 29769.960;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 15;
+    Random = 100;
+  }
+  
+
+  MCU_Activate
+  {
+    Index = 110;
+    Name = "reactivate";
+    Desc = "";
+    Targets = [112,113,114];
+    Objects = [];
+    XPos = 6261.796;
+    YPos = 73.563;
+    ZPos = 29770.114;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 107;
+    Name = "pre-out-1";
+    Desc = "";
+    Targets = [86,101];
+    Objects = [];
+    XPos = 6268.945;
+    YPos = 75.916;
+    ZPos = 29766.459;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 85;
+    Name = "in";
+    Desc = "";
+    Targets = [117];
+    Objects = [];
+    XPos = 6267.470;
+    YPos = 108.681;
+    ZPos = 29775.563;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 117;
+    Name = "1s";
+    Desc = "";
+    Targets = [91];
+    Objects = [];
+    XPos = 6267.474;
+    YPos = 108.597;
+    ZPos = 29772.806;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  MCU_Deactivate
+  {
+    Index = 108;
+    Name = "Trigger Deactivate";
+    Desc = "";
+    Targets = [94,112,113,114];
+    Objects = [];
+    XPos = 6267.818;
+    YPos = 69.923;
+    ZPos = 29766.438;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 95;
+    Name = "CAS 2";
+    Desc = "";
+    Targets = [112];
+    Objects = [];
+    XPos = 6276.502;
+    YPos = 64.669;
+    ZPos = 29767.549;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1.1;
+    Random = 5;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 112;
+    Name = "selected 2";
+    Desc = "";
+    Targets = [122,123];
+    Objects = [];
+    XPos = 6265.447;
+    YPos = 69.616;
+    ZPos = 29767.479;
+    XOri = 0.00;
+    YOri = 5.90;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 122;
+    Name = "pre-out-2";
+    Desc = "";
+    Targets = [87,101];
+    Objects = [];
+    XPos = 6266.680;
+    YPos = 75.916;
+    ZPos = 29766.452;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Deactivate
+  {
+    Index = 123;
+    Name = "Trigger Deactivate";
+    Desc = "";
+    Targets = [95,113,114];
+    Objects = [];
+    XPos = 6265.560;
+    YPos = 69.923;
+    ZPos = 29766.407;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 96;
+    Name = "CAS 3";
+    Desc = "";
+    Targets = [113];
+    Objects = [];
+    XPos = 6275.781;
+    YPos = 64.669;
+    ZPos = 29771.228;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 2.1;
+    Random = 6;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 113;
+    Name = "selected 3";
+    Desc = "";
+    Targets = [128,129];
+    Objects = [];
+    XPos = 6263.329;
+    YPos = 69.616;
+    ZPos = 29767.444;
+    XOri = 0.00;
+    YOri = 5.90;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 128;
+    Name = "pre-out-3";
+    Desc = "";
+    Targets = [88,101];
+    Objects = [];
+    XPos = 6264.456;
+    YPos = 75.916;
+    ZPos = 29766.446;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Deactivate
+  {
+    Index = 129;
+    Name = "Trigger Deactivate";
+    Desc = "";
+    Targets = [96,114];
+    Objects = [];
+    XPos = 6263.374;
+    YPos = 69.923;
+    ZPos = 29766.350;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 97;
+    Name = "CAS 4";
+    Desc = "";
+    Targets = [114];
+    Objects = [];
+    XPos = 6275.254;
+    YPos = 64.669;
+    ZPos = 29773.392;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 3.1;
+    Random = 6;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 114;
+    Name = "selected 4";
+    Desc = "";
+    Targets = [134,135];
+    Objects = [];
+    XPos = 6261.135;
+    YPos = 69.616;
+    ZPos = 29767.457;
+    XOri = 0.00;
+    YOri = 5.90;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 134;
+    Name = "pre-out-4";
+    Desc = "";
+    Targets = [89,101];
+    Objects = [];
+    XPos = 6262.173;
+    YPos = 75.916;
+    ZPos = 29766.385;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Deactivate
+  {
+    Index = 135;
+    Name = "Trigger Deactivate";
+    Desc = "";
+    Targets = [97];
+    Objects = [];
+    XPos = 6261.068;
+    YPos = 69.923;
+    ZPos = 29766.357;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+}
+

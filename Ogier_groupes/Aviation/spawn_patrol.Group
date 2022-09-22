@@ -1,0 +1,260 @@
+MCU_Timer
+{
+  Index = 4;
+  Name = "IN-SPAWNER";
+  Desc = "";
+  Targets = [5];
+  Objects = [];
+  XPos = 43249.871;
+  YPos = 32.491;
+  ZPos = 14602.476;
+  XOri = 0.00;
+  YOri = 277.75;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+Group
+{
+  Name = "Spawned Planes";
+  Index = 28;
+  Desc = "";
+  MCU_Timer
+  {
+    Index = 5;
+    Name = "in";
+    Desc = "";
+    Targets = [8];
+    Objects = [];
+    XPos = 43179.664;
+    YPos = 56.709;
+    ZPos = 15970.769;
+    XOri = 0.00;
+    YOri = 277.75;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Spawner
+  {
+    Index = 8;
+    Name = "Trigger Spawner";
+    Desc = "";
+    Targets = [];
+    Objects = [9,10];
+    XPos = 43174.853;
+    YPos = 35.044;
+    ZPos = 18845.736;
+    XOri = 0.00;
+    YOri = 277.22;
+    ZOri = 0.00;
+    SpawnAtMe = 0;
+  }
+  
+
+  Plane
+  {
+    Name = "Lead";
+    Index = 11;
+    LinkTrId = 9;
+    XPos = 43501.290;
+    YPos = 600.000;
+    ZPos = 21266.034;
+    XOri = 359.14;
+    YOri = 0.00;
+    ZOri = 11.82;
+    Script = "LuaScripts\WorldObjects\Planes\fw190a3.txt";
+    Model = "graphics\planes\fw190a3\fw190a3.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 9;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 43501.290;
+    YPos = 600.200;
+    ZPos = 21266.034;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 0;
+    MisObjID = 11;
+    OnReports
+    {
+      OnReport
+      {
+        Type = 0;
+        CmdId = 8;
+        TarId = 13;
+      }
+    }
+  }
+  
+
+  Plane
+  {
+    Name = "Wingman";
+    Index = 15;
+    LinkTrId = 10;
+    XPos = 42715.394;
+    YPos = 600.000;
+    ZPos = 21234.986;
+    XOri = 359.14;
+    YOri = 0.00;
+    ZOri = 11.82;
+    Script = "LuaScripts\WorldObjects\Planes\fw190a3.txt";
+    Model = "graphics\planes\fw190a3\fw190a3.mgm";
+    Country = 201;
+    Desc = "";
+    Skin = "";
+    AILevel = 2;
+    CoopStart = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    StartInAir = 0;
+    Callsign = 0;
+    Callnum = 0;
+    Time = 60;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    PayloadId = 0;
+    WMMask = 1;
+    AiRTBDecision = 0;
+    DeleteAfterDeath = 1;
+    Spotter = -1;
+    Fuel = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 10;
+    Name = "Plane entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 42715.394;
+    YPos = 600.200;
+    ZPos = 21234.986;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 0;
+    MisObjID = 15;
+    OnReports
+    {
+      OnReport
+      {
+        Type = 0;
+        CmdId = 8;
+        TarId = 17;
+      }
+    }
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 17;
+    Name = "Wingman Spawned";
+    Desc = "";
+    Targets = [19];
+    Objects = [];
+    XPos = 40846.157;
+    YPos = 33.737;
+    ZPos = 20069.488;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 15;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 13;
+    Name = "Leader Spawned";
+    Desc = "";
+    Targets = [25];
+    Objects = [];
+    XPos = 44960.692;
+    YPos = 63.543;
+    ZPos = 21264.205;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Waypoint
+  {
+    Index = 25;
+    Name = "Trigger Waypoint";
+    Desc = "";
+    Targets = [];
+    Objects = [9];
+    XPos = 43511.496;
+    YPos = 600.000;
+    ZPos = 28876.407;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Area = 20;
+    Speed = 100;
+    Priority = 1;
+  }
+  
+
+  MCU_CMD_Cover
+  {
+    Index = 19;
+    Name = "command Cover";
+    Desc = "";
+    Targets = [9];
+    Objects = [10];
+    XPos = 40815.939;
+    YPos = 38.724;
+    ZPos = 22365.006;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    CoverGroup = 1;
+    Priority = 1;
+  }
+  
+
+}
+

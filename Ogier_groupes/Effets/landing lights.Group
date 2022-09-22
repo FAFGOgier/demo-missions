@@ -1,0 +1,340 @@
+MCU_Timer
+{
+  Index = 8;
+  Name = "Lights IN";
+  Desc = "";
+  Targets = [9];
+  Objects = [];
+  XPos = 39205.465;
+  YPos = 138.946;
+  ZPos = 33289.106;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 1;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 10;
+  Name = "Lights OUT";
+  Desc = "";
+  Targets = [11];
+  Objects = [];
+  XPos = 39140.806;
+  YPos = 138.946;
+  ZPos = 33293.313;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 1;
+  Random = 100;
+}
+
+Group
+{
+  Name = "T";
+  Index = 17;
+  Desc = "";
+  Vehicle
+  {
+    Name = "T";
+    Index = 18;
+    LinkTrId = 0;
+    XPos = 39172.695;
+    YPos = 138.946;
+    ZPos = 33289.967;
+    XOri = 0.00;
+    YOri = 176.56;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\vehicles\land_canvas.txt";
+    Model = "graphics\vehicles\land_canvas\land_canvas.mgm";
+    Desc = "";
+    Country = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RehealFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RehealTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  Vehicle
+  {
+    Name = "T";
+    Index = 19;
+    LinkTrId = 0;
+    XPos = 39162.747;
+    YPos = 138.946;
+    ZPos = 33290.574;
+    XOri = 0.00;
+    YOri = 176.56;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\vehicles\land_canvas.txt";
+    Model = "graphics\vehicles\land_canvas\land_canvas.mgm";
+    Desc = "";
+    Country = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RehealFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RehealTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  Vehicle
+  {
+    Name = "T";
+    Index = 20;
+    LinkTrId = 0;
+    XPos = 39166.988;
+    YPos = 138.946;
+    ZPos = 33284.478;
+    XOri = 0.00;
+    YOri = 265.67;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\vehicles\land_canvas.txt";
+    Model = "graphics\vehicles\land_canvas\land_canvas.mgm";
+    Desc = "";
+    Country = 0;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RehealFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RehealTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+}
+
+Group
+{
+  Name = "Landing lights";
+  Index = 26;
+  Desc = "";
+  Vehicle
+  {
+    Name = "Vehicle";
+    Index = 5;
+    LinkTrId = 6;
+    XPos = 39139.458;
+    YPos = 138.946;
+    ZPos = 33365.524;
+    XOri = 0.00;
+    YOri = 268.43;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\vehicles\landlightus.txt";
+    Model = "graphics\artillery\searchlightus\landlightus.mgm";
+    Desc = "";
+    Country = 103;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RehealFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RehealTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 6;
+    Name = "Vehicle entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 39139.458;
+    YPos = 139.146;
+    ZPos = 33365.524;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 5;
+  }
+  
+
+  MCU_CMD_ForceComplete
+  {
+    Index = 9;
+    Name = "on";
+    Desc = "";
+    Targets = [];
+    Objects = [6,13];
+    XPos = 39207.382;
+    YPos = 138.946;
+    ZPos = 33316.536;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Priority = 0;
+    EmergencyOrdnanceDrop = 0;
+  }
+  
+
+  MCU_CMD_ForceComplete
+  {
+    Index = 11;
+    Name = "off";
+    Desc = "";
+    Targets = [];
+    Objects = [6,13];
+    XPos = 39143.391;
+    YPos = 138.946;
+    ZPos = 33319.697;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Priority = 2;
+    EmergencyOrdnanceDrop = 0;
+  }
+  
+
+  Vehicle
+  {
+    Name = "Vehicle";
+    Index = 15;
+    LinkTrId = 13;
+    XPos = 39215.543;
+    YPos = 138.946;
+    ZPos = 33361.124;
+    XOri = 0.00;
+    YOri = 265.09;
+    ZOri = 0.00;
+    Script = "LuaScripts\WorldObjects\vehicles\landlightus.txt";
+    Model = "graphics\artillery\searchlightus\landlightus.mgm";
+    Desc = "";
+    Country = 103;
+    NumberInFormation = 0;
+    Vulnerable = 1;
+    Engageable = 1;
+    LimitAmmo = 1;
+    AILevel = 2;
+    DamageReport = 50;
+    DamageThreshold = 1;
+    DeleteAfterDeath = 1;
+    CoopStart = 0;
+    Spotter = -1;
+    BeaconChannel = 0;
+    Callsign = 0;
+    PayloadId = 0;
+    WMMask = 1;
+    Fuel = 1;
+    Callnum = 0;
+    Skin = "";
+    RepairFriendlies = 0;
+    RehealFriendlies = 0;
+    RearmFriendlies = 0;
+    RefuelFriendlies = 0;
+    RepairTime = 0;
+    RehealTime = 0;
+    RearmTime = 0;
+    RefuelTime = 0;
+    MaintenanceRadius = 10;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 13;
+    Name = "Vehicle entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 39215.543;
+    YPos = 139.146;
+    ZPos = 33361.124;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 15;
+  }
+  
+
+}
+

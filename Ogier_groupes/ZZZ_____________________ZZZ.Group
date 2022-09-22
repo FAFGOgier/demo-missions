@@ -1,0 +1,21 @@
+Block
+{
+  Name = "Block";
+  Index = 2;
+  LinkTrId = 0;
+  XPos = 25674.222;
+  YPos = 115.727;
+  ZPos = 25729.385;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Model = "graphics\blocks\af_barracksround1.mgm";
+  Script = "LuaScripts\WorldObjects\Blocks\af_barracksround1.txt";
+  Country = 0;
+  Desc = "";
+  Durability = 25000;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  DeleteAfterDeath = 1;
+}
+
